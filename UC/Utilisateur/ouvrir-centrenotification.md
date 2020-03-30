@@ -26,6 +26,9 @@ Le centre de notifcation s'affiche comme un sous-menu de l'icone notification
 3.	La liste des notifications les plus récentes surlignées et non suivi (càd on a pas suivi le lien de la notif) et celles déjà lues sont affichées en temps réel (idéalement)
 4. On peut suivre les notifications pour qu'elles soientt mise en "lue"
 5. Le compteur de notifications est mis à jour et l'affichage lu/non lu également du centre de notifications.
+
+> On peut également avoir un bouton "Tout mettre en lue" sans avoir à cliquer sur chaque notification, mais il n'y aura pas de redirection vers les ressources par ce biais. Un bouton "Afficher plus" affichera les notifications plus anciennes à l'aide d'un scrollbar.
+
 > **(Cf. voir schéma)**
 
 [![Schema](https://zupimages.net/up/20/14/r9kr.png)](https://zupimages.net/up/20/14/)
