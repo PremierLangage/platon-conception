@@ -7,9 +7,6 @@ Niveau 1
 
 Idem utilisateur. L'utilisateur membre étudiant souhaite se connecter sur la plateforme.
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[](https://github.com/PremierLangage/plconception/blob/master/conception/concept/.md)**  
-
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
 > **Acteur Primaire**: Utilisateur membre de rôle étudiant   
