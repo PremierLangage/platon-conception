@@ -9,6 +9,8 @@ Acteur Humain qui normalement appartient à un ou plusieurs cercles du serveur c
 
 Ce sont des utilisateurs de la partie ressources. Ils n'interviennent pas directement sur les serveur d'assets. Pour instancier une resource depuis le serveur central vers un serveur d'asset, un membre doit d'abord prendre un rôle d'esneignant. 
 
+C'est le statut par défault que va acquérir automatiquement à sa première connexion un utilisateur ayant le role enseignant depuis LTI. Pour devenir un enseignant PLaTon (et pas seulement un membre éditeur/manager de ressources), il devra opérationnaliser des ressources du serveur central vers son serveur asset.
+
 Les membres sont des créateurs de ressources et aussi les curateurs de celles-ci, les membres sont en général des enseignants (ou anciens ou afficionados de l'enseignement), créateur de mooc ou autre.
 Organisateurs du travail sur les ressources ils s'organisent en cercles.
 l'idée des cercles est de faire se rencontrer les utilisateurs ayant les mêmes besoins en termes d'enseignement. 
@@ -16,6 +18,8 @@ l'idée des cercles est de faire se rencontrer les utilisateurs ayant les mêmes
 Comment a-t-il connu la plateforme ? je sais pas, il a un intérêt pour les ressources pédagogiques.
 
 Comment a-t-il créer son compte ? par la connexion lti. CF use case.
+
+FIXME : comment fait-on pour venir de LTI quand on est retraité (exemple M.C. David) ? Comment fait-on pour venir de L.T.I. quand un lycée n'a pas encore de LMS ? L'accès à PLaTon en tant que membre semble impossible si on a pas un LMS ? Est-ce un problème ? 
 
 
 [aav-add-ressource.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/aav-add-ressource.md)   
