@@ -5,7 +5,7 @@
 
 ## description
 
-> Besoin en formation: Oui car la plateforme est technique.
+> Besoin en formation: Oui car la plateforme est technique. \
 > Niveau de compétence varié pour les membres voir sous types d'acteurs.
 
 Ce sont des utilisateurs de la partie ressources. Ils n'interviennent pas directement sur les **serveur d'assets**. Pour instancier une resource depuis le **serveur central** vers un **serveur d'asset**, un membre doit d'abord prendre un rôle d'**enseignant**. 
