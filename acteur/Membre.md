@@ -19,7 +19,8 @@ Comment a-t-il connu la plateforme ? je sais pas, il a un intérêt pour les res
 
 Comment a-t-il créer son compte ? par la connexion lti. CF use case.
 
-FIXME : comment fait-on pour venir de LTI quand on est retraité (exemple M.C. David) ? Comment fait-on pour venir de L.T.I. quand un lycée n'a pas encore de LMS ? L'accès à PLaTon en tant que membre semble impossible si on a pas un LMS ? Est-ce un problème ? 
+Comment fait-on pour venir de LTI quand on est retraité (exemple M.C. David) ?  Pas de compte LMS pas de compte PL par LTI. Cela veux dire que personne veux de toi.
+Comment fait-on pour venir de L.T.I. quand un lycée n'a pas encore de LMS ? L'accès à PLaTon en tant que membre semble impossible si on a pas un LMS ? Est-ce un problème ? NON. 
 
 
 [aav-add-ressource.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/aav-add-ressource.md)   
