@@ -5,64 +5,48 @@ Niveau 1
 
 ##	Description
 
+Un membre (d'un cercle quelconque) est en train de consulter une **[demande](https://github.com/PremierLangage/plconception/blob/master/conception/concept/demande.md)** (un aav). 
+Il propose un lien vers une ressource pouvant répondre à l'aav.
+ 
 
+> **Déclencheur** : le membre est en train de consulter une demande
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[demande](https://github.com/PremierLangage/plconception/blob/master/conception/concept/demande.md)**  
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Acteur Primaire**: membre  
+> **Acteurs secondaires**: le demandeur   
+> **Parties Prenantes concernées** : les membres surveillants la demande en question (notification?)
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+- une demande (crud-aav) a été faite
 
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
 
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	le système affiche la demande
+2.	l'utilisateur clic sur le bouton (ajouter une réponse)
+3.	cela conduit à une view dans laquelle il y a le champ de réponse et moteur de recherche
+4.	l'utilisateur fait sa recherche, sélectionne une ressource et crée un lien vers la ressource en faisant un commentaire
+5. il valide;
+6. Le système lui affiche le lien interne de la ressource et le commentaire
+7. Une notification est envoyée au demandeur et aux personnes qui suivent la demande. 
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
-
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
+6. l'utilsateur n'est pas satisfait et il peut retourner en 4. (un bouton)
 
 
 ## Post Conditions
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+Le lien sur la ressource et le commentaire sont enregistés dans la base de données;
+Les notifications ont été envoyées; 
 
-### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
-
-### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
-
-
-FIXME _les variables suivantes sont optionnelles._
 
 ### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
-### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
-### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
+Un cas simple d'utilisation. 
 
-##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
 
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
 
-TBR
+## Besoins du cas d'utilisation 
+
+FIXME 
