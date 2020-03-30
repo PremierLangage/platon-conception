@@ -1,68 +1,35 @@
 
 # Cas d'utilisation N° 38 :  Evaluer
 
-Niveau 1
 
 ##	Description
 
-Permet à l’enseignant de réaliser des évaluation/collecter les évaluation 
+Permet à l’enseignant de réaliser des évaluations/collecter les évaluations, c'est un mode d'accès différent aux assets,
+ce mode permet definir la modalité d'évaluation. 
+Ce mode permet de réaliser l'évaluation à la main.
+Ce mode permet de faire les exports.
+Ce mode permet d'indiquer quelles évaluations sont visible oar les élèves.
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[](https://github.com/PremierLangage/plconception/blob/master/conception/concept/.md)**  
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Déclencheur** : l'enseignant passe en "mode évaluation" (bouton, menu , etc.?  a choisir FIXME) 
+> **Acteur Primaire**: Enseignant   
+> **Acteurs secondaires**: Etudiant (notification)   
+> **Parties Prenantes concernées** : Pour l'export des notes les formations concernées.   
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
-
+Etre connecté comme enseignant sur un cours/classe.
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
-
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1. L'enseignant choisi le mode evaluation. 
+2. Le système affiche la view Evaluer qui permet de modifier les modalités d'évaluation des assets,
+toutes les activités de façon héirachique sont affichées et les boutons (completion,modalités,programme) sont disponible ainsi qu'un lien vers l'export des notes.  
+3.	Les boutons ouvrent de nouvelles pages et donc le cas d'utilisation est terminé.
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
 
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
-
-
-## Post Conditions
-### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
-
-### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
-
-### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
+Les extensions ont lieux entre 2 et 3.
 
 
-FIXME _les variables suivantes sont optionnelles._
-
-### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
-### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
-### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
-
-##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
-
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
-
-TBR
