@@ -1,13 +1,13 @@
  
-# Membre  
+# Membre
 
-Acteur Humain qui appartient à un cercle du serveur central de ressources.
+Acteur Humain qui normalement appartient à un ou plusieurs cercles du serveur central de ressources.
 
 
 > Besoin en formation: Oui car la plateform est technique.
 > Niveau de compétence varié pour les membres voir sous types d'acteurs.
 
-Ce sont des utilisateurs de la partie ressources. Ils n'interviennent pas directement sur les serveur d'assets.
+Ce sont des utilisateurs de la partie ressources. Ils n'interviennent pas directement sur les serveur d'assets. Pour instancier une resource depuis le serveur central vers un serveur d'asset, un membre doit d'abord prendre un rôle d'esneignant. 
 
 Les membres sont des créateurs de ressources et aussi les curateurs de celles-ci, les membres sont en général des enseignants (ou anciens ou afficionados de l'enseignement), créateur de mooc ou autre.
 Organisateurs du travail sur les ressources ils s'organisent en cercles.
