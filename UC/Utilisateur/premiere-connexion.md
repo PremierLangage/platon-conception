@@ -1,5 +1,5 @@
 
-# Cas d'utilisation N° 48 :  premiere-connection
+# Cas d'utilisation N° 48 :  premiere-connexion
 
 Niveau 1
 
