@@ -55,3 +55,5 @@ Une note doit être remontée aux activité parentes à chaque réponse d'un ét
 
 ##	Problèmes et étapes suivantes  
 Quels sont les affichages graphiques proposés ?
+
+En relation avec [completion etudiant](https://github.com/PremierLangage/platon-conception/issues/12)
