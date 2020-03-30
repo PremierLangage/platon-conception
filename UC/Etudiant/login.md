@@ -45,7 +45,6 @@ Il ne peut pas se connecter si il a oublié son adresse mail, il doit passer par
 ### Frequence
 souvent 
 ### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
 ### Performance  
 ###	Security  
 ###	Usability / Accessibility  
