@@ -5,7 +5,7 @@ Niveau 1
 
 ##	Description
 
-Un membre de la plateforme veut pouvoir consulter ses informations en affichant son profile.
+Un membre de la plateforme veut pouvoir consulter ses informations en affichant son profil.
 
 > **Déclencheur** : Lors d'un click sur l'icone profile.
 > **Acteur Primaire**: membre   
@@ -25,9 +25,11 @@ Un membre de la plateforme veut pouvoir consulter ses informations en affichant 
 1.	L'utilisateur clique sur l'icône profile
 2.	Un onglet s'ouvre (avec possiblement des sous-menus stats, infos perso)
 3.	Il choisit ce qu'il souhaite consulter (stats, informations perso...)  
-FIXME faire la liste effective de ce que l'on trouve ICI mer jeremy
-4.	Il arrive sur une page où toutes ces/ses FIXME informations sont détaillées. 
-5. IL est arrivé à mettre a jour ses choix.
+3.1 Informations persos
+3.2 Stats d'exos
+3.3 La liste des cercles auxquels il appartient.
+4.	Il arrive sur une page où toutes ces informations sont détaillées. 
+5. IL est arrivé à mettre à jour ses choix.
 
 
 
