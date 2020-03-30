@@ -1,20 +1,19 @@
  
 # Membre  
 
-Acteur Humain qui appartient à un cercle. 
-
+Acteur Humain qui appartient à un cercle du serveur central de ressources.
 
 
 > Besoin en formation: Oui car la plateform est technique.
 > Niveau de compétence varié pour les membres voir sous types d'acteurs.
 
-C'est des utilisateurs de la partie ressources. N'intervienne pas directement sur les serveur d'assets.
+Ce sont des utilisateurs de la partie ressources. Ils n'interviennent pas directement sur les serveur d'assets.
 
-Les membres sont les créateurs de ressources et les curateurs de celle ci, les membre sont en général des enseignants (ou anciens ou afficionados de l'enseignement), créateur de mooc ou autre .
-Organisateurs du travail sur les ressources ils appartiennent à des cercles.
-l'idée des cercles est de faire rencontrer les utilisateurs ayant les mêmes besoins en enseignement. 
+Les membres sont des créateurs de ressources et aussi les curateurs de celles-ci, les membres sont en général des enseignants (ou anciens ou afficionados de l'enseignement), créateur de mooc ou autre.
+Organisateurs du travail sur les ressources ils s'organisent en cercles.
+l'idée des cercles est de faire se rencontrer les utilisateurs ayant les mêmes besoins en termes d'enseignement. 
 
-Comment a-t-il connu la plateforme ? je sais pas. 
+Comment a-t-il connu la plateforme ? je sais pas, il a un intérêt pour les ressources pédagogiques.
 
 Comment a-t-il créer son compte ? par la connexion lti. CF use case.
 
