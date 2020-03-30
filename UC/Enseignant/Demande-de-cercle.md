@@ -5,13 +5,13 @@ Niveau 1
 
 ##	Description
 
-Permet de faire une demande de création de cercle (fait par u nadministrateur)
+Permet de faire une demande de création de cercle (fait par un administrateur).
+Deux posibilités au cours de la création d'un cours/classe, soit l'enseignant connait le cercle auquel il veut liens sont cours.
+Soit il ne le connait pas et donc demande la création d'un **[cercle](https://github.com/PremierLangage/plconception/blob/master/conception/concept/cercle.md)**  correspondant aux particularités de son cours (niveau, discipline ,etc).
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[cercle](https://github.com/PremierLangage/plconception/blob/master/conception/concept/cercle.md)**  
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
+
+> **Déclencheur** : La création d'un cours
 > **Acteur Primaire**: Utilisateur   
 > **Acteurs secondaires**: TODO   
 > **Parties Prenantes concernées** : TODO   
