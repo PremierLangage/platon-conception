@@ -6,10 +6,9 @@ Niveau 1
 ##	Description
 
 Idem utilisateur. L'utilisateur membre étudiant souhaite se connecter sur la plateforme.
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur membre de rôle étudiant   
+ 
+> **Déclencheur** :Click sur l'icone de connexion "Sign in / Se connecter"
+> **Acteur Primaire**: Utilisateur membre de rôle étudiant , idem qu'utilisateur
 
  
 ## Preconditions
