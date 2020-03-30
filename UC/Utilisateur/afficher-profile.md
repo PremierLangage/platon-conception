@@ -25,10 +25,15 @@ Un membre de la plateforme veut pouvoir consulter ses informations en affichant 
 1.	L'utilisateur clique sur l'icône profile
 2.	Un onglet s'ouvre (avec possiblement des sous-menus stats, infos perso)
 3.	Il choisit ce qu'il souhaite consulter (stats, informations perso...)  
-4.	Il arrive sur une page où toutes ces informations sont détaillées. 
+FIXME faire la liste effective de ce que l'on trouve ICI mer jeremy
+4.	Il arrive sur une page où toutes ces/ses FIXME informations sont détaillées. 
+5. IL est arrivé à mettre a jour ses choix.
+
+
 
 ###	Extensions
 
+### Cas d'Echec 
 
 4. On ne parvient pas à requêter en base, on ne peut obtenir les informations demandées.
 
@@ -44,11 +49,8 @@ Leurs informations restent sauvegardées en base.
 Le profil n'est pas affiché et page erreur html ?
 
 ### Frequence
-Très souvent.  
-### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
+pas souvent.  
+
 
 ##	Problèmes et étapes suivantes  
 Définir si nécessaire la possible existence de sous-menu ? FIXME DR
