@@ -31,6 +31,11 @@ une notification est envoyée
 3.	au niveau d'une barre de navigation, un chiffre en rouge indique les notifications 
 4.	lorsqu'on clique sur le chiffre notifications une fenêtre s'ouvre sur la page des notifications (classées par thèmes ou par dates)
 
+> **(Cf. voir schéma)**
+
+![Schema](https://raw.githubusercontent.com/PremierLangage/platon-conception/master/UC/Utilisateur/Images/uc_notif_display.png)
+
+
 ###	Extensions
 
 Après le 2. on peut directement cliquer sur le fenêtre pop-up et directement arriver à 4.
