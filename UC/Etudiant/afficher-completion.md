@@ -9,9 +9,13 @@ Un étudiant veut savoir si il a terminé l'asset ? suffisement ? complètement 
 **[completion](https://github.com/PremierLangage/plconception/blob/master/conception/concept/completion.md)**  
 
 > **Niveau** : objectif utilisateur
+
 > **Déclencheur** : L'étudiant accède au tableau de bord d'une activité
+
 > **Acteur Primaire**: Etudiant   
+
 > **Acteurs secondaires**: Enseignant   
+
 > **Parties Prenantes concernées** : Etudiant   
  
  
