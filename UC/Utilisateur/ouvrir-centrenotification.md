@@ -10,8 +10,7 @@ L'utilisateur membre souhaite ouvrir le centre de notification afin de les consu
   
 > **Déclencheur** : Click sur l'icone de notification (cloche)  
 > **Acteur Primaire**: Membre  
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Parties Prenantes concernées** : All
  
  
 ## Preconditions
