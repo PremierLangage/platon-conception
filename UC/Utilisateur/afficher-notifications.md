@@ -5,41 +5,42 @@ Niveau 1
 
 ##	Description
 
+Lorsqu'une **[notification](https://github.com/PremierLangage/plconception/blob/master/conception/concept/notification.md)**  est envoyée, elle est affichée 
 
+> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused 
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[notification](https://github.com/PremierLangage/plconception/blob/master/conception/concept/notification.md)**  
+> **Déclencheur** : Une notification est envoyée
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
 > **Acteur Primaire**: Utilisateur   
+
 > **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+
+> **Parties Prenantes concernées** : tout le monde  
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+une notification est envoyée
 
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
 
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	une notification est envoyée 
+2.	un petit pop-up s'affiche pendant quelques secondes avec un bip 
+3.	au niveau d'une barre de navigation, un chiffre en rouge indique les notifications 
+4.	lorsqu'on clique sur le chiffre notifications une fenêtre s'ouvre sur la page des notifications (classées par thèmes ou par dates)
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
 
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
-
+Après le 2. on peut directement cliquer sur le fenêtre pop-up et directement arriver à 4.
 
 ## Post Conditions
+
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+L'acteur principal à une alerte qu'une nouvelle notification est parvenue
+Les barres incrémentent l'alerte 
+La page des motifications reçoit la nouvelle notification
 
 ### Minimal Guarantees
 FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
