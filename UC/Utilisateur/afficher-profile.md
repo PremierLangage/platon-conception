@@ -23,7 +23,6 @@ Un membre de la plateforme veut pouvoir consulter ses informations en affichant 
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
 
 1.	L'utilisateur clique sur l'icône profile
 2.	Un onglet s'ouvre (avec possiblement des sous-menus stats, infos perso)
@@ -31,7 +30,7 @@ FIXME_[tout ce passe bien c'est le scénario parfait .]_
 4.	Il arrive sur une page où toutes ces informations sont détaillées. 
 
 ###	Extensions
-FIXME Moins bien
+
 
 4. On ne parvient pas à requêter en base, on ne peut obtenir les informations demandées.
 
@@ -56,10 +55,10 @@ Très souvent.
 ##	Problèmes et étapes suivantes  
 Définir si nécessaire la possible existence de sous-menu ? FIXME DR
 Dans ce genre là :
-Profil :
-* Vos infos perso
-* Vos stats
-* Vos qqcdv
+* Profil :
+   * Vos infos perso
+   * Vos stats
+   * Vos qqcdv
 ...
 
 FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
