@@ -28,13 +28,13 @@ Il propose un lien vers une ressource pouvant répondre à l'aav.
 2.	l'utilisateur clic sur le bouton (ajouter une réponse)
 3.	cela conduit à une view dans laquelle il y a le champ de réponse et moteur de recherche
 4.	l'utilisateur fait sa recherche, sélectionne une ressource et crée un lien vers la ressource en faisant un commentaire
+4.1 l'utilisateur peut prévisualisé sont commentaire markdown. 
 5. il valide;
-6. Le système lui affiche le lien interne de la ressource et le commentaire
+6. Le système lui affiche le lien interne de la ressource et le commentaire et son lien de profile.
 7. Une notification est envoyée au demandeur et aux personnes qui suivent la demande. 
 
 ###	Extensions
-6. l'utilsateur n'est pas satisfait et il peut retourner en 4. (un bouton)
-
+6. l'utilisateur n'est pas satisfait et il peut retourner en 4 back du navigateur.
 
 ## Post Conditions
 ### Conditions de succès 
@@ -48,5 +48,8 @@ Un cas simple d'utilisation.
 
 
 ## Besoins du cas d'utilisation 
+Liens Internes vers les ressources.
 
-FIXME 
+IHM de selection de ressource -> commun avec l'editeurComposite @mc
+
+
