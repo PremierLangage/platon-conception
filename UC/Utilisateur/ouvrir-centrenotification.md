@@ -6,7 +6,7 @@ Niveau 4
 ##	Description
 
 L'utilisateur membre souhaite ouvrir le centre de notification afin de les consulter.
-Le centre de notifcation s'affiche comme un sous-menu de l'icone notification
+Le centre de **[notification](https://github.com/PremierLangage/plconception/blob/master/conception/concept/notification.md)** s'affiche comme un sous-menu de l'icone notification
 
   
 > **Déclencheur** : Click sur l'icone de notification (cloche)  
