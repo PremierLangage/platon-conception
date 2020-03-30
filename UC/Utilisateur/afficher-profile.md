@@ -29,10 +29,12 @@ Un membre de la plateforme veut pouvoir consulter ses informations en affichant 
        * E-mail
        * Nom
        * Prenom
-       * Role
        * Etablissement
-   * Stats d'exos
    * La liste des cercles auxquels il appartient.
+   * les préférences applicatives 
+       * préférences daltonniens 
+       * préférences editeur 
+       * préférences générales (page d'acceuil, etc)
 4.	Il arrive sur une page où toutes ces informations sont détaillées. 
 5. IL est arrivé à mettre à jour ses choix.
 
@@ -60,7 +62,8 @@ pas souvent.
 
 
 ##	Problèmes et étapes suivantes  
-Définir si nécessaire la possible existence de sous-menu ? FIXME DR
+Définir si nécessaire la possible existence de sous-menu ? 
+
 Dans ce genre là :
 * Profil :
    * Vos infos perso
@@ -68,7 +71,5 @@ Dans ce genre là :
    * Vos qqcdv
 ...
 
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
+FIXME JL et si j'était pas la ??  Propose moi des trucs soit force de proposition tu a de l'imagination.
 
-TBR
