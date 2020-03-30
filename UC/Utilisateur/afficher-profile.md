@@ -25,9 +25,9 @@ Un membre de la plateforme veut pouvoir consulter ses informations en affichant 
 1.	L'utilisateur clique sur l'icône profile
 2.	Un onglet s'ouvre (avec possiblement des sous-menus stats, infos perso)
 3.	Il choisit ce qu'il souhaite consulter (stats, informations perso...)  
-3. 1. Informations persos
-3. 2. Stats d'exos
-3. 3. La liste des cercles auxquels il appartient.
+   1. Informations persos
+   2. Stats d'exos
+   3. La liste des cercles auxquels il appartient.
 4.	Il arrive sur une page où toutes ces informations sont détaillées. 
 5. IL est arrivé à mettre à jour ses choix.
 
