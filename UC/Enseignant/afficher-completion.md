@@ -10,8 +10,11 @@ Il doit avoir une vue d'ensemble de tout les étudiants et une vue pour chaque �
 **[completion](https://github.com/PremierLangage/plconception/blob/master/conception/concept/completion.md)**  
 
 > **Niveau** : objectif utilisateur
+
 > **Déclencheur** : L'utilisateur accède à un tableau de bord
-> **Acteur Primaire**: Enseignant    
+
+> **Acteur Primaire**: Enseignant   
+
 > **Parties Prenantes concernées** : Etudiants et enseignants   
  
  
