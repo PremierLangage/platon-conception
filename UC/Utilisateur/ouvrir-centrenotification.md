@@ -28,7 +28,7 @@ Le centre de notifcation s'affiche comme un sous-menu de l'icone notification
 5. Le compteur de notifications est mis à jour et l'affichage lu/non lu également du centre de notifications.
 (Cf. voir schéma)
 <br/>
-<a href="https://ibb.co/Pg9WsP3"><img src="https://i.ibb.co/bX2vjCq/uc-notif-center.png" alt="uc-notif-center" border="0"></a>
+![schema]("https://i.ibb.co/bX2vjCq/uc-notif-center.png")
 <br/>
 ###	Extensions
 3. Problème de requête en base, on ne parvient pas à obtenir les notifications.
