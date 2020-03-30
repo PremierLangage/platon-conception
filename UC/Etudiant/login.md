@@ -7,7 +7,7 @@ Niveau 1
 
 Idem utilisateur. L'utilisateur membre étudiant souhaite se connecter sur la plateforme.
  
-> **Déclencheur** :Click sur l'icone de connexion "Sign in / Se connecter"
+> **Déclencheur** : Click sur l'icone de connexion "Sign in / Se connecter"
 > **Acteur Primaire**: Utilisateur membre de rôle étudiant , idem qu'utilisateur
 
  
