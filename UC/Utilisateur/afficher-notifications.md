@@ -5,7 +5,7 @@ Niveau 1
 
 ##	Description
 
-Lorsqu'une **[notification](https://github.com/PremierLangage/plconception/blob/master/conception/concept/notification.md)**  est envoyée, elle est affichée 
+Lorsqu'une **[notification](https://github.com/PremierLangage/plconception/blob/master/conception/concept/notification.md)**  est envoyée par la plateforme, elle est affichée dans le [centre de notification](https://github.com/PremierLangage/platon-conception/edit/master/UC/Utilisateur/ouvrir-centrenotification.md) et son compteur est mis à jour.
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused 
 
