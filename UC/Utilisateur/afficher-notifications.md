@@ -45,21 +45,23 @@ Après le 2. on peut directement cliquer sur le fenêtre pop-up et directement a
 ### Conditions de succès 
 L'acteur principal à une alerte qu'une nouvelle notification est parvenue
 Les barres incrémentent l'alerte 
-La page des motifications reçoit la nouvelle notification
+La page des notifications reçoit la nouvelle notification
 
 ### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
+Idéalement on assure la mise à jour des notifications en asynchrone grâce aux web sockets.
 
 ### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
+Failure is not an option. #Apollo11
 
 
 FIXME _les variables suivantes sont optionnelles._
 
 ### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
+Très Souvent 
 ### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
+API Rest
+Web Socket
+Inner Link
 ### Performance  
 ###	Security  
 ###	Usability / Accessibility  
