@@ -30,7 +30,7 @@ Les groupes de classe sont créés (par défaut tout les etudiants de classe).
 1.	L'enseignant accède au tableau de bord de l'activité.
 2.	Il clique sur "afficher l'avancée des étudiants"
 3. Le tableau récapitulatif de l'avancement est affiché : 
-3.1 Voir schéma FIXME Pavel9900000 
+3.1 Voir schéma [!schema](https://raw.githubusercontent.com/PremierLangage/platon-conception/master/UC/Enseignant/%5Bimg%5Dafficher_completion.jpg)
 4. le prof est contant il vu ce qu'il voulait voir.
 
 
