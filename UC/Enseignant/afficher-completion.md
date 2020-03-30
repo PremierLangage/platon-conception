@@ -5,64 +5,50 @@ Niveau 1
 
 ##	Description
 
- L'enseignant souhaite savoir si un élève donné a fini une activité.
+L'enseignant souhaite savoir la progression d'un étudiant sur une activité, et sur chacune des sous-activités.
+Il doit avoir une vue d'ensemble de tout les étudiants et une vue pour chaque étudiant.
+**[completion](https://github.com/PremierLangage/plconception/blob/master/conception/concept/completion.md)**  
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[completion](https://github.com/PremierLangage/plconception/blob/master/conception/concept/completion.md)**  
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Niveau** : objectif utilisateur
+> **Déclencheur** : L'utilisateur accède à un tableau de bord
+> **Acteur Primaire**: Enseignant    
+> **Parties Prenantes concernées** : Etudiants et enseignants   
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+Des activités ont été ajoutées à un cours.
+Il y a des étudiants dans le cours.
 
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
-
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	Des étudiants ont répondu à des exercices dans une activité  
+2.	L'enseignant accède au tableau de bord de l'activité
+3.	Il clique sur "afficher l'avancée des étudiants"
+4.	Il peut voir quels exercices les étudiants ont réussi et l'avancée globale de la classe
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
 
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
+3.	Il clique sur "afficher l'avancée des étudiants"
+4. Il clique sur un étudiant
+5. Il peut voir l'avancée d'un étudiant plus en détails sur une activité
+
 
 
 ## Post Conditions
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+L'enseignant a pu voir l'avancée de ses élèves
 
 ### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
-
-### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
-
-
-FIXME _les variables suivantes sont optionnelles._
+Les données visibles sont à jour au moment du chargement de la page
 
 ### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
-### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
+Accès régulier
+
 ### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
+Le chargement doit se faire rapidement (chaque activité doit retrouver rapidement l'avancée de chaque étudiant)
+Une note doit être remontée aux activité parentes à chaque réponse d'un étudiant
 
 ##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
-
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
-
-TBR
+Quels sont les affichages graphiques proposés ?
