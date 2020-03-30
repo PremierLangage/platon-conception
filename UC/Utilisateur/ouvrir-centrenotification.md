@@ -31,7 +31,7 @@ Le centre de notifcation s'affiche comme un sous-menu de l'icone notification
 
 > **(Cf. voir schéma)**
 
-[![Schema](https://zupimages.net/up/20/14/r9kr.png)](https://zupimages.net/up/20/14/)
+![Schema](https://raw.githubusercontent.com/PremierLangage/platon-conception/master/UC/Utilisateur/Images/uc_notif_center.png)
 
 
 ###	Extensions
