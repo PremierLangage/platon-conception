@@ -28,6 +28,8 @@ Avoir créée une activité LTI correspondant à PLaTon.
 2.	Le LMS redirige l'utilisateur sur PLaTon.
 3. Les identifiants LTI ne sont pas valide, PLaTon refuse la connexion.
 
+*Remarque :* Si un même utilisateur se connecte à un même serveur depuis plusieurs LMS différents, un compte différents sera créer sur PLaTon pour chaque LMS.
+
 
 ## Post Conditions
 ### Conditions de succès 
