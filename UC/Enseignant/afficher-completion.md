@@ -22,22 +22,22 @@ Il doit avoir une vue d'ensemble de tout les étudiants et une vue pour chaque �
 
 Des activités ont été ajoutées à un cours.
 Il y a des étudiants dans le cours.
-
+Des étudiants ont répondu à des exercices dans une activité.
+Les groupes de classe sont créés (par défaut tout les etudiants de classe).
 
 ## Scenario Nominal
 
-1.	Des étudiants ont répondu à des exercices dans une activité  
-2.	L'enseignant accède au tableau de bord de l'activité
-3.	Il clique sur "afficher l'avancée des étudiants"
-4.	Il peut voir quels exercices les étudiants ont réussi et l'avancée globale de la classe
+1.	L'enseignant accède au tableau de bord de l'activité.
+2.	Il clique sur "afficher l'avancée des étudiants"
+3. Le tableau récapitulatif de l'avancement est affiché : 
+3.1 Voir schéma FIXME Pavel9900000
+4. le prof est contant il vu ce qu'il voulait voir.
+
 
 ###	Extensions
 
-3.	Il clique sur "afficher l'avancée des étudiants"
-4. Il clique sur un étudiant
-5. Il peut voir l'avancée d'un étudiant plus en détails sur une activité
-
-
+3. Il est possible de clicker sur un élève pour avoir la vue avancement élève (la même que l'élève). 
+3. Il est possible de clicker sur un activité composite pour avoir la vue détaillé de l'activité 
 
 ## Post Conditions
 ### Conditions de succès 
