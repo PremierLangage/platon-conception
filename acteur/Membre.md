@@ -1,27 +1,36 @@
  
 # Membre
 
-Acteur Humain qui normalement appartient à un ou plusieurs cercles du serveur central de ressources.
+**Acteur Humain** qui normalement appartient à un ou plusieurs **cercles** du **serveur central** de ressources. On parle de membre lorsqu'il y a eu première connexion à PLaTon via LTI. La première connexion d'un utilisateur inconnu ayant le **status d'enseignant dans LTI** fabrique un utilisateur de type membre dans PlaTon. C'est une personne qui a vocation à travailler sur les **ressources** du **serveur central**.
 
+## description
 
-> Besoin en formation: Oui car la plateform est technique.
+> Besoin en formation: Oui car la plateforme est technique.
 > Niveau de compétence varié pour les membres voir sous types d'acteurs.
 
-Ce sont des utilisateurs de la partie ressources. Ils n'interviennent pas directement sur les serveur d'assets. Pour instancier une resource depuis le serveur central vers un serveur d'asset, un membre doit d'abord prendre un rôle d'esneignant. 
+Ce sont des utilisateurs de la partie ressources. Ils n'interviennent pas directement sur les **serveur d'assets**. Pour instancier une resource depuis le **serveur central** vers un **serveur d'asset**, un membre doit d'abord prendre un rôle d'**enseignant**. 
 
-C'est le statut par défault que va acquérir automatiquement à sa première connexion un utilisateur ayant le role enseignant depuis LTI. Pour devenir un enseignant PLaTon (et pas seulement un membre éditeur/manager de ressources), il devra opérationnaliser des ressources du serveur central vers son serveur asset.
+C'est le statut par défault que va acquérir automatiquement à sa première connexion un utilisateur ayant le role enseignant depuis LTI. Pour devenir un enseignant PLaTon (et pas seulement un membre éditeur/manager de ressources), il devra opérationnaliser des ressources du **serveur central** vers son **serveur asset**.
 
-Les membres sont des créateurs de ressources et aussi les curateurs de celles-ci, les membres sont en général des enseignants (ou anciens ou afficionados de l'enseignement), créateur de mooc ou autre.
-Organisateurs du travail sur les ressources ils s'organisent en cercles.
-l'idée des cercles est de faire se rencontrer les utilisateurs ayant les mêmes besoins en termes d'enseignement. 
+Les membres sont des **créateurs** de ressources et aussi les **curateurs** de celles-ci, les membres sont en général des enseignants (ou anciens ou afficionados de l'enseignement), créateur de mooc ou autre.
+Organisateurs du travail sur les ressources ils s'organisent en **cercles**.
+l'idée des **cercles** est de faire se rencontrer les utilisateurs ayant les **mêmes besoins** en termes d'enseignement. 
 
-Comment a-t-il connu la plateforme ? je sais pas, il a un intérêt pour les ressources pédagogiques.
+## Questions sur l'acteur membre
 
-Comment a-t-il créer son compte ? par la connexion lti. CF use case.
+* **Comment a-t-il connu la plateforme ?**  \
+  Je sais pas, il a un intérêt pour les ressources pédagogiques. C'est un enseignant ou un amoureux des outils pédagogiques.
 
-Comment fait-on pour venir de LTI quand on est retraité (exemple M.C. David) ?  Pas de compte LMS pas de compte PL par LTI. Cela veux dire que personne veux de toi.
-Comment fait-on pour venir de L.T.I. quand un lycée n'a pas encore de LMS ? L'accès à PLaTon en tant que membre semble impossible si on a pas un LMS ? Est-ce un problème ? NON. 
+* **Comment a-t-il créer son compte ?** \
+  Par une première connexion via LTI. CF use-case login.
 
+* **Comment fait-on pour venir de LTI quand on est retraité ?** \
+  Pas de compte LMS pas de compte PL par LTI. De nombreuse institution reste globalement fortement ouverte lorsque des personnes "extérieures" proposent leur bras pour du travail pédagogique. Nous invitons donc les gens voulant contribuer au ressources à ce rapprocher d'une institution disposant d'un LMS pour obternir un compte enseignant ami ou bénévol.
+
+* **Comment fait-on pour venir avec LTI quand son lycée n'a pas encore de LMS ? Est-ce un problème ?** \
+  Non, ce n'est un problème. Du moins, ce n'est pas un problème qui sera traité par PLaTon. Nous invitons tous les potentiels utilisateurs à s'équiper en premier lieu d'un LMS LTI-compatible (moodle ou autre...).
+
+## Les use-cases identifiés des membres
 
 [aav-add-ressource.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/aav-add-ressource.md)   
 [acceder-discord.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/acceder-discord.md)   
