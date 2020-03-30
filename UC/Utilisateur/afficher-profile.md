@@ -7,8 +7,6 @@ Niveau 1
 
 Un membre de la plateforme veut pouvoir consulter ses informations en affichant son profile.
 
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : Lors d'un click sur l'icone profile.
 > **Acteur Primaire**: membre   
 > **Acteurs secondaires**: //   
