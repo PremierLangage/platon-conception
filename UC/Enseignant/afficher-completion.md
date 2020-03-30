@@ -30,8 +30,8 @@ Les groupes de classe sont créés (par défaut tout les etudiants de classe).
 1.	L'enseignant accède au tableau de bord de l'activité.
 2.	Il clique sur "afficher l'avancée des étudiants"
 3. Le tableau récapitulatif de l'avancement est affiché : 
-3.1 Voir schéma [!schema](https://raw.githubusercontent.com/PremierLangage/platon-conception/master/UC/Enseignant/%5Bimg%5Dafficher_completion.jpg)
-4. le prof est contant il vu ce qu'il voulait voir.
+3.1 Voir schéma ![schema](https://raw.githubusercontent.com/PremierLangage/platon-conception/master/UC/Enseignant/%5Bimg%5Dafficher_completion.jpg)
+4. le prof est content il vu ce qu'il voulait voir.
 
 
 ###	Extensions
@@ -56,4 +56,4 @@ Une note doit être remontée aux activité parentes à chaque réponse d'un ét
 ##	Problèmes et étapes suivantes  
 Quels sont les affichages graphiques proposés ?
 
-En relation avec [completion etudiant](https://github.com/PremierLangage/platon-conception/issues/12)
+En relation avec [completion etudiant](https://github.com/PremierLangage/platon-conception/issues/12) pour la vue d'un étudiant choisi
