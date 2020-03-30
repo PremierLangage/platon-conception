@@ -28,5 +28,5 @@ L'enseignant est dans le cas d'utilisation  Evaluer.
 
 ### Selecteur de groupes
 
-[Selecteurr de groupes](../concept/selecteurgroupes.md)
+[Selecteur de groupes](../../concept/selecteurgroupe.md)
 
