@@ -26,6 +26,11 @@ Un membre de la plateforme veut pouvoir consulter ses informations en affichant 
 2.	Un onglet s'ouvre (avec possiblement des sous-menus stats, infos perso)
 3.	Il choisit ce qu'il souhaite consulter (stats, informations perso...)  
    * Informations persos
+       * E-mail
+       * Nom
+       * Prenom
+       * Role
+       * Etablissement
    * Stats d'exos
    * La liste des cercles auxquels il appartient.
 4.	Il arrive sur une page où toutes ces informations sont détaillées. 
