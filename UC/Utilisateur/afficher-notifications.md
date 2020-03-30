@@ -13,8 +13,6 @@ Lorsqu'une **[notification](https://github.com/PremierLangage/plconception/blob/
 
 > **Acteur Primaire**: Utilisateur   
 
-> **Acteurs secondaires**: TODO   
-
 > **Parties Prenantes concernées** : tout le monde  
  
  
@@ -51,7 +49,7 @@ La page des notifications reçoit la nouvelle notification
 Idéalement on assure la mise à jour des notifications en asynchrone grâce aux web sockets.
 
 ### Conditions final en cas d'échec
-Failure is not an option. #Apollo11
+> Failure is not an option. #Apollo11
 
 
 FIXME _les variables suivantes sont optionnelles._
@@ -68,7 +66,7 @@ Inner Link
 ###	Other  
 
 ##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
+L'utilisateur clique sur le lien de la notification, ou il clique le bouton "tout mettre comme lu".
 
 FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
 FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
