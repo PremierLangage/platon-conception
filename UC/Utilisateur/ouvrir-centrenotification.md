@@ -5,62 +5,58 @@ Niveau 4
 
 ##	Description
 
+L'utilisateur membre souhaite ouvrir le centre de notification afin de les consulter.
 
-
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[centredenotification](https://github.com/PremierLangage/plconception/blob/master/conception/concept/centredenotification.md)**  
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
+  
+> **Déclencheur** : Click sur l'icone de notification (cloche)  
+> **Acteur Primaire**: Membre  
 > **Acteurs secondaires**: TODO   
 > **Parties Prenantes concernées** : TODO   
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
-
+1. Il faut être connecté
+2. Cliquer sur l'icone de notification (cloche)
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
-
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	Click sur l'icone de notification (cloche)  
+2.	Un sous-menu s'ouvre  
+3.	La liste des notifications les plus récentes surlignées et non suivi (càd on a pas suivi le lien de la notif) et celles déjà lues sont affichées en temps réel (idéalement)
+4.	L'utilisateur a consulté ses notifications
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
-
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
+3. Problème de requête en base, on ne parvient pas à obtenir les notifications.
+3. bis. Problème d'inner link, le lien suivi de la notification ne mène nul part.
 
 
 ## Post Conditions
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+Le menu s'est bien ouvert avec les notifications les plus récentes.
 
 ### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
+Les notifications restent stockées en base X temps (à définir FIXME DR)
+Elles sont temps réel (idéalement) et s'affichent dynamiquement (idéalement)
 
 ### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
-
-
-FIXME _les variables suivantes sont optionnelles._
+Le centre de notification est vide pour cause de problème de requête
+OU
+L'inner link suivi mène sur une page error html 404
 
 ### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
+souvent  
 ### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
+Web socket, inner links, front JS
 ### Performance  
 ###	Security  
 ###	Usability / Accessibility  
 ###	Other  
 
 ##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
+* Liens internes
+* Websocket
+* API Rest 
 
 FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
 FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
