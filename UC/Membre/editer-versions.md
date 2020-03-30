@@ -7,60 +7,64 @@ Niveau 0
 
 Permet de comparer les versions et de créer une version suplémentaire.
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[version](https://github.com/PremierLangage/plconception/blob/master/conception/concept/version.md)**  
+Un membre d'un cercle consulte une **[ressource](https://github.com/PremierLangage/plconception/blob/master/conception/concept/ressource.mdressource)**, ou consulte une liste de ressources. Il peut alors accéder à la liste des **[version](https://github.com/PremierLangage/plconception/blob/master/conception/concept/version.md)**  
+ actuelles de la ressource, ou d'une des ressources de la liste. A partir des la liste des versions, il peut en modifier une, pour l'améliorer, ou en créer une autre, s'il souhaite l'adapter à une situation particulière. Il peut aussi en sélectionner une pour ajout à une **[activité][https://github.com/PremierLangage/plconception/blob/master/conception/concept/activity.md)**.
+ 
+ Cela suppose que les versions soient organisées en arbre. La liste des versions consultées est l'ensemble des feuilles de l'arbre. Le membre peut soit **modifier une version**, c'est à dire prolonger la branche, soit créer une nouvelle branche. 
+
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Déclencheur** : Un membre d'un cercle consulte une ressource, ou consulte une liste de ressources. Dans le premier cas, un bouton permet d'accéder aux versions. Dans le second cas, un menu contextuel attaché à chaque ressource de la liste permet d'accéder aux versions de cette ressource. 
+> **Acteur Primaire**: membre
+> **Acteurs secondaires**: Néant  
+> **Parties Prenantes concernées** : Néant  
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+1. La ressource doit être versionnable.
+2. Pour la modification d'une version, le membre doit avoir l'autorisation nécessaire.
+3. Pour la création d'une nouvelle version, le membre doit avoir l'autorisation nécessaire.
 
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
+1.	Le membre choisit d'accéder aux versions d'une ressource, soit en consultant cette ressource, soit en consultant une liste de ressources où elle figure.
+2.	S'affiche une liste de versions, et une prévisualisation de la version sélectionnée dans la liste. La liste est ordonnée par date décroissante, ou par popularité décroissante des versions. A partir de cette liste, il est possible de revenir à l'endroit à partir duquel on y a accédé. 
+3.	Pour chacune des versions de la liste, un menu contextuel propose d'éditer cette version, ou de la tester, ou de l'ajouter à une ressource.
+4.	Dans l'éditeur, il est proposé de sauvegarder la modification comme une nouvelle version,  ou comme une modification de la version éditée. Dans le cas d'une nouvelle version, un descriptif doit être fourni. Dans le cas d'une nouvelle version, la description de ce qui a été corrigé doit être fourni, et en quoi la modification constitue une amélioration.
 
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
 
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
+1. La ressource n'a qu'une version. Le menu contextuel propose directement d'éditer cette ressource ou de l'ajouter à une activité sans passer par la liste des versions.
+
+3. L'utilisateur n'a pas les autorisations nécessaires pour modifier/créer une versions. Les choix non autorisés ne sont pas proposés.
+
 
 
 ## Post Conditions
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+L'utilisateur revient de là où il était en 1). Si une version a été modifiée/créée, l'arbre des versions est modifié en conséquence.
 
 ### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
+Si l'utilisateur a modifié/créé une version, mais que celle-ci n'a pas pu être intégrée dans l'arbre des versions, l'utilisateur est informé par un message d'erreur, et revient là où il était en 1). 
 
 ### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
-
-
-FIXME _les variables suivantes sont optionnelles._
+L'utilisateur est informé par un message d'erreur, et revient là où il était en 1). L'arbre des versions de la ressources est inchangé.
 
 ### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
-### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
-### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
+
+Cas simple d'utilisation. Occurence dès qu'une ressource avec versions doit-être intégrée dans une activité.
+
 
 ##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
+1. Il faut clarifier les autorisations nécessaires pour valider une modification/création de version. 
+
+2. Si une version est modifiée, elle ne doit pas immédiatement remplacer la précédente dans les choix proposés, mais être d'abord proposée en plus. Si elle s'avère plus populaire, elle est proposée à la place de la précédente. Un remplacement direct est possible par un utilisateur à autorisation élevée.
+
+3. Il faudrait autoriser la création de versions **privées**, uniquement liées à une activité particulière, mais n'ayant pas vocation à être proposées aux autres utilisateurs.
+
 
 FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
 FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
