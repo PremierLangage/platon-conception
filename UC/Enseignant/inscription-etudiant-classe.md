@@ -26,7 +26,7 @@ L'enseignant doit avoir accès à une classe sur PLaTon et les droits sur celle-
     2. Il choisit le/les étudiant dans un menu déroulement, une barre de recherche est disponible
     3. Il valide le/les étudiant séléctionnés
 * B
-    1. L'enseignant copier le lien vers sa classe PLaTon
+    1. L'enseignant copie le lien vers sa classe PLaTon
     2. L'enseignant créer une activité LTI sur LMS à l'aide du lien copier
     3. Un élève clique sur l'activité LTI sur le LMS
 
@@ -34,6 +34,12 @@ L'enseignant doit avoir accès à une classe sur PLaTon et les droits sur celle-
 ## Post Conditions
 ### Conditions de succès 
 Le/les étudiants sont ajoutés au cours.
+
+### Minimal Guarantees
+/
+
+### Conditions final en cas d'échec
+L'étudiant n'est pas ajouté à la classe.
 
 ### Frequence
 Souvent.
