@@ -13,14 +13,13 @@ FIXME N'oubliez pas de mensioner le concept **[demo](https://github.com/PremierL
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
 > **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Acteurs secondaires**: None
+> **Parties Prenantes concernées** : Tout le monde. ;)
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
-
+Pour que l'on puisse accèder à des démo il faut qu'elles ai été préalablement créées.
 
 ## Scenario Nominal
 
