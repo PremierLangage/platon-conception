@@ -5,13 +5,13 @@ Niveau 1
 
 ##	Description
 
-L'enseignant souhaite savoir la progression d'un étudiant sur une activité, et sur chacune des sous-activités.
-Il doit avoir une vue d'ensemble de tout les étudiants et une vue pour chaque étudiant.
-**[completion](https://github.com/PremierLangage/plconception/blob/master/conception/concept/completion.md)**  
+L'enseignant souhaite savoir la progression d'un étudiant sur une activité, et sur chacune des sous-activités.    
+Il doit avoir une **vue d'ensemble** de tout les étudiants et une vue pour **chaque** étudiant.  
+cf. **[completion](https://github.com/PremierLangage/plconception/blob/master/conception/concept/completion.md)**  
 
 > **Niveau** : objectif utilisateur
 
-> **Déclencheur** : L'utilisateur accède à un tableau de bord
+> **Déclencheur** : L'utilisateur accède à un tableau de bord d'activité. 
 
 > **Acteur Primaire**: Enseignant   
 
@@ -31,6 +31,7 @@ Les groupes de classe sont créés (par défaut tout les etudiants de classe).
 2.	Il clique sur "afficher l'avancée des étudiants"
 3. Le tableau récapitulatif de l'avancement est affiché : 
 3.1 Voir schéma ![schema](https://raw.githubusercontent.com/PremierLangage/platon-conception/master/UC/Enseignant/%5Bimg%5Dafficher_completion.jpg)
+ou ![schema2](Numériser 13.jpeg)
 4. le prof est content il vu ce qu'il voulait voir.
 
 
