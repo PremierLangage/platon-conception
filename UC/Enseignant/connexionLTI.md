@@ -5,4 +5,4 @@
 
 ##	Description
 
-voir [ConnexionLTI](../Utilisateur/connexionLTI.md)
+voir [ConnexionLTI](../Utilisateur/connexion-lti.md)
