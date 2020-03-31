@@ -6,6 +6,10 @@
 ##	Description
 
 {{comment}}
+L'Enseignant est dans sa classe, il peut éditer son cours.
+- ajouter une ressource
+
+
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
 FIXME N'oubliez pas de mensioner le concept **[{{concept}}](https://github.com/PremierLangage/plconception/blob/master/conception/concept/{{concept}}.md)**  
