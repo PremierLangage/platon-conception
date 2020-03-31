@@ -19,20 +19,21 @@ FIXME N'oubliez pas de mensioner le concept **[aav](https://github.com/PremierLa
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+L'enseignant est dans s
 
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
+FIXME une discussion avec des personnes travaillant sur des ontologies pourraient être utile ...
 
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	Le prof est dans son cours qui correspond à une discipline et un niveau.   
+2.	Le prof va dans la zone d'AAV (FIXME : bouton direct/accès via search and compose ?) 
+3.	Le prof à accès au graphe d'AAV de son cours 
+4.	Le prof rajoute un noeud au graphe d'AAV au bon 
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
+
+1.Le prof n'est pas dans son cours ou bien rest un train d'intervenir sur un aav qui n'est pas de son cours. Il doit alors pouvoir accéder à une page pour indiquer la discipline, le niveau.
 
 FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
 
