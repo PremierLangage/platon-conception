@@ -36,7 +36,7 @@ une notification est envoyée
 
 ###	Extensions
 
-Après le 2. on peut directement cliquer sur le fenêtre pop-up et directement arriver à 4.
+Après le 2. on peut directement cliquer sur le fenêtre pop-up et directement arriver à 4 avec la dernière notification présélectionnée.
 
 ## Post Conditions
 
@@ -52,8 +52,6 @@ Idéalement on assure la mise à jour des notifications en asynchrone grâce aux
 > Failure is not an option. #Apollo11
 
 
-FIXME _les variables suivantes sont optionnelles._
-
 ### Frequence
 Très Souvent 
 ### Besoins Spéciaux (optionel)  
@@ -66,7 +64,7 @@ Inner Link
 ###	Other  
 
 ##	Problèmes et étapes suivantes  
-L'utilisateur clique sur le lien de la notification, ou il clique le bouton "tout mettre comme lu".
+L'utilisateur clique sur le lien de la notification, ou il clique le bouton "comme lu".
 
 FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
 FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
