@@ -14,7 +14,7 @@ L'administrateur est un **Acteur Humain** ayant un accès au panneau d'administr
 
 ## Questions sur les adminstrateurs ?
 
-* **Est-il l'adminstrateur Django ? ** \
+* **Est-il l'adminstrateur Django ?** \
   Ce n'est pas l'administrateur Django (qui est pas décrit comme acteur dans cette conceptiom. Et le panneau d'administration Django correspond à du developpement mais pas à une utilisation finale et standard de PLaTon).
 
 * **Est-il le seul à pouvoir créer des cerles ?** \
