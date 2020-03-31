@@ -31,7 +31,7 @@ Les groupes de classe sont créés (par défaut tout les etudiants de classe).
 2.	Il clique sur "afficher l'avancée des étudiants"
 3. Le tableau récapitulatif de l'avancement est affiché : 
 3.1 Voir schéma ![schema](https://raw.githubusercontent.com/PremierLangage/platon-conception/master/UC/Enseignant/%5Bimg%5Dafficher_completion.jpg)
-ou ![schema2](https://raw.githubusercontent.com/PremierLangage/platon-conception/master/UC/Enseignant/Numériser 13.jpeg)
+ou ![schema2](https://raw.githubusercontent.com/PremierLangage/platon-conception/master/UC/Enseignant/affichercompletion.png)
 4. le prof est content il vu ce qu'il voulait voir.
 
 
