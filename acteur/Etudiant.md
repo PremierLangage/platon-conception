@@ -1,19 +1,19 @@
  
-# Etudiant  
+# Étudiant  
 
-Objectifs des etudiant: apprendre et participer.
+Objectifs des étudiants: apprendre et participer.
 
 **Apprendre**: Accumuler des complétions d'AAV (**[aav](https://github.com/PremierLangage/plconception/tree/master/conception/concept/aav.md)**)
 
 **Participer**: Être dans un cours organisé avec d'autres étudiants, suivre un planning, effectuer des devoirs, former des binomes ou autre groupes.
 
-**Acteur Humain** qui normalement appartient à un ou plusieurs **cours** d'un **serveur d'assets**. La première connexion d'un utilisateur inconnu sur un **serveur d'assets** ayant le **status d'étudiant dans LTI** fabrique un utilisateur de type étudiant dans le **serveur d'assets**. Cette connexion se fait par un lien du type : "faire tel exercice" ou encore "accéder à tel cours".
+**Acteur Humain** qui normalement appartient à un ou plusieurs **cours** d'un **serveur d'assets**. La première connexion d'un utilisateur inconnu sur un **serveur d'assets** ayant le **status d'étudiant dans LTI** fabrique un utilisateur de type étudiant dans ce même **serveur d'assets**. Cette connexion se fait par un lien du type : "faire tel exercice" ou encore "accéder à tel cours" mis en place par un enseignant.
 
 ## description
 
 > Besoin en formation: Non, il doit juste répondre à des exercices.
 
-Les étudiants sont des utilisateurs ayant accédé à PLaTon par un lien LTI qui a été placé dans un cours LTI par un enseignant. Ils ne peuvent que rejoindre un cours depuis LTI. 
+Les étudiants sont des utilisateurs ayant accédé à un **serveur d'assets** PLaTon par un lien LTI qui a été placé dans un cours LTI par un enseignant. Ils ne peuvent que rejoindre un cours depuis LTI. 
 
 ## Questions sur l'acteur étudiant
 
