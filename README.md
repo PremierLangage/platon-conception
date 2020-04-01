@@ -6,6 +6,6 @@ de PLaTon : la version 1.0
 
 ## Les différents acteurs dans PLaTon
 
-[Administrateur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Administrateur.md)
+* [Administrateur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Administrateur.md)
 
-[Membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md)
+* [Membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md)
