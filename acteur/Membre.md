@@ -1,7 +1,11 @@
  
 # Membre
 
-**Acteur Humain** qui normalement appartient à un ou plusieurs **cercles** du **serveur central** de ressources. On parle de membre lorsqu'il y a eu première connexion à PLaTon via LTI. La première connexion d'un utilisateur inconnu ayant le **status d'enseignant dans LTI** fabrique un utilisateur de type membre dans PlaTon. C'est une personne qui a vocation à travailler sur les **ressources** du **serveur central**.
+**Acteur Humain** qui normalement appartient à un ou plusieurs **cercles** du **serveur central** de ressources.  
+On parle de membre lorsqu'il y a eu première connexion à PLaTon via LTI.   
+La première connexion d'un utilisateur inconnu ayant le **status d'enseignant dans LTI** fabrique un utilisateur de type membre dans PlaTon et l'affecte dans le cercle **nouveaux**.  
+C'est une personne qui a vocation à travailler sur les **ressources** du **serveur central**.
+
 
 ## description
 
@@ -25,7 +29,7 @@ l'idée des **cercles** est de faire se rencontrer les utilisateurs ayant les **
   Par une première connexion via LTI. CF use-case login.
 
 * **Comment fait-on pour venir de LTI quand on est retraité ?** \
-  Pas de compte LMS pas de compte PL par LTI. De nombreuse institution reste globalement fortement ouverte lorsque des personnes "extérieures" proposent leur bras pour du travail pédagogique. Nous invitons donc les gens voulant contribuer au ressources à ce rapprocher d'une institution disposant d'un LMS pour obternir un compte enseignant ami ou bénévol.
+  Pas de compte LMS pas de compte PLaton par LTI. De nombreuse institution reste globalement fortement ouverte lorsque des personnes "extérieures" proposent leur bras pour du travail pédagogique. Nous invitons donc les gens voulant contribuer au ressources à ce rapprocher d'une institution disposant d'un LMS pour obternir un compte enseignant ami ou bénévol.
 
 * **Comment fait-on pour venir avec LTI quand son lycée n'a pas encore de LMS ? Est-ce un problème ?** \
   Non, ce n'est un problème. Du moins, ce n'est pas un problème qui sera traité par PLaTon. Nous invitons tous les potentiels utilisateurs à s'équiper en premier lieu d'un LMS LTI-compatible (moodle ou autre...).
