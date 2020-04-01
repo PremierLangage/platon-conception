@@ -3,21 +3,21 @@
 
 Objectifs des etudiant: apprendre et participer.
 
-Apprendre: accumuler des completions d'aav (**[aav](https://github.com/PremierLangage/plconception/tree/master/conception/concept/aav.md)**)
+**Apprendre**: Accumuler des complétions d'AAV (**[aav](https://github.com/PremierLangage/plconception/tree/master/conception/concept/aav.md)**)
 
-Participer: ëtre dans un cours organisé avec d'autres étudiants, avec un planning, des devoirs, des binomes.
+**Participer**: Être dans un cours organisé avec d'autres étudiants, suivre un planning, effectuer des devoirs, former des binomes ou autre groupes.
 
-**Acteur Humain** qui normalement appartient à un ou plusieurs **cours** d'un **serveur d'assets**. On parle d'étudiant lorsqu'il y a eu première connexion à PLaTon via LTI. La première connexion d'un utilisateur inconnu ayant le **status d'étudiant dans LTI** fabrique un utilisateur de type étudiant dans le serveur d'assets.
+**Acteur Humain** qui normalement appartient à un ou plusieurs **cours** d'un **serveur d'assets**. La première connexion d'un utilisateur inconnu sur un **serveur d'assets** ayant le **status d'étudiant dans LTI** fabrique un utilisateur de type étudiant dans le **serveur d'assets**. Cette connexion se fait par un lien du type : "faire tel exercice" ou encore "accéder à tel cours".
 
 ## description
 
 > Besoin en formation: Non, il doit juste répondre à des exercices.
 
-Les étudiants sont des utilisateurs ayant accédé à PLaTon par un lien LTI qui a été placé dans un cours LTI par un enseignant. Ils ne peuvent que rejoindre un cours depuis LTI.
+Les étudiants sont des utilisateurs ayant accédé à PLaTon par un lien LTI qui a été placé dans un cours LTI par un enseignant. Ils ne peuvent que rejoindre un cours depuis LTI. 
 
 ## Questions sur l'acteur étudiant
 
-* **Comment a-t-il connu la plateforme ?**
+* **Comment a-t-il connu la plateforme ?** \
   Un enseignant a ajouté un lien sur le LMS
   
 * **Comment a-t-il créer son compte ?** \
@@ -26,13 +26,23 @@ Les étudiants sont des utilisateurs ayant accédé à PLaTon par un lien LTI qu
 ## Les use-cases identifiés des étudiants
 
 [activite-recommandation.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/activite-recommandation.md)
+
 [afficher-completion-group.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/afficher-completion-group.md)
+
 [afficher-completion.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/afficher-completion.md)
+
 [auto-inscription-classe.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/auto-inscription-classe.md)
+
 [donner-avis-asset.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/donner-avis-asset.md)
+
 [exporter-cours-portfolio.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/exporter-cours-portfolio.md)
+
 [interagir-exercice.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/interagir-exercice.md)
+
 [lire-tabledebord-individuel.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/lire-tabledebord-individuel.md)
+
 [login.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/login.md)
+
 [réaliser-activité.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/r%C3%A9aliser-activit%C3%A9.md)
+
 [travailler.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/travailler.md)
