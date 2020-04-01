@@ -5,66 +5,63 @@ Niveau 1
 
 ##	Description
  
- Un membre (d'un cercle quelconque) souhaite programmer une **[ressource](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/ressource.md)**, qui peut-être une ressource entièrement nouvelle, ou une **[version](https://github.com/PremierLangage/plconception/blob/master/conception/concept/version.md)** d'une ressource existante, ou une ressource nouvelle, créée à partir d'une ressource existante.
+ Un membre (d'un cercle quelconque) souhaite programmer une **[ressource](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/ressource.md)**, qui peut-être **1)** une ressource entièrement nouvelle, ou **2)**une **[version](https://github.com/PremierLangage/plconception/blob/master/conception/concept/version.md)** d'une ressource existante, ou **3)** une ressource nouvelle, créée à partir d'une ressource existante.
  
- En utilisant l'éditeur (faire simple) cf voir la documentation du langage pour les exercices et les fichiers de cours
+Si l'utilisateur programme une ressource à partir d'une ressource existante (cas **2** et **3**), alors la méthode est celle de la ressource en question. S'il crée une ressource entièrement nouvelle, il peut choisir, si cela s'applique, une méthode pour la créer.
+Dans le cas d'un exercice, par exemple, il peut choisir d'utiliser un **[exercice_prepare](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/exercice_prepare.md)**
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[ressource](https://github.com/PremierLangage/plconception/blob/master/conception/concept/ressource.md)**  
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
+ **Déclencheur** : Plusieurs point de départs possibles. L'utilisateur
+ 
+ a. consulte une ressource
+ b. consulte une liste de ressources
+ c. consulte une **[demande](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/demande.md)**
+ 
+ Il choisit alors de programmer une ressource. Par exemple
+ 
+ A. il consulte un **[cours](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/cours.md)**, il souhaite programmer un **[exercice](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/exercice.md)** pour ce cours, ou programmer une **[activité](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/activite.md)** pour ce cours 
+ B. il consulte une activité, il souhaite ajouter un exercice à l'activité.
+ C. il consulte un exercice, il souhaite créer une version de cet exercice, ou en programmer un nouveau à partir de celui-ci.
+ D. il consulte une demande, il souhaite créer une ressource qui réponde à cette demande
+  
 > **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
- 
- 
+> **Parties Prenantes concernées** : Dans le cas D. le créateur de la demande, qui est notifié.  Dans le cas d'une version d'une ressource existante, le créateur de la version précédente, qui est notifié. Dans tous les cas, le superviseur concerné qui doit valider le résultat final.
+
+
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+L'utilisateur doit avoir l'autorisation nécessaire.
 
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
-
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	Déclenchement (voir ci-dessus).  
+2.	Choix d'une méthode d'édition (si applicable, et si on est dans le cas **1)**, ressource entièrement nouvelle).
+3.	Si la méthode choisie requiert des paramètres supplémentaires, lien vers un formulaire adéquat. Par exemple si le choix est de programmer un exercice via un exercice préparé, le formulaire permet de choisir le modèle.
+4. Un certain nombre de cycles édition/test/sauvegarde dans l'éditeur correspondant au type de ressource et à la méthode choisie.
+5. Validation de la ressource programmée par l'utilisateur.
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
-
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
-
+4. L'utilisateur abandonne le processus. 
 
 ## Post Conditions
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+La ressource est créée et validée par l'utilisateur. Elle est sauvegardée et disponible pour être validée par des membres d'autorisation plus élevées, et pour être renseignée en métadonnées. 
 
 ### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
+Dans tous les cas, le processus aboutit soit à la création d'une nouvelle ressource, soit laisse la base des ressources inchangée.
 
 ### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
-
-
-FIXME _les variables suivantes sont optionnelles._
+La base des ressources est inchangée.
 
 ### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
-### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
-### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
+Pas très fréquent.
 
-##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
+##	Problèmes et étapes suivantes
 
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
+Les scenarios sont multiples du fait des types ressources variés. Il faudrait préciser chaque cas **A)**, **B)**, **C)**, **D)** , éventuellement en ajouter d'autres, et préciser les métadonnées de la ressource programmée héritées du contexte dans lequel on a démarré.
+
+On peut souhaiter, partant d'un exercice préparé, vouloir programmer un exercice en partant d'une description plus bas niveau de l'exercice de départ, mais c'est un scénario pour un version ultérieure, peut-être.
+
 
 TBR
