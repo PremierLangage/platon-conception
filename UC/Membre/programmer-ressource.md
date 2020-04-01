@@ -14,18 +14,24 @@ Dans le cas d'un exercice, par exemple, il peut choisir d'utiliser un **[exercic
  **Déclencheur** : Plusieurs point de départs possibles. L'utilisateur
  
  a. consulte une ressource
+ 
  b. consulte une liste de ressources
+ 
  c. consulte une **[demande](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/demande.md)**
  
  Il choisit alors de programmer une ressource. Par exemple
  
  A. il consulte un **[cours](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/cours.md)**, il souhaite programmer un **[exercice](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/exercice.md)** pour ce cours, ou programmer une **[activité](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/activite.md)** pour ce cours 
+ 
  B. il consulte une activité, il souhaite ajouter un exercice à l'activité.
+ 
  C. il consulte un exercice, il souhaite créer une version de cet exercice, ou en programmer un nouveau à partir de celui-ci.
+ 
  D. il consulte une demande, il souhaite créer une ressource qui réponde à cette demande
   
-> **Acteur Primaire**: Utilisateur   
-> **Parties Prenantes concernées** : Dans le cas D. le créateur de la demande, qui est notifié.  Dans le cas d'une version d'une ressource existante, le créateur de la version précédente, qui est notifié. Dans tous les cas, le superviseur concerné qui doit valider le résultat final.
+ **Acteur Primaire**: Utilisateur   
+
+**Parties Prenantes concernées** : Dans le cas D. le créateur de la demande, qui est notifié.  Dans le cas d'une version d'une ressource existante, le créateur de la version précédente, qui est notifié. Dans tous les cas, le superviseur concerné qui doit valider le résultat final.
 
 
 ## Preconditions
@@ -36,10 +42,15 @@ L'utilisateur doit avoir l'autorisation nécessaire.
 ## Scenario Nominal
 
 1.	Déclenchement (voir ci-dessus).  
+
 2.	Choix d'une méthode d'édition (si applicable, et si on est dans le cas **1)**, ressource entièrement nouvelle).
+
 3.	Si la méthode choisie requiert des paramètres supplémentaires, lien vers un formulaire adéquat. Par exemple si le choix est de programmer un exercice via un exercice préparé, le formulaire permet de choisir le modèle.
+
 4. Un certain nombre de cycles édition/test/sauvegarde dans l'éditeur correspondant au type de ressource et à la méthode choisie.
+
 5. Validation de la ressource programmée par l'utilisateur.
+
 
 ###	Extensions
 4. L'utilisateur abandonne le processus. 
