@@ -18,10 +18,10 @@ Les étudiants sont des utilisateurs ayant accédé à PLaTon par un lien LTI qu
 ## Questions sur l'acteur étudiant
 
 * **Comment a-t-il connu la plateforme ?** \
-  Un enseignant a ajouté un lien sur le LMS
+  Un enseignant a ajouté un lien vers une activité (tournant sur **serveur d'assets**) PLaTon sur son LMS. Tous les élèves du LMS pouvant cliquer sur le lien se verront créé automatiquement un compte **étudiant** sur ce **serveur d'assets** via LTI.
   
 * **Comment a-t-il créer son compte ?** \
-  Par une première connexion via LTI. CF use-case login. Il faudrait cependant lui fournir un mot de passe lors de sa premiere connexion s'il ne souhaite par fois pas passer par LTI. Cependant le seul moyen de rejoindre un cours est de cliquer sur un lien dans un LMS
+  Par une première connexion via LTI. CF use-case login. Il faudrait cependant lui fournir un mot de passe lors de sa premiere connexion s'il ne souhaite par fois pas passer par LTI. Cependant le seul moyen de rejoindre un cours est de cliquer sur un lien dans un LMS.
 
 ## Les use-cases identifiés des étudiants
 
