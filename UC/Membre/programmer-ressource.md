@@ -4,7 +4,9 @@
 Niveau 1
 
 ##	Description
-
+ 
+ Un membre (d'un cercle quelconque) souhaite programmer une **[ressource](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/ressource.md)**, qui peut-être une ressource entièrement nouvelle, ou une **[version](https://github.com/PremierLangage/plconception/blob/master/conception/concept/version.md)** d'une ressource existante, ou une ressource nouvelle, créée à partir d'une ressource existante.
+ 
  En utilisant l'éditeur (faire simple) cf voir la documentation du langage pour les exercices et les fichiers de cours
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
