@@ -5,31 +5,35 @@ Niveau 2
 
 ##	Description
 
-
+Un enseignant peut avoir accès à des informations sur un éléve ou sur une groupe d'élèves .(stats)
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[indicateur](https://github.com/PremierLangage/plconception/blob/master/conception/concept/indicateur.md)**  
+FIXME N'oubliez pas de mentionner le concept **[indicateur](https://github.com/PremierLangage/plconception/blob/master/conception/concept/indicateur.md)**  
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
+> **Déclencheur** : _[Describe the event that initiates the use case.]_ Consultation des statistiques   
 > **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Acteurs secondaires**: Etudiant   
+> **Parties Prenantes concernées** :    
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+FIXME Listez les conditions nécessaires pour que ce cas d'utilisation puisse avoir lieu
+-1 Un enseignant doit créer un cours
+-2 Donner aux étudiants un accès au cours
+-3 Les étudiants doivent participer au cours (Faire des exercices,activitées).
 
 
 ## Scenario Nominal
 
 FIXME_[tout ce passe bien c'est le scénario parfait .]_
 
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	Un enseignant souhaite consulter des informations sur un cours 
+2. Quand on clique sur un cours nous avons un bouton statistique 
+3. Une page avec différentes informations graphiques etc... collectif 
+4. Possibilité de voir des  indicateurs individuels en recherchant un étudiants ou affichage de tous les étudiants(problèmes classe de 300 éléves )
+
 
 ###	Extensions
 FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
