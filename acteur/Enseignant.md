@@ -15,7 +15,7 @@ L'enseignant non éditeur accède qu'aux **serveur d'assets** et au search and c
 - Faire de la gestion: inscrire des enseigants non éditeurs, des enseignants et des étudiants.
 - Administration du cours: partage et archivage.
 
-Sinon l'enseigant est membre d'un cercle (a minima celui des "noobs" sur le site) et donc peut utiliser le serveur de ressource comme un [membre](./membre.md).
+Sinon l'enseigant est membre d'un cercle (a minima celui des "noobs" sur le site) et donc peut utiliser le serveur de ressource comme un [membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md).
 
 
 ## cas d'utilisation associés
