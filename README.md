@@ -18,7 +18,7 @@ de PLaTon : la version 1.0
 
 * [Étudiants](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Etudiant.md)
 
-* [Enseignant](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Enseignant.md) (lorsqu'il décide de rester non éditeur...)
+* [Enseignant](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Enseignant.md) (lorsqu'il décide de rester non éditeur mais qui manage ses classes déployées...)
 
 ## Ressources du projet, concepts et lexique
 
