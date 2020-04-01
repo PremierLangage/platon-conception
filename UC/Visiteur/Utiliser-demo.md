@@ -11,25 +11,26 @@ FIXME _[One to two sentences that briefly describe the use case, including the p
 FIXME N'oubliez pas de mensioner le concept **[demo](https://github.com/PremierLangage/plconception/blob/master/conception/concept/demo.md)**  
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
+> **Déclencheur** : _[Describe the event that initiates the use case.]_ Recherche d'un exercice  
 > **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Acteurs secondaires**:    
+> **Parties Prenantes concernées** :    
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+FIXME Listez les conditions nécessaires pour que ce cas d'utilisation puisse avoir lieu
 
+1 Tous les utilisateurs connectés ou non peuvent avoir accès aux exercices de démo.
 
 ## Scenario Nominal
 
 FIXME_[tout ce passe bien c'est le scénario parfait .]_
 
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	Un utilisateur a acces a une barre de recherche pour trouver un exercice (Possibiliter de filtrer AAV, matière,nom du cours) 
+2.	Affichage de tous les exerices trouvés en fonction de la recherche  
+3.	Possibilitée de lancer un exercice trouvé.  
+  
 
 ###	Extensions
 FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
