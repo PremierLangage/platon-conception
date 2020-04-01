@@ -19,6 +19,9 @@ L'enseignant doit pouvoir ajouté des étudiants à une **[classe](https://githu
 
 L'enseignant doit avoir accès à une classe sur PLaTon et les droits sur celle-ci.
 
+FIXME Quelques questions
+FIXME Ou est le bouton ajout d'étudiant ? C'est une view spéciale 
+FIXME dans quoi sont trouvé les etudiants qui remplissent la liste du menu déroulant
 
 ## Scenario Nominal
 * A
@@ -42,4 +45,8 @@ Le/les étudiants sont ajoutés au cours.
 L'étudiant n'est pas ajouté à la classe.
 
 ### Frequence
-Souvent.
+Souvent. 
+Peut devenir fastidieux si il y a plusieurs centaines d'étudiants à inscrire.
+FIXME peut on proposer une version avec un upload de la liste ??
+
+
