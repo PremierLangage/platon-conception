@@ -32,7 +32,7 @@ l'idée des **cercles** est de faire se rencontrer les utilisateurs ayant les **
 
 ## Les use-cases identifiés des membres
 
-* [aav-add-ressource.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/aav-add-ressource.md) lier un **objectif pédagogique** avec une ressources (un exercice) du **serveur central**
+* [aav-add-ressource.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/aav-add-ressource.md) : lier un **objectif pédagogique** avec une ressources (un exercice) du **serveur central**
 
 [acceder-discord.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/acceder-discord.md)   
 [addremove-label-ressource.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/addremove-label-ressource.md)   
