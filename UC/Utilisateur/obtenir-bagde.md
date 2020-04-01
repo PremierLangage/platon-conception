@@ -5,7 +5,7 @@ Niveau 3
 
 ## Description
 
-Les badges sont des récompense obtenues de diverses façons :
+Les **[badges](https://github.com/PremierLangage/plconception/blob/master/conception/concept/badge.md)**   sont des récompense obtenues de diverses façons :
 * Après avoir effectué une action
 * Après avoir effectué une action un certain nombre de fois
 * Remis manuellement par une personne autorisé à le faire
@@ -13,9 +13,6 @@ Les badges sont des récompense obtenues de diverses façons :
 La remise manuelle peut être utile pour des actions ne pouvant être traitées par la plateforme, ou même des actions relatives à la plateforme, mais faites à l'extérieur de celle-ci (par exemple la participation à une convention IRL).
 
 Certains badges peuvent avoir plusieurs niveaux. On peut imaginer des "points" associé aux badges / niveaux qui permettent de calculer un score pour l'utilisateur.
-
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[badge](https://github.com/PremierLangage/plconception/blob/master/conception/concept/badge.md)**  
 
 > **Niveau** : Haut niveau
 > **Déclencheur** : Automatiquement après une action / Manuelle par une personne autorisé
@@ -34,6 +31,7 @@ L'utilisateur est inscrit sur PLaTon.
 2. Manuelle
  1. Une personne autorisée décide que les actions d'un utilisateur mérite un badge.
  2. Cette personne remet le badge à l'utilisateur concerné
+ 
  FIXME : Décrire l'interface / le processus de remise manuelle de badge
 
 
