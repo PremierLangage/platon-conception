@@ -19,16 +19,13 @@ L'enseignant doit pouvoir ajouté des étudiants à une **[classe](https://githu
 
 L'enseignant doit avoir accès à une classe sur PLaTon et les droits sur celle-ci.
 
-FIXME Quelques questions
-FIXME Ou est le bouton ajout d'étudiant ? C'est une view spéciale 
-FIXME dans quoi sont trouvé les etudiants qui remplissent la liste du menu déroulant
-
 ## Scenario Nominal
-* A
+1. Depuis le panneau de gestion de sa classe sur PLaTon
     1. L'enseignant clique sur le bouton d'ajout d'étudiant dans son cours
-    2. Il choisit le/les étudiant dans un menu déroulement, une barre de recherche est disponible
+    2. Un popup s'ouvre avec la liste des étudiants inscrit sur PLaTon.
+    2. Il choisit le/les étudiant dans un menu déroulement, une barre de recherche et des filtres sont disponibles. On peut aussi imaginé la possibilité d'ajouer plusieurs étudiant d'un coup en important un csv où en copiant une liste d'étudiant.
     3. Il valide le/les étudiant séléctionnés
-* B
+2. En créant une activité LTI sur un LMS.
     1. L'enseignant copie le lien vers sa classe PLaTon
     2. L'enseignant créer une activité LTI sur LMS à l'aide du lien copier
     3. Un élève clique sur l'activité LTI sur le LMS
@@ -45,8 +42,6 @@ Le/les étudiants sont ajoutés au cours.
 L'étudiant n'est pas ajouté à la classe.
 
 ### Frequence
-Souvent. 
-Peut devenir fastidieux si il y a plusieurs centaines d'étudiants à inscrire.
-FIXME peut on proposer une version avec un upload de la liste ??
-
+Souvent.
+Inscription simultanés de plusieurs centaines d'étudiant à prévoir.
 
