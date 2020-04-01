@@ -32,7 +32,7 @@ Sinon l'enseignant est membre d'un **cercle** (a minima celui des "noobs" sur le
 [asset-metadata-edition.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/asset-metadata-edition.md)   
 [choisir-visibilité-completion.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/choisir-visibilité-completion.md)   
 
-* [connexion LTI](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/connexionLTI.md) : Connexion de l'enseignant depuis un LMS vers un **serveur assets** PLaTon
+* [connexionLTI.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/connexionLTI.md) : Connexion de l'enseignant depuis un LMS vers un **serveur assets** PLaTon
 
 [consulter-indicateur-individuel-collectif.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/consulter-indicateur-individuel-collectif.md)   
 [creer-cours.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/creer-cours.md)   
