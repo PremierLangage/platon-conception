@@ -12,10 +12,13 @@ de PLaTon : la version 1.0
 
 * [Membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md)
 
+* [Enseignant](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Enseignant.md) (qui travaille avec les resources centralisées...)
+
 ### Acteurs dont l'activité reste sur serveur d'assets
 
 * [Étudiants](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Etudiant.md)
 
+* [Enseignant](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Enseignant.md) (lorsqu'il décide de rester non éditeur...)
 
 ## Ressources du projet, concepts et lexique
 
