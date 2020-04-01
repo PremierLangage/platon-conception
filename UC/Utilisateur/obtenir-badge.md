@@ -21,7 +21,7 @@ Certains badges peuvent avoir plusieurs niveaux. On peut imaginer des "points" a
  
 ## Preconditions
 L'utilisateur est inscrit sur PLaTon.
-Le Badge a été défini. Cf. [crud-badge](../président/crud-badge.md)
+Le Badge a été défini. Cf. [crud-badge](../President/crud-badge.md)
 
 ## Scenario Nominal
 
@@ -32,7 +32,7 @@ Le Badge a été défini. Cf. [crud-badge](../président/crud-badge.md)
  
  
 ### Badges  Manuels
-Voir le cas d'utilisation donner un badge [donner-badge](../président/donner-badge.md)
+Voir le cas d'utilisation donner un badge [donner-badge](../President/donner-badge.md)
  
  
 
