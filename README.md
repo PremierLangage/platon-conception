@@ -17,6 +17,6 @@ de PLaTon : la version 1.0
 * [Étudiants](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Etudiant.md)
 
 
-## Ressources du projet, concept et lexique
+## Ressources du projet, concepts et lexique
 
 * [AAV pour Acquis d'Apprentissage Visé](https://github.com/PremierLangage/platon-conception/blob/master/concept/aav.md)
