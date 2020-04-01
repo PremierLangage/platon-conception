@@ -1,5 +1,5 @@
 
-# Cas d'utilisation N° 86 :  optenir-bagde
+# Cas d'utilisation N° 86 :  optenir badge
 
 Niveau 3
 
@@ -21,18 +21,20 @@ Certains badges peuvent avoir plusieurs niveaux. On peut imaginer des "points" a
  
 ## Preconditions
 L'utilisateur est inscrit sur PLaTon.
-
+Le Badge a été défini. Cf. [crud-badge](../président/crud-badge.md)
 
 ## Scenario Nominal
-1. Automatique
+
+### Automatique
  1. L'utilisateur effectue une action.
  2. La plateforme enregistre cette action, celle-ci corresponds à un badge.
  3. Le badge est attribué à l'utilisateur
-2. Manuelle
- 1. Une personne autorisée décide que les actions d'un utilisateur mérite un badge.
- 2. Cette personne remet le badge à l'utilisateur concerné
  
- FIXME : Décrire l'interface / le processus de remise manuelle de badge
+ 
+### Badges  Manuels
+Voir le cas d'utilisation donner un badge [donner-badge](../président/donner-badge.md)
+ 
+ 
 
 
 
