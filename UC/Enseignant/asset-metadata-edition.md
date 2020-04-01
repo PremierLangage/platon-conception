@@ -29,26 +29,24 @@ Existance d'un asset accessible par l'enseignant.
 4.	Si aucune nouvelle version a été créée depuis que l'enseignant a commencé l'édition des métadata, ses modifications sont sauvegardé dans une nouvelle version
 
 ### Extensions
-Annulation:  
+#### Annulation:  
 2.	L'enseignant édite / ajoute des champs.
 3. L'enseignant annule ses modifications à l'aide d'un bouton annuler
 
 ___
-Ecriture concurante:
+#### Ecriture concurante:
 Modification disjointes.
-4. Si les champs modifiés sont distincs juste une notification aux deux utilisateurs et les deux modifications sont prises en compte.
+4. Si les champs modifiés sont distincts juste une notification aux deux utilisateurs et les deux modifications sont prises en compte.
 
-Modification conflictuelles.
+#### Modification conflictuelles.
 3.	L'enseignant clique sur un bouton "valider".
 4. Un autre enseignant sauvegarder des modifications des métadatas pendant que le premier enseignant était en train de modifier
-5. L'enseignant à la possibilité de voir en parallèles ses modifications et celles sauvegardé par l'autre enseignant.
-FIXME cela veux dire quoi en parallèle ??? 
+5. L'enseignant à la possibilité de voir en parallèles ses modifications et celles sauvegardé par l'autre enseignant, par exemple l'une a coté de l'autre (si la fenêtre est assez large), où l'une en dessous de l'autre.
 6. L'enseignant règle les conflits entre les deux versions
 7.	L'enseignant clique sur un bouton "valider".
 8.	Si aucune nouvelle version a été créée depuis que l'enseignant a commencé l'édition des métadata, ses modifications sont sauvegardé dans une nouvelle version
 
 ___
-
 3.	L'enseignant clique sur un bouton "valider".
 4. Un autre enseignant sauvegarder des modifications des métadatas pendant que le premier enseignant était en train de modifier
 5. L'enseignant à la possibilité de voir en parallèles ses modifications et celles sauvegardé par l'autre enseignant.
