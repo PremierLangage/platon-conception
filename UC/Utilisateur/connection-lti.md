@@ -66,8 +66,7 @@ Il est intéressants de noter que les LMS ne sont pas tenus de fournir des infor
  
  
 ## Preconditions
-
-Avoir créée une activité LTI correspondant à PLaTon.
+Avoir créé une activité LTI correspondant à PLaTon depuis un LMS connus.
 
 ## Scenario Nominal
 
@@ -77,7 +76,6 @@ Avoir créée une activité LTI correspondant à PLaTon.
 4.	L'utilisateur est authentifié sur PLaTon.  
 
 ### Extensions
-
 2.	Le LMS redirige l'utilisateur sur PLaTon.
 3. Les identifiants LTI ne sont pas valide, PLaTon refuse la connexion.
 
