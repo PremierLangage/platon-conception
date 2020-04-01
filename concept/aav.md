@@ -11,7 +11,7 @@ Pour plus d'information sur les AAV se repporter au site : [FA2L](https://fa2l.b
 AAV Numériques, le problème de la définition actuelle des AAV par [FA2L](https://fa2l.be), bien que très adaptée a la description d'une formation, n'est pas adpatée a la construction d'une structure générale d'information et de savoir-faires.
 
 
-## Editeur d'aav
+## Editeur d'AAV
 
 [Un éditeur d'AAV en ligne](https://byrdseed.com/differentiator/index.php?l=fr)
 
