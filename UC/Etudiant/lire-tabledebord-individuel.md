@@ -4,32 +4,40 @@
 Niveau 3
 
 ##	Description
+Chaque étudiant lorsqu'il est sur la plateforme à un affichage individuel différent :
 
+ - Visualisation de ces cours 
+ - Visualisation de ces stats genérale
+ - Recherche d'exercices ouverts à tous
 
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
 FIXME N'oubliez pas de mensioner le concept **[tableaudebord](https://github.com/PremierLangage/plconception/blob/master/conception/concept/tableaudebord.md)**  
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
+> **Déclencheur** : _[Describe the event that initiates the use case.]_ Un étudiant se connecte sur la plateforme  
 > **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Acteurs secondaires**:    
+> **Parties Prenantes concernées** :    
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+FIXME Listez les conditions nécessaires pour que ce cas d'utilisation puisse avoir lieu
+
+-1 Avoir un compte sur platon 
+-2 Un enseignant doit publier un cours 
+-3 Minimum d'utilisation pour avoir des stats
+
 
 
 ## Scenario Nominal
 
 FIXME_[tout ce passe bien c'est le scénario parfait .]_
 
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	L'étudiant se connecte à la plateforme (identifiant et mot de passe)
+2.	L'étudiant a une vue d'ensemble sur ces cours et un bouton statistique
+3.	Voir en détail d'un cours en cliquant dessus   
 
 ###	Extensions
 FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
