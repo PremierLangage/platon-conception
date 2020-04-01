@@ -1,12 +1,15 @@
  
 # Enseignant  
 
-**Acteur Humain** qui est à la fois un [membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md) sur le **serveur central** de ressources (s'il s'y connecte) mais aussi un acteur enseignant sur un **serveur d'assets** (Il existe un LMS qui le désigne comme enseignant sur au moins un cours du même LMS). 
+L'enseignant est un **Acteur Humain** qui est à la fois un [membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md) sur le **serveur central** de ressources (s'il s'y connecte), mais d'abord un acteur enseignant sur un **serveur d'assets** (Il existe un LMS qui le désigne comme enseignant sur au moins un cours du même LMS). 
 
 > Besoin en formation: Oui
 
-L'enseignant non éditeur accède qu'aux **serveur d'assets** et au search and compose qui lui permet de modifier son cours.
+L'enseignant non éditeur n'accède qu'aux **serveur d'assets** notament à son **éditeur d'assets** qui lui permet d'administrer les cours opérationnels qu'il déploye à ses élèves (À ce moment là, son travail reste local...).
 
+Losrque l'enseignant se dirige sur le **serveur central** de ressources, il devient un [membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md) mais aussi garde avec lui l'information relative à son **serveur d'assets**. Ainsi, s'il utilise le Search & compose pour construire son cours, ce même cours aura vocation à devenir un asset du **serveur d'assets** dont il est originaire.
+
+Les possibilités coeurs du travail de l'enseignant sous PLaTon sont :
 - Il peut définir la liste des AAV de son cours.
 - Il peut modifier les assets de son cours.
 - Il peut regarder l'avancement de ces élèves sur les assets déployés.
@@ -15,7 +18,7 @@ L'enseignant non éditeur accède qu'aux **serveur d'assets** et au search and c
 - Faire de la gestion: inscrire des enseigants non éditeurs, des enseignants et des étudiants.
 - Administration du cours: partage et archivage.
 
-Sinon l'enseigant est membre d'un **cercle** (a minima celui des "noobs" sur le site) et donc peut utiliser le **serveur central** de ressource comme un [membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md).
+Sinon l'enseignant est membre d'un **cercle** (a minima celui des "noobs" sur le site) et donc peut utiliser le **serveur central** de ressource comme un [membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md).
 
 
 ## cas d'utilisation associés
