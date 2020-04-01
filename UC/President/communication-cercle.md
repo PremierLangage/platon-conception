@@ -6,6 +6,8 @@ Niveau 1
 ##	Description
 
  Nous pensons exporter cette problèmatique sur un outil externe loomio/discord mais le cas d'utilisation doit faire le tour de la question sur ce qui est possible ou non. En lien avec [envoyer-notification.md](envoyer-notification.md)
+ 
+ Connection Riot/Matrix https://github.com/vector-im/riot-web
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
 FIXME N'oubliez pas de mensioner le concept **[cercle](https://github.com/PremierLangage/plconception/blob/master/conception/concept/cercle.md)**  
