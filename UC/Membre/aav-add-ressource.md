@@ -12,8 +12,8 @@ Un membre (d'un cercle quelconque) est en train de consulter une **[demande](htt
 
 > **Déclencheur** : N'importe quand lorsqu'un membre connait la demande (AAV) mais aussi l'existance de la ressource. (l'exercice qui y répond à la demande). Cela peut être une découvrete spontanée, celle d'un rodeur sur les ressources. Ça peut être aussi le membre créateur qui vient de créer un nouvel exercice et qui souhaite renseigner PLaTon sur l'intérêt pédagogique de son nouvel exercice.
 
-> **Acteur Primaire**: [membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md)
-> **Acteurs secondaires**: le demandeur (créateur originel de l'AAV).
+> **Acteur Primaire**: [membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md) \
+> **Acteurs secondaires**: le demandeur (créateur originel de l'AAV). \
 > **Parties Prenantes concernées** : les autres membres surveillants aussi la demande en question (notification?)
  
  
