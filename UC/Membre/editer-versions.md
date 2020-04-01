@@ -1,8 +1,6 @@
 
 # Cas d'utilisation N° 1 :  editer-versions
 
-Niveau 0
-
 ##	Description
 
 Permet de comparer les versions et de créer une version suplémentaire.
@@ -13,7 +11,7 @@ Un membre d'un cercle consulte une **[ressource](https://github.com/PremierLanga
  Cela suppose que les versions soient organisées en arbre. La liste des versions consultées est l'ensemble des feuilles de l'arbre. Le membre peut soit **modifier une version**, c'est à dire prolonger la branche, soit créer une nouvelle branche. 
 
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
+ 
 > **Déclencheur** : Un membre d'un cercle consulte une ressource, ou consulte une liste de ressources. Dans le premier cas, un bouton permet d'accéder aux versions. Dans le second cas, un menu contextuel attaché à chaque ressource de la liste permet d'accéder aux versions de cette ressource. 
 > **Acteur Primaire**: membre
 > **Acteurs secondaires**: Néant  
