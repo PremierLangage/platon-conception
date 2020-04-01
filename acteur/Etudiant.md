@@ -1,6 +1,12 @@
  
 # Etudiant  
 
+Objectifs des etudiant: apprendre et participer.
+
+Apprendre: accumuler des completions d'aav (**[aav](https://github.com/PremierLangage/plconception/tree/master/conception/concept/aav.md)**)
+
+Participer: ëtre dans un cours organisé avec d'autres étudiants, avec un planning, des devoirs, des binomes.
+
 **Acteur Humain** qui normalement appartient à un ou plusieurs **cours** d'un **serveur d'assets**. On parle d'étudiant lorsqu'il y a eu première connexion à PLaTon via LTI. La première connexion d'un utilisateur inconnu ayant le **status d'étudiant dans LTI** fabrique un utilisateur de type étudiant dans le serveur d'assets.
 
 ## description
