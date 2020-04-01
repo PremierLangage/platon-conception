@@ -1,7 +1,9 @@
 
 # Cas d'utilisation N° 97 :  ouvrir-centrenotification
 
-Niveau 4
+FIXME pinax-notification https://github.com/pinax/pinax-notifications
+FIXME il faut installer cette application dans un django pour voir ce que cela donne...
+
 
 ##	Description
 
@@ -66,7 +68,5 @@ Web socket, inner links, front JS
 * Websocket
 * API Rest 
 
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
 
 TBR
