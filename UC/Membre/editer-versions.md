@@ -31,8 +31,8 @@ Un membre d'un cercle consulte une **[ressource](https://github.com/PremierLanga
 
 1.	Le membre choisit d'accéder aux versions d'une ressource, soit en consultant cette ressource, soit en consultant une liste de ressources où elle figure.
 2.	S'affiche une liste de versions, et une prévisualisation de la version sélectionnée dans la liste. La liste est ordonnée par date décroissante, ou par popularité décroissante des versions. A partir de cette liste, il est possible de revenir à l'endroit à partir duquel on y a accédé. 
-3.	Pour chacune des versions de la liste, un menu contextuel propose d'éditer cette version, ou de la tester, ou de l'ajouter à une ressource.
-4.	Dans l'éditeur, il est proposé de sauvegarder la modification comme une nouvelle version,  ou comme une modification de la version éditée. Dans le cas d'une nouvelle version, un descriptif doit être fourni. Dans le cas d'une nouvelle version, la description de ce qui a été corrigé doit être fourni, et en quoi la modification constitue une amélioration.
+3.	Pour chacune des versions de la liste, un menu contextuel propose d'éditer cette version, ou de la tester, ou de l'ajouter à une activité.
+4.	Dans l'éditeur, il est proposé de sauvegarder la modification comme une nouvelle version,  ou comme une modification de la version éditée. Dans le cas d'une nouvelle version, un descriptif doit être fourni. Dans le cas d'une modification d'une version, la description de ce qui a été corrigé doit être fourni, et en quoi la modification constitue une amélioration.
 
 
 ###	Extensions
@@ -66,7 +66,4 @@ Cas simple d'utilisation. Occurence dès qu'une ressource avec versions doit-êt
 3. Il faudrait autoriser la création de versions **privées**, uniquement liées à une activité particulière, mais n'ayant pas vocation à être proposées aux autres utilisateurs.
 
 
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
 
-TBR
