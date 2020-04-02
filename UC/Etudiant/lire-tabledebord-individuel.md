@@ -18,11 +18,11 @@ ATTENTION : il s'agit de l'écran d'accueil après une connexion, il ne s'agit p
 
 **[tableaudebord](https://github.com/PremierLangage/plconception/blob/master/conception/concept/tableaudebord.md)**  
 
-> **Niveau** :  
+> **Niveau** :  ????
 > **Déclencheur** : Un étudiant se connecte sur la plateforme via l'écran login et MDP  
 > **Acteur Primaire**: Utilisateur (tous)   
-> **Acteurs secondaires**:    
-> **Parties Prenantes concernées** :     
+> **Acteurs secondaires**: Non   
+> **Parties Prenantes concernées** : ??    
  
  
 ## Preconditions
