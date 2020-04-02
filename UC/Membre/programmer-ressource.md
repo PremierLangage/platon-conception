@@ -5,10 +5,10 @@ Niveau 1
 
 ##	Description
  
- Un membre (d'un cercle quelconque) souhaite programmer une **[ressource](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/ressource.md)**, qui peut-être **1)** une ressource entièrement nouvelle, ou **2)**une **[version](https://github.com/PremierLangage/plconception/blob/master/conception/concept/version.md)** d'une ressource existante, ou **3)** une ressource nouvelle, créée à partir d'une ressource existante.
+ Un membre (d'un cercle quelconque) souhaite programmer une **[ressource](https://github.com/PremierLangage/plconception/blob/master/conception/concept/ressource.md)**, qui peut-être **1)** une ressource entièrement nouvelle, ou **2)**une **[version](https://github.com/PremierLangage/plconception/blob/master/conception/concept/version.md)** d'une ressource existante, ou **3)** une ressource nouvelle, créée à partir d'une ressource existante.
  
 Si l'utilisateur programme une ressource à partir d'une ressource existante (cas **2** et **3**), alors la méthode est celle de la ressource en question. S'il crée une ressource entièrement nouvelle, il peut choisir, si cela s'applique, une méthode pour la créer.
-Dans le cas d'un exercice, par exemple, il peut choisir d'utiliser un **[exercice_prepare](https://github.com/PremierLangage/plconception/blob/master  /conception/concept/exercice_prepare.md)**
+Dans le cas d'un exercice, par exemple, il peut choisir d'utiliser un **[exercice_prepare](https://github.com/PremierLangage/plconception/blob/master/conception/concept/exercice_prepare.md)**
 
 
  **Déclencheur** : Plusieurs point de départs possibles. L'utilisateur
