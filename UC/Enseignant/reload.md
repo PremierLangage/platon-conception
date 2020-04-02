@@ -5,7 +5,7 @@ Niveau 1
 
 ##	Description
 
- L'édition des assets est indirecte il faut editer la ressource correspondante, et faire un rechargement ce que doit expliquer le cas d'utilisation. Le search & compose des assets.
+L'édition des assets est indirecte il faut editer la ressource correspondante, et faire un rechargement ce que doit expliquer le cas d'utilisation. Le search & compose des assets.
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
 FIXME N'oubliez pas de mensioner le concept **[assets](https://github.com/PremierLangage/plconception/blob/master/conception/concept/assets.md)**  
