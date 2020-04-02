@@ -8,8 +8,8 @@ de PLaTon : la version 1.0
 
 ### Acteurs ayant accès au serveur central de ressources
 
-* [Administrateur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Administrateur.md)
-* [Membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md)
+* [Administrateur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Administrateur.md) (sorte de power-user du **serveur central** de ressources)
+* [Membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md) (status de base de l'utilisateur/contributeur du **serveur central** de ressources)
 * [Enseignant](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Enseignant.md) (qui travaille avec les resources centralisées...)
 
 ### Acteurs dont l'activité reste sur serveur d'assets
