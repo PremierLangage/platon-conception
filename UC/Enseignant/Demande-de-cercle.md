@@ -39,12 +39,13 @@ Nous somme dans le cas d'utilisation
 > Discipline principale   
 > President: loginname or email (par défaut l'utilisateur qui fait la demande)
 > Physio :loginname or email 
-> DirecteurScientifique : loginname or email 
-3.2 l'enseignant rempli le formulaire 
-3.3 le système valide l'ensemble des champs. 
-3.4 Un cercle temporaire est créer sans membres.
-3.5 l'adminsitrateur est notifié qu'il doit valider la création d'un cercle. [Cf uc creation cercle](../Administrateur/creation-cercle.md)
-4. le cercle temporaire est associé au cours.
+> DirecteurScientifique : loginname or email   
+3.2 l'enseignant rempli le formulaire   
+3.3 le système valide l'ensemble des champs.   
+3.4 Un cercle temporaire est créer sans membres.  
+3.5 l'adminsitrateur est notifié qu'il doit valider la création d'un cercle. 
+[Cf uc creation cercle](../Administrateur/creation-cercle.md)
+4. le cercle temporaire est associé au cours.  
 
 
 ## Post Conditions
