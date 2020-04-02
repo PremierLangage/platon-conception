@@ -32,7 +32,8 @@ l'idée des **cercles** est de faire se rencontrer les utilisateurs ayant les **
   Pas de compte LMS pas de compte PLaton par LTI. De nombreuse institution reste globalement fortement ouverte lorsque des personnes "extérieures" proposent leur bras pour du travail pédagogique. Nous invitons donc les gens voulant contribuer au ressources à ce rapprocher d'une institution disposant d'un LMS pour obternir un compte enseignant ami ou bénévol.
 
 * **Comment fait-on pour venir avec LTI quand son lycée n'a pas encore de LMS ? Est-ce un problème ?** \
-  Non, ce n'est un problème. Du moins, ce n'est pas un problème qui sera traité par PLaTon. Nous invitons tous les potentiels utilisateurs à s'équiper en premier lieu d'un LMS LTI-compatible (moodle ou autre...).
+  Non, ce n'est pas un problème. Du moins, ce n'est pas un problème qui sera traité par PLaTon. Nous invitons tous les potentiels utilisateurs à s'équiper en premier lieu d'un LMS LTI-compatible (moodle ou autre...).
+  Dans une version ultérieure ....
 
 ## Les use-cases identifiés des membres
 
