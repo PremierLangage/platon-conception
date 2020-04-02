@@ -3,7 +3,7 @@
 
 Acteur Humain qui hérite de Membre.
 
-C'est un membre avec des droits supplémentaire de gestion des membre du cercle.
+C'est un membre avec des droits supplémentaire de gestion des membres du cercle.
 
 IL a des commandes comme :
 - ban user for a given time => black list  
