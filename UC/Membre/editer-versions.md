@@ -7,7 +7,7 @@ Permet de comparer les versions, choisir une version ou de créer une version su
 
 Un membre d'un cercle consulte une **[ressource](https://github.com/PremierLangage/plconception/blob/master/conception/concept/ressource.mdressource)**, ou consulte une liste de ressources. Il peut alors accéder à la liste des **[versions](https://github.com/PremierLangage/plconception/blob/master/conception/concept/version.md)**  
  actuelles de la ressource, ou d'une des ressources de la liste.
- A partir des la liste des versions, il peut en modifier une, pour l'améliorer, ou en créer une autre, s'il souhaite l'adapter à une situation particulière. Il peut aussi en sélectionner une pour ajout à une **[activité][https://github.com/PremierLangage/plconception/blob/master/conception/concept/activity.md)**.
+ A partir des la liste des versions, il peut en modifier une, pour l'améliorer, ou en créer une autre, s'il souhaite l'adapter à une situation particulière. Il peut aussi en sélectionner une pour ajout à une **[activité](https://github.com/PremierLangage/plconception/blob/master/conception/concept/activity.md)**.
  
  Cela suppose que les versions soient organisées en arbre. _FIXME en liste cela suffirait. Comme dans wikipedia._
  Par contre il faut que les liens de ressources (entre elles dans une activité par exemple) comporte le numero de version.
