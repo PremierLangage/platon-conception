@@ -32,7 +32,7 @@ Nous somme dans le cas d'utilisation
 
 
 ###	Extensions
-3. l'enseignant choisi de créer un cours. 
+3. l'enseignant choisi de créer un cours.   
 3.1 le système propose un formulair de demande de création de cercle seul:
   > Nom du cercle   
   > Description du cercle   
