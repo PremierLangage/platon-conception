@@ -1,68 +1,47 @@
-
 # Cas d'utilisation N° 32 :  editer-cours-ressource
 
 Niveau 1
 
 ##	Description
 
- Dans le cas ou l'enseignant veut modifier un asset élèmentaire et donc ddoit repasser par l'éditeur et un reload. Ceci est un cas d'utilisation complexe.
+La modification d'un **[cours](https://github.com/PremierLangage/platon-conception/blob/master/concept/cours.md)** se fait directement sur la page du cours en question. Modifier un cours consiste à ajouter/supprimer des sections, ajouter/supprimer des ressources dans les sections, modifier le titre des sections/ressources, modifier les **[métadonnées](https://github.com/PremierLangage/platon-conception/blob/master/concept/metadonnees.md)** des ressources.
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[cours](https://github.com/PremierLangage/plconception/blob/master/conception/concept/cours.md)**  
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Déclencheur** : Clique sur le bouton **éditer** présent sur la page du cours.
+> **Acteur Primaire**: Enseignant   
+> **Acteurs secondaires**: -   
+> **Parties Prenantes concernées** : Les autres enseignants du cours   
  
  
-## Preconditions
-
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
-
+## Préconditions
+- L'utilisateur doit être enseignant du cours.
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
-
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
-
-###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
-
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
+1. L'enseignant clique sur le bouton **éditer**
+2. L'interface du cours se bascule en mode édition avec au **minimum** les fonctionnalités suivantes indépendamment de l'organisation d'IHM.
+   - la possibilité d'ajouter une section (bouton qui ouvre une boite de dialogue permettant de saisir le titre de la section)
+    - la possibilité de supprimer une section (**confirmation obligatoire**)
+   -  la possibilité de changer l'ordre des sections/ressources (drap & drop **explicitement indiqué par la présence d'une icône par exemple**)
+   - la possibilité d'accéder à une page/boîte de dialogue dédiée à la modification du contenu et des métadonnées de chaque ressource du cours (via un bouton à coté de la ressource par exemple).
+   - la possibilité de supprimer une ressource (**confirmation obligatoire**)
+   - la possibilité d'accéder à des actions rapides (comme changer la visibilité d'une ressource)
+   - la possibilité d'accéder à une page/boîte de dialogue pour rechercher et ajouter un élève/enseignant.
+   - la possibilité de supprimer un élève/enseignant (**confirmation obligatoire**)
+3. L'enseignant clique sur un bouton permettant de  quitter le mode édition
 
 
 ## Post Conditions
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+Une modification est considérée comme réussie uniquement si aucune notification n'indique pas le contraire.
 
 ### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
+- Une notification doit indiquer la réussite ou l’échec de chaque modification.
 
 ### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
-
-
-FIXME _les variables suivantes sont optionnelles._
+- Une notification indique l'échec de la modification
 
 ### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
-### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
-### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
+Souvent
 
-##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
+### Problèmes et étapes suivantes
 
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
-
-TBR
