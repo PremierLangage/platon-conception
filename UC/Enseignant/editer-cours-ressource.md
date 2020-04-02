@@ -25,8 +25,6 @@ La modification d'un **[cours](https://github.com/PremierLangage/platon-concepti
    - la possibilité d'accéder à une page/boîte de dialogue dédiée à la modification du contenu et des métadonnées de chaque ressource du cours (via un bouton à coté de la ressource par exemple).
    - la possibilité de supprimer une ressource (**confirmation obligatoire**)
    - la possibilité d'accéder à des actions rapides (comme changer la visibilité d'une ressource)
-   - la possibilité d'accéder à une page/boîte de dialogue pour rechercher et ajouter un élève/enseignant.
-   - la possibilité de supprimer un élève/enseignant (**confirmation obligatoire**)
 3. L'enseignant clique sur un bouton permettant de  quitter le mode édition
 
 
