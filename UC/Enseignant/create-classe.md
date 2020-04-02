@@ -5,11 +5,11 @@ Niveau 1
 
 ##	Description
 
- Une classe permet d'organiser un cours (cours-moodle= classe-platon, contient des élèves et un cours composé d'assets).
+ Une **[classe](https://github.com/PremierLangage/plconception/blob/master/conception/concept/classe.md)**   permet d'organiser un cours (une classe contient des élèves et un [cours](https://github.com/PremierLangage/plconception/blob/master/conception/concept/cours.md) composé d'assets).
 
- **[classe](https://github.com/PremierLangage/plconception/blob/master/conception/concept/classe.md)**  
+ 
 
-> **Déclencheur** : Création par un accès LTI par une nouvelle classe du LMS client 
+> **Déclencheur** : Création par un accès LTI par une nouvelle classe du LMS client  
 > **Acteur Primaire**: L'utilisateur de type enseignant du LMS qui se connect en premier.  
 > **Acteurs secondaires**: -   
 > **Parties Prenantes concernées** : Les participant de la classe  
