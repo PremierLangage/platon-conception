@@ -6,9 +6,9 @@
 >
 > **[#26-crud-badge](https://github.com/PremierLangage/platon-conception/blob/master/UC/Administrateur/crud-badge.md)**
 >
-> **[#70-edition-classificationdisciplinaire](https://github.com/PremierLangage/platon-conception/blob/master/UC/Administrateur/edition-classificationdisciplinaire.md)**
+> **[#70-edition-classificationdisciplinaire](https://github.com/PremierLangage/platon-conception/blob/master/UC/Administrateur/edition-classificationdisciplinaire.md)** // FIXME
 ## Candidats
-> **[#72-faire-un-test](https://github.com/PremierLangage/platon-conception/blob/master/UC/Administrateur/edition-classificationdisciplinaire.md)** - Niveau 2 // FIXME
+> **[#72-faire-un-test](https://github.com/PremierLangage/platon-conception/blob/master/UC/Candidats/faire-un-test.md)** - Niveau 2 
 ## Didactitien
 > **[#82-ecrire-tableau-de-bord](https://github.com/PremierLangage/platon-conception/blob/master/UC/Didactitien/ecrire-tableau-de-bord.md)** - Niveau 3
 >
