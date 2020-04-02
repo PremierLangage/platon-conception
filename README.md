@@ -21,4 +21,5 @@ de PLaTon : la version 1.0
 
 ### Concepts immatériels
 
-* [AAV pour Acquis d'Apprentissage Visé](https://github.com/PremierLangage/platon-conception/blob/master/concept/aav.md)
+* [AAV pour Acquis d'Apprentissage Visé](https://github.com/PremierLangage/platon-conception/blob/master/concept/aav.md) (objectif pédagogique clair et mesurable)
+* [Notion de complétion d'un travail](https://github.com/PremierLangage/plconception/blob/master/conception/concept/completion.md) (relatif à l'avancement, la réussite voire la validation)
