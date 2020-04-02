@@ -4,50 +4,51 @@
 Niveau 3
 
 ##	Description
-Chaque étudiant lorsqu'il est sur la plateforme à un affichage individuel différent :
+Chaque étudiant lorsqu'il se connecte sur la plateforme à un affichage individuel différent et paramétrable suivant ses préférences :
 
  - Visualisation de ces cours 
- - Visualisation de ces stats genérale
- - Recherche d'exercices ouverts à tous
+ - Visualisation de ces statistiques genérales
+ - Visualisation de son Port-Folio (AAV ou Objectif Pédagogique)
+ - Recherche d'exercices ouverts à tous (si existant)
+ - ...
 
+Lorsqu'un élève se connecte à Platon (via login et MDP) il aura immédiatement accès à un écran d'accueil qu'il aura lui même paramétré dans les préférences de son profil.
+Cet écran d'accueil comportera son tableau de bord avec les cours auxquels il est inscrit, ses dernières activités en particulier les exercicies réussis, échoués et de quels cours il dépendaient.
+ATTENTION : il s'agit de l'écran d'accueil après une connexion, il ne s'agit pas de l'accès direct au cours suite à un lien sur un LMS !!
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[tableaudebord](https://github.com/PremierLangage/plconception/blob/master/conception/concept/tableaudebord.md)**  
+**[tableaudebord](https://github.com/PremierLangage/plconception/blob/master/conception/concept/tableaudebord.md)**  
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ Un étudiant se connecte sur la plateforme  
-> **Acteur Primaire**: Utilisateur   
+> **Niveau** :  
+> **Déclencheur** : Un étudiant se connecte sur la plateforme via l'écran login et MDP  
+> **Acteur Primaire**: Utilisateur (tous)   
 > **Acteurs secondaires**:    
-> **Parties Prenantes concernées** :    
+> **Parties Prenantes concernées** :     
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaires pour que ce cas d'utilisation puisse avoir lieu
+Listez les conditions nécessaires pour que ce cas d'utilisation puisse avoir lieu
 
 -1 Avoir un compte sur platon 
--2 Un enseignant doit publier un cours 
--3 Minimum d'utilisation pour avoir des stats
-
+-2 Se connecter sur Platon en passant par la fenêtre Login et MDP 
 
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
+Tout ce passe bien c'est le scénario parfait.
 
 1.	L'étudiant se connecte à la plateforme (identifiant et mot de passe)
-2.	L'étudiant a une vue d'ensemble sur ces cours et un bouton statistique
-3.	Voir en détail d'un cours en cliquant dessus   
+2.	L'étudiant a une vue d'ensemble sur son tableau de bord, ses cours, ses statistiques, ses dernières activités ...
+3.	Il peut accéder à tout les activités représentées en cliquant directement dessus   
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
-
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
-
+Si problème de connection avec le serveur un message d'erreur doit apparaître
 
 ## Post Conditions
+???
+
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+Si la connection se fait le tableau de bord apparaît
 
 ### Minimal Guarantees
 FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
