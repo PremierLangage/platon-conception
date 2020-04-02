@@ -1,7 +1,11 @@
  
 # DirecteurScientifique  
 
-Acteur Humain 
+Acteur Humain qui est membre d'un cercle pour lequel il a la responsabilité scientifique.
 
-> Besoin en formation: Oui / Non FIXME  
+- valider les meta données des ressources
+- ecrire les atelier pour contfruire les etablis
+
+
+> Besoin en formation: Oui pour savoir écrire des ateliers
 
