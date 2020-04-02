@@ -67,6 +67,9 @@
 ## Membre
 ## Physionomiste
 ## Président
+> **[#15-communication-cerlce](https://github.com/PremierLangage/platon-conception/blob/master/UC/President/communication-cercle.md)** - Niveau 1
+>
+>
 ## Utilisateur
 ## Visiteur
 
