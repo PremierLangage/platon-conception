@@ -1,5 +1,5 @@
 
-# Cas d'utilisation N° 23 :  crud-classe
+# Cas d'utilisation N° 23 :  create-classe
 
 Niveau 1
 
