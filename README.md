@@ -6,7 +6,7 @@ de PLaTon : la version 1.0
 
 ## Les différents acteurs dans PLaTon
 
-* [Utilisateur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Utilisateur.md) (status racine abstrait avant attribution d'un rôle plus précis post-login)
+* [Utilisateur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Utilisateur.md) (status racine abstrait de l'utilisateur loggué ayant toujours un rôle plus précis)
 
 ### Acteurs ayant accès au serveur central de ressources
 
