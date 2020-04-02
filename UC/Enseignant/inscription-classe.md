@@ -1,5 +1,5 @@
 
-# Cas d'utilisation N° 96 :  inscription-etudiant-classe
+# Cas d'utilisation N° 96 :  inscription-classe
 
 Niveau 4
 
