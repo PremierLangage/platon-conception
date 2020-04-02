@@ -34,12 +34,13 @@ Nous somme dans le cas d'utilisation
 ###	Extensions
 3. l'enseignant choisi de créer un cours. 
 3.1 le système propose un formulair de demande de création de cercle seul:
-> Nom du cercle   
-> Description du cercle   
-> Discipline principale   
-> President: loginname or email (par défaut l'utilisateur qui fait la demande)
-> Physio :loginname or email 
-> DirecteurScientifique : loginname or email   
+  > Nom du cercle   
+  > Description du cercle   
+  > Discipline principale   
+  > President: loginname or email (par défaut l'utilisateur qui fait la demande)
+  > Physio :loginname or email 
+  > DirecteurScientifique : loginname or email
+
 3.2 l'enseignant rempli le formulaire   
 3.3 le système valide l'ensemble des champs.   
 3.4 Un cercle temporaire est créer sans membres.  
