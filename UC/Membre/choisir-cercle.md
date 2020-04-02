@@ -7,7 +7,7 @@ Niveau 1
 
 Un utilisateur souhaite entrer dans un cercle. 
 
-> **Déclencheur** :Dans le profile de l'utilisateur, il click sur entrer dans un cercle.
+> **Déclencheur** :Dans le profile de l'utilisateur, il click sur entrer dans un cercle.  
 > **Acteur Primaire**: Utilisateur   
 > **Acteurs secondaires**: physio   
 > **Parties Prenantes concernées** : -   
