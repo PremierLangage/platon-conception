@@ -5,10 +5,9 @@ Niveau 1
 
 ##	Description
 
- 
-
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[etabli](https://github.com/PremierLangage/plconception/blob/master/conception/concept/etabli.md)**  
+Quant un Membre décide de créer une nouvelle ressouce il doit choisir l'établi  avec lequel il souhait contruire cette ressource **[etabli](https://github.com/PremierLangage/plconception/blob/master/conception/concept/etabli.md)** .
+Ce peut être l'établi par défaut pour les nouveaux. Ou l'établid'un des cercle auquels il appartient. 
+Ce cas d'utilisation décrit comment le membre choisi sont établi FIXME il faut proposer une démarche.
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
