@@ -14,29 +14,30 @@ L'enseignant peut export des statistiques/Notes de sa classe.
  
  
 ## Preconditions
-Précondition dans le cas d'utilisation [enseigner](enseigner.md) dans la vue gestion de classe
+Précondition dans le cas d'utilisation [Enseigner](Enseigner.md) et dans la vue gestion de classe.
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
-
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	Le système affiche la vue gestion de classe.
+  Qui contient un lien vers export. l'utisateur click sur le lien export/Notes
+2.	Le système affiche la vue export de la classe. 
+Cette vue contient une tableau hiérachique des activités, et l'on peut indiquer,
+les étudiants/groupes que l'on choisi et les évaluations que l'on choisi.
+3. une fois que les etudiants/groupes et les évaluations sont choisi, ont apuis sur le bouton export.
+4.	Un popup apprait ou l'on peut spécifier, les champs de Etudiant que l'on souhaite exporté, par défaut (nom,prénom,id-LMS), le caractère séparateur, le caractère de "virgule numérique". 
+Une fois le popup validé le fichier est téléchargé par le navigateur.
+5. l'enseignant optient le fichier d'evaluation sur sont poste.
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
 
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
 
 
 ## Post Conditions
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+Reception sur le poste du fichier de notes.
 
 ### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
+
 
 ### Conditions final en cas d'échec
 FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
