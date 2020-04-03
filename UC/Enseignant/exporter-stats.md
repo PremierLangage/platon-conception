@@ -5,22 +5,16 @@ Niveau 4
 
 ##	Description
 
-export des stats pour le prof 
+L'enseignant peut export des statistiques/Notes de sa classe. 
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[export](https://github.com/PremierLangage/plconception/blob/master/conception/concept/export.md)**  
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Déclencheur** : l'enseignant choisi la vue export dans la vue gestion de classe 
+> **Acteur Primaire**: enseignant   
+> **Acteurs secondaires**:    
+> **Parties Prenantes concernées** :    
  
  
 ## Preconditions
-
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
-
+Précondition dans le cas d'utilisation [enseigner](enseigner.md) dans la vue gestion de classe
 
 ## Scenario Nominal
 
@@ -62,7 +56,7 @@ FIXME _[Describe any additional factors that impact the execution of the use cas
 ##	Problèmes et étapes suivantes  
 FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
 
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
+FIXME définir vue gestion de classe  
+
 
 TBR
