@@ -1,16 +1,13 @@
  
 # President  
 
-Acteur Humain qui gère la communication dans le groupe et vers l'extérieur.
+Le président d'un **cercle** est un **Acteur Humain** qui gère la communication à l'intérieur du groupe et vers l'extérieur. Le créateur d'un **cercle** en devient par défault le président. Le président d'un **cercle** est donc tout d'abord un [membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md) du **serveur central** de ressources.
 
-Cet acteur est par défault le créateur du Cercle.
+Le président d'un **cercle** jouit aussi des droits du [physinomiste]() et du [directeur scientifique]().
 
-Il hérite des droits du Physio et du DS (directeur sicentifique).
+Le président peut communiquer en utilisant des pages écrites en makrdown. Ces pages sont accèssibles à tous les membres du **cercle** . Parmi ces pages, une d'entre elles permet de pointer sur les outils sociaux privilégiés par le **cercle** (Discord/Riot par défaut ou autre...). 
 
-Comment le président peu communiquer en utilisant une page écrite en makrdown que tout les membres peuvent voir 
-et qui permet de pointer sur les outils sociaux privilégiés par le cercle (Discord/Riot par défaut). 
-
-Le cercle aura une page publique sur le site pl.u-pem.fr/cercles/nomducercle que le président peu éditer en markdown aussi.
+Le **cercle** aura une page publique sur le site pl.u-pem.fr/cercles/nomducercle que le président peu éditer en markdown aussi.
 
 > Besoin en formation: Oui (oui à markdown).
 
