@@ -9,5 +9,5 @@ Les besoins du visiteur sont :
 - Tester un exercice qui aurait été sugérer par autrui (lien dans un mail ou autre, pour une review, un feedback, un test, ...).
 - Obtenir de l'information sur les ressources disponibles (quantité et qualité) suivant ses cercles préssentis (exemple : je suis prof de SVT au collège, il y a quoi de dispo environ sur le **serveur central**.).
 
-> Besoin en formation: Non, car on ne peut identifier les visiteurs
+> Besoin en formation: Non, car on ne peut identifier les visiteurs   
 > Besoin en documentation: Très important, car la formation est impossible
