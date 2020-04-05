@@ -6,10 +6,12 @@ de PLaTon : la version 1.0
 
 ## Les différents acteurs dans PLaTon
 
+* [Visiteur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Visiteur.md) (Le statut par défault de l'acteur n'ayant pas de compte PLaTon)
+
 ### Acteurs ayant accès au serveur central de ressources
 
 * [Administrateur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Administrateur.md) (sorte de power-user du **serveur central** de ressources)
-* [Membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md) (status de base de l'utilisateur/contributeur du **serveur central** de ressources)
+* [Membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md) (statut de base de l'utilisateur/contributeur du **serveur central** de ressources)
 * [Enseignant](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Enseignant.md) (membre qui opérationnalise les resources vers un **serveur d'assets**...)
 * [Directeur Scientifique](https://github.com/PremierLangage/platon-conception/blob/master/acteur/DirecteurScientifique.md) (membre d'un **cercle** dont il porte la responsabilité scientifique)
 
