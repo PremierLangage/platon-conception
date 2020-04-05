@@ -6,8 +6,6 @@ de PLaTon : la version 1.0
 
 ## Les différents acteurs dans PLaTon
 
-* [Utilisateur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Utilisateur.md) (status racine abstrait de l'utilisateur loggué ayant toujours un rôle plus précis)
-
 ### Acteurs ayant accès au serveur central de ressources
 
 * [Administrateur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Administrateur.md) (sorte de power-user du **serveur central** de ressources)
@@ -16,6 +14,7 @@ de PLaTon : la version 1.0
 
 ### Acteurs dont l'activité reste sur serveur d'assets
 
+* [Utilisateur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Utilisateur.md) (status racine abstrait de l'utilisateur loggué ayant toujours un rôle plus précis)
 * [Étudiants](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Etudiant.md) (acteur apprenant sur le **serveur d'assets** de son organisme formateur)
 * [Enseignant](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Enseignant.md) (lorsqu'il décide de rester non-éditeur mais qu'il manage ses classes déployées...)
 
