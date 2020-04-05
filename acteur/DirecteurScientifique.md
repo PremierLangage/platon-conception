@@ -6,9 +6,9 @@ Le directeur scientifique d'un **cercle** est un **Acteur Humain** qui est membr
 La responsabilité scientifique à l'intérieur d'un cercle consiste en :
 - Valider les **meta-données** des ressources (participer à la structuration des **méta-données** spécifiques au **cercle**).
 - Écrire les ateliers pour construire les établis (écrire la structure des ateliers, utilisation d'un **Search & Compose** spécifique).
-- Écrire les documentations relatives au cerle.
+- Écrire les documentations relatives au **cerle**.
 
-> Besoin en formation: Oui pour savoir écrire des ateliers qui ont peut être des éléments techniques 
-mais si on utilise le **Search & Compose** pour les atelier cela devrait être simple.
+> Besoin en formation: Oui pour savoir écrire des ateliers qui possèdent peut être des éléments techniques 
+mais si on utilise le **Search & Compose** pour les ateliers cela devrait plutôt être simple.
 
 
