@@ -13,6 +13,7 @@ de PLaTon : la version 1.0
 * [Administrateur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Administrateur.md) (sorte de power-user du **serveur central** de ressources)
 * [Membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md) (statut de base de l'utilisateur/contributeur du **serveur central** de ressources)
 * [Enseignant](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Enseignant.md) (membre qui opérationnalise les resources vers un **serveur d'assets**...)
+* [Président d'un cercle](https://github.com/PremierLangage/platon-conception/blob/master/acteur/President.md) (membre d'un **cercle** qui en assure l'animation et l'organisation (souvent son créateur))
 * [Directeur Scientifique](https://github.com/PremierLangage/platon-conception/blob/master/acteur/DirecteurScientifique.md) (membre d'un **cercle** dont il porte la responsabilité scientifique)
 
 ### Acteurs dont l'activité reste sur serveur d'assets
