@@ -1,4 +1,4 @@
-# Cas d'utilisation N° 32 :  editer  asset
+# Cas d'utilisation N° 32 :  editer  assets
 Niveau 1
 
 ##	Description
