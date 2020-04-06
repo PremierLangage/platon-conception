@@ -26,7 +26,6 @@ de PLaTon : la version 1.0
 
 ## Ressources du projet, concepts et lexique
 
-### Concepts immatériels
-
 * [AAV pour Acquis d'Apprentissage Visé](https://github.com/PremierLangage/platon-conception/blob/master/concept/aav.md) (objectif pédagogique clair et mesurable)
 * [Notion de complétion d'un travail](https://github.com/PremierLangage/plconception/blob/master/conception/concept/completion.md) (relatif à l'avancement, la réussite voire la validation)
+* [Protocole L.T.I.](https://github.com/PremierLangage/plconception/blob/master/conception/concept/lti.md) (L.T.I. pour Learning Tools Interoperability est le protocole particulièrement bien supporté par les L.M.S. pour maintenir l'authentification et plus entre les outils pédagogiques numériques)
