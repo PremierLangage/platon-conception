@@ -7,32 +7,35 @@ Niveau 0
 
  ce cas est le plus important
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[exercice,activity](https://github.com/PremierLangage/plconception/blob/master/conception/concept/exercice,activity.md)**  
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Déclencheur** : l'étudiant loggé cick sur une activité 
+> **Acteur Primaire**: Etudiant   
+> **Acteurs secondaires**: Pour certaines activités l'enseignant peut intervenir 
+> **Parties Prenantes concernées** : - 
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+1) l'étudiant est un utilisateur identifié de la plateforme, login. 
+2) l'étudiant a commencer le cas d'utilisation Apprendre/travailler 
+3) l'étudiant a choisi l'activité 
+
 
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
-
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1. le système affiche la page d'acceuil de l'activité :
+- la navigation
+- la page d'acceuil (par exemple information dans un pltp).
+2. L'etudiant démarre l'activité. 
+3.	Le système enregistre la date de démmarage. Et propose la première ressource de l'activité (qui peut êttre une activité).
+La ressource est affiché (prend éventuellement toute la page).
+4. 
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
+
+1. Ce n'est pas la première fois que l'étudiant se connect à l'activité il est donc directement, placé sur le sous élément sur lequel il travaillais la dernière fois.
+
+FIXME to be continued
 
 FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
 
