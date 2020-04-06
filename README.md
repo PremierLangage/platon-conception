@@ -7,6 +7,7 @@ de PLaTon : la version 1.0
 ## Les différents acteurs dans PLaTon
 
 * [Visiteur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Visiteur.md) (Le statut par défault de l'acteur n'ayant pas de compte PLaTon)
+* [Candidat](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Candidats.md) (Le candidat est un utilisateur sans compte dans PLaTon mais possédant un secret pour accèder à une activité évaluatrice)
 
 ### Acteurs ayant accès au serveur central de ressources
 
