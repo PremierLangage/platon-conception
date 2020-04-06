@@ -20,7 +20,7 @@ Un utilisateur [membre](https://github.com/PremierLangage/platon-conception/blob
 ## Scenario Nominal
 
 1.	Le système propose la liste des **cercles** (même truc que dans la crétion **cercle** de Adminsitrateur).
-2.	L'utilisateur choisi un **cercle** dont les intérêts sont communs aux siens.
+2.	L'utilisateur choisi un **cercle** dont les intérêts sont communs aux siens. Il clique sur "rejoindre le cercle". Se demande peut être assorti d'un message optionnel (ex : Salut, c'est X.Y. de l'université de Z, on avait discuté ensemble de ci et de ça, pourrais-tu m'accepter ?).
 3.	La demande est envoyée comme une notification aux [physionomistes](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Physionomiste.md) du **cercle** (si l'intégration est soumise à approbation).
 4. Le [physionomiste](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Physionomiste.md) valide l'entrée, l'utilisateur est inscrit dans le **cercle**.
 
