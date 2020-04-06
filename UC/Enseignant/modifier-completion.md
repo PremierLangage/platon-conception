@@ -1,5 +1,5 @@
 
-# Cas d'utilisation N° 45 :  modifier-completion
+# Cas d'utilisation N° 45 :  Evaluer une activité  (modifier-completion)
 
 Niveau 1
 
