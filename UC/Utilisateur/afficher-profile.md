@@ -37,7 +37,9 @@ Un membre de la plateforme veut pouvoir consulter ses informations en affichant 
        * préférences générales (page d'acceuil, etc)
 4.	Il arrive sur une page où toutes ces informations sont détaillées. 
 5. Il est arrivé à mettre à jour ses choix.
+> (Cf. Schema)
 
+![Schema](https://raw.githubusercontent.com/PremierLangage/platon-conception/master/UC/Utilisateur/Images/uc-display-profile.png)
 
 
 ###	Extensions
