@@ -7,15 +7,16 @@ Niveau 1
 
 Idem utilisateur. L'utilisateur étudiant souhaite se connecter sur la plateforme.
  
-> **Déclencheur** : Click sur l'icone de connexion "Sign in / Se connecter" FIXME bof u tape l'url dans le davigateur
-> **Acteur Primaire**: Utilisateur membre de rôle étudiant , idem qu'utilisateur   FIXME un acteur c'est le rôle donc il faut choisir le role c'est lequel 
+> **Déclencheur** : 
+ * Click sur l'icone de connexion "Sign in / Se connecter" 
+ * Via LTI
+ * Par URL
+> **Acteur Primaire**: Etudiant , idem qu'utilisateur.
 
-
- FIXME un membre c'est PAS un etudiant
  
 ## Preconditions
 
-1. Avoir un compte PL FIXME oui élaborre ??? 
+1. Avoir un compte PL créer préalablement via la plateforme ou un compte via LTI
 
 
 ## Scenario Nominal
@@ -24,13 +25,17 @@ Idem utilisateur. L'utilisateur étudiant souhaite se connecter sur la plateform
 2. Il arrive sur la page de connexion
 3.	Il rentre son login / id utilisateur  
 4.	Il rentre son password / mdp  
-5. Il est authentifié FIXME que fait le système ??? 
-6.	Il accède à la page générale de PL  
+5. Il est authentifié
+6.	Il est renvoyé sur la page d'accueil de PL
+
+> **(Cf. voir schéma)**
+
+![Schema](https://raw.githubusercontent.com/PremierLangage/platon-conception/master/UC/Utilisateur/Images/uc-student-login.png)
 
 ###	Extensions
 3. Il a oublié son login, un lien "login oublié" est disponible
 4. Il a oublié son mdp, un lien "mdp oublié" est disponible
-5. Son id utilisateur ou mdp est erroné, il n'est pas authentifié. Il retourne sur la page de connexion
+5. Son id utilisateur ou mdp est erroné, il n'est pas authentifié. Il retourne sur la page de connexion 2.
 
 1. arrive directement par url
 1. arrive par LTI -> arrive dans quelle étape 
@@ -38,13 +43,13 @@ Idem utilisateur. L'utilisateur étudiant souhaite se connecter sur la plateform
 
 ## Post Conditions
 ### Conditions de succès 
-Il est authentifié et accède à la page d'accueil de PL FIXME je voudrais revenir dans l'état ou j'était la dernière fois (ou pouvoir choisir ma page d'acceuil , et que je configure dans le profile -> il faut changer le use case profile.
+Il est authentifié et accède à la page d'accueil de PL
 
 ### Minimal Guarantees
 Il peut retrouver son login/mdp grâce à son adresse mail du compte
 
 ### Conditions final en cas d'échec
-Il ne peut pas se connecter si il a oublié son adresse mail, il doit passer par le LTI, et si il a plus accès au LMS de départ il vois avec les adminsitrateur du LMS.
+Il ne peut pas se connecter si il a oublié son adresse mail, il doit passer par le LTI, et si il a plus accès au LMS de départ il voit avec les adminsitrateur du LMS.
 
 ### Frequence
 souvent (comment cela marche les sessions).
