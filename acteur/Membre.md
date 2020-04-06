@@ -43,7 +43,9 @@ l'idée des **cercles** est de faire se rencontrer les utilisateurs ayant les **
 [addremove-label-ressource.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/addremove-label-ressource.md)   
 [analyser-besoin-hint.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/analyser-besoin-hint.md)   
 [analyser-erreurs-activite.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/analyser-erreurs-activite.md)   
-[choisir-cercle.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/choisir-cercle.md)   
+
+* [choisir-cercle.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/choisir-cercle.md) : demande pour rejoindre un **cercle** existant, certains **cercles** sont ouverts, d'autres ont une intégration soumise à validation.
+
 [choisir-etabli.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/choisir-etabli.md)   
 [connection-chat-membre.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/connection-chat-membre.md)   
 [connection-discord.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/connection-discord.md)   
