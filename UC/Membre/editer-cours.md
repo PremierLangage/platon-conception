@@ -7,6 +7,10 @@ FIXME quelle différence avec **[{Editer-cours-ressources)] https://github.com/
 
 ##	Description
 
+l'idée que nous souhaitons assembler des activité et des ressource atomiques ensemble pour créer une nouvelle ressource composite.
+
+
+
 {{comment}}
 L'Enseignant est dans sa classe, il peut éditer son cours.
 - modifier des éléments de sa classe (ajouter des sections, des feuilles, des barèmes)
