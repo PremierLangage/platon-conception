@@ -3,18 +3,21 @@
 
 # Cas d'utilisation N° 102 :  Edition du cours
 
+FIXME quelle différence avec **[{Editer-cours-ressources)] https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/editer-cours-ressource.md ? 
+
 ##	Description
 
 {{comment}}
 L'Enseignant est dans sa classe, il peut éditer son cours.
-- ajouter une ressource
+- modifier des éléments de sa classe (ajouter des sections, des feuilles, des barèmes)
+- ajouter/modifier des **[{{assets}}](https://github.com/PremierLangage/platon-conception/blob/master/concept/assets.md)
+- modifier/editer une **[{{ressource}}](https://github.com/PremierLangage/platon-conception/blob/master/concept/ressource.md)
 
 
+> **Niveau** : 
+Bas niveau pour modifier les modifications d'assets
+Bascule sur un autre cas d'utilisation (éditer AAV, éditer exercice)
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[{{concept}}](https://github.com/PremierLangage/plconception/blob/master/conception/concept/{{concept}}.md)**  
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
 > **Acteur Primaire**: Utilisateur   
 > **Acteurs secondaires**: TODO   
