@@ -31,6 +31,7 @@ Un membre de la plateforme veut pouvoir consulter ses informations en affichant 
        * Prenom
        * Etablissement
    * La liste des cercles auxquels il appartient.
+   * Historique d'utilisation de la plate-forme, derniers cours consultés, derniers exos faits ou écrits, etc.
    * Les préférences applicatives 
        * préférences daltonniens 
        * préférences editeur 
@@ -64,13 +65,5 @@ pas souvent.
 
 
 ##	Problèmes et étapes suivantes  
-
-
-Dans ce genre là :
-* Profil :
-   * Vos infos perso
-   * Vos stats
-   * Vos qqcdv
-...
 
 
