@@ -58,7 +58,7 @@ Très Souvent
 ### Besoins Spéciaux (optionel)  
 API Rest
 Web Socket
-Inner Link
+[Inner Link](https://github.com/PremierLangage/plconception/blob/master/conception/concept/link.md)
 ### Performance  
 ###	Security  
 ###	Usability / Accessibility  
