@@ -20,48 +20,20 @@ FIXME N'oubliez pas de mensioner le concept **[demo](https://github.com/PremierL
 ## Preconditions
 
 Pour que l'on puisse accèder à des démo il faut qu'elles ai été préalablement créées.
+le cas d'utilisation pour créer une démo : [crud-ressource-demo](crud-ressource-demo.md)
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
-
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
-
-###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
-
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
 
 
-## Post Conditions
-### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+1.	l'utilitateur (ou le visiteur) click sur le lien.
+2. le système crée/alloue une session de démo.
 
-### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
+Le nombre de session maximal de session de démo est 100. 
+Quand on n'a plus de session de démo, on détruit la plus vielle.
+2. le système fait jouer l'activité de la démo.
+Les informations usuelles sont sauvegardé dans la session.
+(on pourra faire des states sur les 100 sessions si cela amuse quelqu'un).
 
-### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
+Ce référer au cas d'utilisation [interagir-exercice](../Etudiant/interagir-exercice.md) pour la description de l'interaction.
 
-
-FIXME _les variables suivantes sont optionnelles._
-
-### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
-### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
-### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
-
-##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
-
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
-
-TBR
