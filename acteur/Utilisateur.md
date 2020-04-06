@@ -10,3 +10,7 @@ Lors de sa première connexion depuis un LMS vers un **serveur d'assets**, cet u
 * Chaque utilisateur à un profil.
 
 * L'objectif de l'utilisateur est d'utiliser les ressources de PLaTon.
+
+## Cas d'utilisation de l'utilisateur loggué sur PLaTon
+
+* [connexion via LTI](https://github.com/PremierLangage/platon-conception/blob/master/UC/Utilisateur/connection-lti.md) (Action de l'utilisateur abstrait qui clique sur un liens depuis son LMS vers PLaTon, il se spécialisera alors en étudiant ou en enseignant.)
