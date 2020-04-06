@@ -1,5 +1,5 @@
 
-# Cas d'utilisation N° 6 : afficher-completion
+# Cas d'utilisation N° 6 : visualiser le travail du groupe et de l'élève (afficher-completion)
 
 Niveau 1
 
