@@ -1,7 +1,7 @@
 
 
 
-# Cas d'utilisation N° 102 :  Edition du cours
+# Cas d'utilisation N° 102 :  Edition du cours ressource
 
 FIXME quelle différence avec **[{Editer-cours-ressources)] https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/editer-cours-ressource.md ? 
 
