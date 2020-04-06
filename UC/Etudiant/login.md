@@ -52,7 +52,7 @@ Il peut retrouver son login/mdp grâce à son adresse mail du compte
 Il ne peut pas se connecter si il a oublié son adresse mail, il doit passer par le LTI, et si il a plus accès au LMS de départ il voit avec les adminsitrateur du LMS.
 
 ### Frequence
-souvent (comment cela marche les sessions).
+normale
 
 ##	Problèmes et étapes suivantes  
 
