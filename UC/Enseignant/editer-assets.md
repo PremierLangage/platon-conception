@@ -1,5 +1,4 @@
-# Cas d'utilisation N° 32 :  editer-cours-ressource
-
+# Cas d'utilisation N° 32 :  editer  asset
 Niveau 1
 
 ##	Description
