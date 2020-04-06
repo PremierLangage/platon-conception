@@ -57,14 +57,14 @@ L'inner link suivi mène sur une page error html 404
 ### Frequence
 souvent  
 ### Besoins Spéciaux (optionel)  
-Web socket, inner links, front JS
+Web socket, [Inner Link](https://github.com/PremierLangage/plconception/blob/master/conception/concept/link.md), front JS, API REST
 ### Performance  
 ###	Security  
 ###	Usability / Accessibility  
 ###	Other  
 
 ##	Problèmes et étapes suivantes  
-* Liens internes
+* [Liens internes](https://github.com/PremierLangage/plconception/blob/master/conception/concept/link.md)
 * Websocket
 * API Rest 
 
