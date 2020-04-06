@@ -14,3 +14,5 @@ Lors de sa première connexion depuis un LMS vers un **serveur d'assets**, cet u
 ## Cas d'utilisation de l'utilisateur loggué sur PLaTon
 
 * [connexion via LTI](https://github.com/PremierLangage/platon-conception/blob/master/UC/Utilisateur/connection-lti.md) (Action de l'utilisateur abstrait qui clique sur un liens depuis son LMS vers PLaTon, il se spécialisera alors en étudiant ou en enseignant.)
+
+* [première connexion](https://github.com/PremierLangage/platon-conception/blob/master/UC/Utilisateur/premiere-connexion.md) (Action de l'utilisateur abstrait qui clique pour la première fois sur un liens depuis son LMS vers PLaTon. Cette action transforme un visiteur en utilisateur en créant son compte avec les renseignement LTI issus du LMS.)
