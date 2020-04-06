@@ -26,7 +26,6 @@ Les étudiants sont des utilisateurs ayant accédé à un **serveur d'assets** P
 ## Les use-cases identifiés des étudiants
 
 [activite-recommandation.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/activite-recommandation.md)   
-[afficher-completion-group.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/afficher-completion-group.md)   
 
 * [afficher-completion.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/afficher-completion.md) (l'étudiant souhaite visualiser son avancement sur les activités de ses cours)  
 
