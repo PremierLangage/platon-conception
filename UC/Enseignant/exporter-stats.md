@@ -36,28 +36,6 @@ Une fois le popup validé le fichier est téléchargé par le navigateur.
 ### Conditions de succès 
 Reception sur le poste du fichier de notes.
 
-### Minimal Guarantees
-
-
-### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
-
-
-FIXME _les variables suivantes sont optionnelles._
-
-### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
-### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
-### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
-
-##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
-
-FIXME définir vue gestion de classe  
 
 
 TBR
