@@ -7,7 +7,15 @@ Niveau 1
 
 L'[enseignant](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Enseignant.md) souhaite visualiser la progression d'un [étudiant](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Etudiant.md) ou de plusieurs étudiants sur une activité déployée (un asset), et sur chacune des sous-activités. Cette visualisation s'opère systématiquement dans un **serveur d'assets**.
 
+Des [indicateurs](https://github.com/PremierLangage/plconception/blob/master/conception/concept/indicateur.md) sont là pour afficher cette progression.Ce sont des est éléments graphiques qui afficheent  des données d'un cours.
+Par exemple:
+ - Nombre de notions vu/validé en fonction de la date.
+ - Une liste clickable d'élèves en difficulté dans un cours.
+ - Taux de reussite des exercices en fonction du temps sur le cours
+ 
+
 Il doit obtenir une vue d'ensemble de tous les étudiants inscrits dans l'asset dans un premier temps et une vue pour chaque étudiant s'il le demande. cf. **[completion](https://github.com/PremierLangage/plconception/blob/master/conception/concept/completion.md)**  
+
 
 > **Déclencheur** : L'utilisateur enseignant accède à un tableau de bord d'activité pour laquelle il a le status d'enseignant. \
 > **Acteur Primaire**: Enseignant \
