@@ -9,7 +9,6 @@ Quant un Membre décide de créer une nouvelle ressouce il doit choisir l'établ
 Ce peut être l'établi par défaut pour les nouveaux. Ou l'établid'un des cercle auquels il appartient. 
 Ce cas d'utilisation décrit comment le membre choisi sont établi FIXME il faut proposer une démarche.
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
 > **Acteur Primaire**: Utilisateur   
 > **Acteurs secondaires**: TODO   
