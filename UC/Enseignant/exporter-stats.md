@@ -1,5 +1,5 @@
 
-# Cas d'utilisation N° 95 :  exporter-stats
+# Cas d'utilisation N° 95 :  exporter-stats ou Notes
 
 Niveau 4
 
