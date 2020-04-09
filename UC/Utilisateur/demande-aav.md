@@ -14,7 +14,7 @@
 
 **[demande](https://github.com/PremierLangage/plconception/blob/master/conception/concept/demande.md)**  
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
+
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
 > **Acteur Primaire**: Utilisateur   
 > **Acteurs secondaires**: TODO   
