@@ -7,4 +7,5 @@ Niveau 2
 
  A concevoir avec  [modifier-completion.md](modifier-completion.md)
 
-Devrai être décrit dans un 
+Devrai être décrit dans une activité de type plug apps.
+
