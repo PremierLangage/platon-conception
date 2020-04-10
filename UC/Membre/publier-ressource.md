@@ -5,64 +5,61 @@ Niveau 1
 
 ##	Description
 
-difficulté affectez ce Use case à nimdanor 
+Objectif rendre plus visible une ressource. 
+Les ressources d'un utilisateur ne sont visible que dans son établi.
+Mais elles peuvent être trouvées par une recherche.
+Publier une ressource ce fait de deux façons soit dans un cours par ajout a un cours ou reload dans un cours.
+Soit dans le cercle sous la supervision du directeur scientifique qui vas attribuer le label à la ressource.
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[publication](https://github.com/PremierLangage/plconception/blob/master/conception/concept/publication.md)**  
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+ 
+> **Déclencheur** :   Ajout, reload, copie de la ressource dans le répertoire publique du membre. 
+> **Acteur Primaire**: Membre   
+> **Acteurs secondaires**: DirSci
+> **Parties Prenantes concernées** : autres membres   
  
  
 ## Preconditions
-
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
-
+Être membre et dans un établi. 
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
+1. Quand une ressource est chargée pour la première fois dans sur un serveur d'asset et qu'elle est private (dans le repertoire personnel privé du membre). 
+2.	Le système vérifie que le membre est propriétaire de la ressource. Sinon un message d'erreur signale le problème et propose plusieurs solutions:
+- une notification au propriétaire pour qu'il publie sa ressource. Fin du cas d'utilisation annulation de la mise a jour ou de l'ajout de la ressource.
+- une notification au propriétaire et une copie dans la partie privé du membre. 
+3.	La ressource est déplacée (avec la même structure de répertoire) dans la partie publique de l'établi du membre. 
+4.	La ressource est visible dans les ressources du cercle. 
+5. l'opération de modification de l'asset se termine.
 
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
 
-###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
 
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
+###	Scénario alternatif
+
+1. Le membre déplace du repertoire privé au repertoire public de l'atelier une ressource (c'est à dire tout les fichiers privé nécessaires au bon fonctionnement de la ressource, bien entendu pas ceux qui sont déjà publiques). 
+1.1 Une autre interface est possible avec un bouton ou autre qui permet de rendre le fichier publique. @mc de voire.
+2. Le système vérifie que l'on écrase pas un fichier dans la partie publique et fait un popup de warning. 
+2.1 si l'utilisateur dit écraser!  il fautt qu'il soit propriétaire du fichier écrasé.
+3. Le dirsci est notifié. La liste des ressources du cercle est mise à jour.
+4. La ressource est publié.
+
 
 
 ## Post Conditions
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+La ressource est publique (les anciens liens sur la version privé sont toujours vallables, cela implique que le chemin prié/publique n'est pas important (recherche suscécivement dans publique puis privé)).
+
 
 ### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
+Dans le cas d'un écrasement (ce qui ne devrai pas avoir lieu car aprori l'utilisateur peut éditer la version publique quand il).
+L'opération de publication est complète ou ne l'est pas du tout, si une seule sous ressource pose problème echec de la procédure en entier.
 
 ### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
+En cas d'échec pas de changement de la visibilité de la ressource.
 
-
-FIXME _les variables suivantes sont optionnelles._
 
 ### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
+Souvent.
+
 ### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
-### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
+Problème de syncronisation quand on publie en même temps des ressource de même nom dans le même cercle.
 
-##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
-
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
-
-TBR
