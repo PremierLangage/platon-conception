@@ -19,3 +19,11 @@ L'administrateur est un **Acteur Humain** ayant un accès au panneau d'administr
 
 * **Est-il le seul à pouvoir créer des cerles ?** \
   Non, si vous êtes trois vous pouvez quand même créer un cercle -> voire création de cercle de membres.
+
+
+## Cas d'utilsation identifiés pour les administrateurs
+
+ [creation-cercle.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Administrateur/creation-cercle.md)   
+	[crud-badge-createur.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Administrateur/crud-badge-createur.md)   
+	[crud-tag.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Administrateur/crud-tag.md)   
+	[edition-classificationdisciplinaire.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Administrateur/edition-classificationdisciplinaire.md)   

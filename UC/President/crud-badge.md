@@ -1,16 +1,18 @@
 
-# Cas d'utilisation N° 90 :  analyser-reponces
 
-Niveau 4
+# Cas d'utilisation N° 103 : crud-badge
+
+Ce cas d'utilisation n'est pas pour la version 1.0.
+
+Dans l'interface du président il y  un moyen d'aller sur une view qui pêrmet de créer un badge.
+
 
 ##	Description
 
+FIXME 
 
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[personalisation-des-parcours](https://github.com/PremierLangage/plconception/blob/master/conception/concept/personalisation-des-parcours.md)**  
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
 > **Acteur Primaire**: Utilisateur   
 > **Acteurs secondaires**: TODO   

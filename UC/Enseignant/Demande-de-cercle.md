@@ -6,63 +6,54 @@ Niveau 1
 ##	Description
 
 Permet de faire une demande de création de cercle (fait par un administrateur).
-Deux posibilités au cours de la création d'un cours/classe, soit l'enseignant connait le cercle auquel il veut liens sont cours.
-Soit il ne le connait pas et donc demande la création d'un **[cercle](https://github.com/PremierLangage/plconception/blob/master/conception/concept/cercle.md)**  correspondant aux particularités de son cours (niveau, discipline ,etc).
+Deux posibilités au cours de la création d'un cours/classe, soit l'enseignant connait le cercle auquel il veut appartenir et créer le lien avec son cours en faisant une demande d'entrée dans le cercle au près du physionomiste.
+
+Soit il ne le connait pas et donc demande la création d'un **[cercle](https://github.com/PremierLangage/plconception/blob/master/conception/concept/cercle.md)**  correspondant aux particularités de son cours (niveau, discipline ,etc). C'est l'administrateur qui créer le cercle correspondant (ou inscrit le profe et son cours dans un cercle existant).
 
 
 
-> **Déclencheur** : La création d'un cours
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+
+> **Déclencheur** : La création d'un cours implique de lier le cours à un cercle. 
+> **Acteur Primaire**: Enseignant   
+> **Acteurs secondaires**: Soit l'administateur soit le physionomiste   
+> **Parties Prenantes concernées** : 
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
-
+Nous somme dans le cas d'utilisation 
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
+1.	Le système demande a l'enseignant dans quel cercle il inscrit le nouveau cours.  
+2. le système propose la liste de cercle dont l'enseignant fait parti, un bouton création, une liste de tout les cercles. 
+3.	L'enseignant choisi un cercle parmis les cercle dont il fait parti.
+4.	Le cours est ajouté au cours du cercle. Le cercle est associé au cours.
 
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
+3. l'enseignant choisi de créer un cours.   
+3.1 le système propose un formulair de demande de création de cercle seul:
+  > Nom du cercle   
+  > Description du cercle   
+  > Discipline principale   
+  > President: loginname or email (par défaut l'utilisateur qui fait la demande)
+  > Physio :loginname or email 
+  > DirecteurScientifique : loginname or email
 
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
+3.2 l'enseignant rempli le formulaire   
+3.3 le système valide l'ensemble des champs.   
+3.4 Un cercle temporaire est créer sans membres.  
+3.5 l'adminsitrateur est notifié qu'il doit valider la création d'un cercle. 
+[Cf uc creation cercle](../Administrateur/creation-cercle.md)
+4. le cercle temporaire est associé au cours.  
 
 
 ## Post Conditions
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+Un cercle est associé au cours.
 
 ### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
-
-### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
-
-
-FIXME _les variables suivantes sont optionnelles._
 
 ### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
-### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
-### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
-
-##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
-
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
-
-TBR
+A chaque fois que l'on créer un cours.

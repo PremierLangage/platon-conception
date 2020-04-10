@@ -18,13 +18,14 @@ Lorsqu'une **[notification](https://github.com/PremierLangage/plconception/blob/
  
 ## Preconditions
 
-une notification est envoyée
+1. Nécessite d'être connecté
+2. Une notification est envoyée
 
 
 ## Scenario Nominal
 
 
-1.	une notification est envoyée 
+1.	une notification est envoyée jhome/index.php/download
 2.	un petit pop-up s'affiche pendant quelques secondes avec un bip 
 3.	au niveau d'une barre de navigation, un chiffre en rouge indique les notifications 
 4.	lorsqu'on clique sur le chiffre notifications une fenêtre s'ouvre sur la page des notifications (classées par thèmes ou par dates)
@@ -57,7 +58,7 @@ Très Souvent
 ### Besoins Spéciaux (optionel)  
 API Rest
 Web Socket
-Inner Link
+[Inner Link](https://github.com/PremierLangage/plconception/blob/master/conception/concept/link.md)
 ### Performance  
 ###	Security  
 ###	Usability / Accessibility  
@@ -66,7 +67,6 @@ Inner Link
 ##	Problèmes et étapes suivantes  
 L'utilisateur clique sur le lien de la notification, ou il clique le bouton "comme lu".
 
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
+étape suivante : [centre-notification](https://github.com/PremierLangage/platon-conception/issues/108)
 
 TBR

@@ -1,26 +1,33 @@
 
-# Cas d'utilisation N° 22 :  crud-asset
+# Cas d'utilisation N° 103 : preparetest
 
-Niveau 1
+
+Preparer un test pour des candidats à une formation 
+
+Niveau 2
 
 ##	Description
 
- L'édition des assets est indirecte il faut editer la ressource correspondante, et faire un rechargement ce que doit expliquer le cas d'utilisation. Le search & compose des assets.
+l'objectif du membre est de transformer une activité evaluative en test d'entrée dans une formation.
+D'envoyer un lien sur la plateforme aux candidats, avec des mécanismes de vérification:
+- lien a usage unique, question d'entrée dans le test (date de naissance, numéro de téléphone), double identification (vérification avec sms).
+- Validation d'un document fait sur l'honneur que le candidat répondra lui même et seul au test, et qu'il repassera un test du même niveau en arrivant dans la formation pour valider que c'est bien lui qui à passé le test.
+Envoyer les tests au candidats.
+Envoyer le test a un candidat.
+Récuperer les resultats.
+Exporter les resultats.
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[assets](https://github.com/PremierLangage/plconception/blob/master/conception/concept/assets.md)**  
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
+
+> **Déclencheur** : Création d'une classe de type Candidature 
+> **Acteur Primaire**: Membre 
+> **Acteurs secondaires**:    
 > **Parties Prenantes concernées** : TODO   
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
-
+IL faut que le membre loggé et qu'il 
 
 ## Scenario Nominal
 

@@ -7,6 +7,14 @@ Niveau 1
 
  Ici le cas d'utilisatioin explicite les informations que l'on peut modifier et comment 
 
+1) Label du cercle 
+2) status de publication 
+
+Automatiques 
+
+
+
+
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
 FIXME N'oubliez pas de mensioner le concept **[metadonnees](https://github.com/PremierLangage/plconception/blob/master/conception/concept/metadonnees.md)**  
 

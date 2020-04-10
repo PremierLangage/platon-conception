@@ -1,14 +1,14 @@
 
-# Cas d'utilisation N° 33 :  edition-composite
+# Cas d'utilisation N° 40 :  Integrer-moncours
 
 Niveau 1
 
 ##	Description
 
-
+L'idée est de décrire comment récupperer tout les supports de cours d'un prof et de montrer comment passer chaque élément textes/video/podcates,  pdf , exercices problems devoirs -, tp , et comment faire des évaluation 
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[editeur](https://github.com/PremierLangage/plconception/blob/master/conception/concept/editeur.md)**  
+FIXME N'oubliez pas de mensioner le concept **[classe](https://github.com/PremierLangage/plconception/blob/master/conception/concept/classe.md)**  
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  

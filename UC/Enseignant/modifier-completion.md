@@ -1,5 +1,5 @@
 
-# Cas d'utilisation N° 45 :  modifier-completion
+# Cas d'utilisation N° 45 :  Evaluer une activité  (modifier-completion)
 
 Niveau 1
 
@@ -20,7 +20,7 @@ L'enseignant est dans le cas d'utilisation  Evaluer.
 
 ## Scenario Nominal
 
-1. le système affiche le selecteur de groupe (pour réduire la liste des élèves). L'enseignant modifi ou pas le selecteur de groupe.
+1. le système affiche le selecteur de groupe (pour réduire la liste des élèves). L'enseignant modifie ou pas le selecteur de groupe.
 2.	le système affiche la liste des etudiants du groupe avec un menu déroulant positionné par défaut à "pas évalué". Avec comme évaluations possibles: (pas évalué=-1, success=100, échec=0, partiel=50). 
 3.	L'enseignant sélectionne pour chaque ligne l'évaluation. Après chaque modification d'une évaluation, le système met à jour l'information dans la base.
 4. A la sortie de la page les modification sont accessibles. 

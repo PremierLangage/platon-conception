@@ -25,24 +25,15 @@ Les étudiants sont des utilisateurs ayant accédé à un **serveur d'assets** P
 
 ## Les use-cases identifiés des étudiants
 
-[activite-recommandation.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/activite-recommandation.md)
+[activite-recommandation.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/activite-recommandation.md)   
 
-[afficher-completion-group.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/afficher-completion-group.md)
+* [afficher-completion.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/afficher-completion.md) (l'étudiant souhaite visualiser son avancement sur les activités de ses cours)  
 
-[afficher-completion.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/afficher-completion.md)
-
-[auto-inscription-classe.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/auto-inscription-classe.md)
-
-[donner-avis-asset.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/donner-avis-asset.md)
-
-[exporter-cours-portfolio.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/exporter-cours-portfolio.md)
-
-[interagir-exercice.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/interagir-exercice.md)
-
-[lire-tabledebord-individuel.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/lire-tabledebord-individuel.md)
-
-[login.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/login.md)
-
-[réaliser-activité.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/r%C3%A9aliser-activit%C3%A9.md)
-
-[travailler.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/travailler.md)
+[auto-inscription-classe.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/auto-inscription-classe.md)   
+[donner-avis-asset.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/donner-avis-asset.md)   
+[exporter-cours-portfolio.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/exporter-cours-portfolio.md)   
+[interagir-exercice.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/interagir-exercice.md)   
+[lire-tabledebord-individuel.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/lire-tabledebord-individuel.md)   
+[login.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/login.md)   
+[réaliser-activité.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/r%C3%A9aliser-activit%C3%A9.md)   
+[travailler.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Etudiant/travailler.md)   

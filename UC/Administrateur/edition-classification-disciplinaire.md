@@ -1,14 +1,14 @@
 
-# Cas d'utilisation N° 23 :  crud-classe
+# Cas d'utilisation N° 70 :  edition-classificationdisciplinaire
 
-Niveau 1
+Niveau 2
 
 ##	Description
 
- Une classe permet d'organiser un cours (cours-moodle= classe-platon, contient des élèves et des assets).
+ L'organisation des cercles ce fait principalement a partir de cette classification. il faut pouvoir réorganiser les cercle si il y a un changement ce qui explique ce cas d'utilisation.
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[classe](https://github.com/PremierLangage/plconception/blob/master/conception/concept/classe.md)**  
+FIXME N'oubliez pas de mensioner le concept **[classificationdisciplinaire](https://github.com/PremierLangage/plconception/blob/master/conception/concept/classificationdisciplinaire.md)**  
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  

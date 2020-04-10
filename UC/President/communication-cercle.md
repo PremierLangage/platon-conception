@@ -3,66 +3,49 @@
 
 Niveau 1
 
-##	Description
+## Description
 
- Nous pensons exporter cette problèmatique sur un outil externe loomio/discord mais le cas d'utilisation doit faire le tour de la question sur ce qui est possible ou non. En lien avec [envoyer-notification.md](envoyer-notification.md)
+L'idée est de fournir un / plusieurs moyens de communication pour permettre au membres d'un même **[cercle](https://github.com/PremierLangage/plconception/blob/master/conception/concept/cercle.md)**   de communiquer.
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[cercle](https://github.com/PremierLangage/plconception/blob/master/conception/concept/cercle.md)**  
+Il peut être utile d'avoir deux moyens de communication à différentes vitesse. L'un s'apparenterais plus à un chat et permettrais un échange rapide (discord / slack / riot). L'autre permettrais un échange plus formet et réfléchis (forum / QA), utilisant un système de notification ([envoyer-notification.md](envoyer-notification.md)) pour signaler toutes nouvelles réponses.
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+Il est problement intéressant d'exporter ces fonctionnalités sur des services existants.
+
+En plus de ces moyen de communication, une page d'annonce est mise à disposition du Président du cercle (en Markdown), celle-ci pourra contenir des liens vers les différents mediums choisis.
+
+Le scénario ci-dessous ne concerne que l'édition de la page de présentation par le président.
+
+> **Niveau** : Haut niveau
+> **Déclencheur** : Clique de la part du président sur le bouton d'édition de la page de présentation. 
+> **Acteur Primaire**: Président
  
  
 ## Preconditions
+Être enseignant et appartenir à un cercle.
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
 
+## Scenario Nominal.
+1.	Depuis la vue de président du cercle, celui-ci clique sur le bouton d'édition de la page de présentation du cercle.
+2. Le président effectue les modifications de la page de présentation.
+3. Le président valide ses modifications à l'aide du bouton "Sauvegarder"
+4. Les modifications sont sauvegardé et le président redirigé sur la vue de président du cercle.
 
-## Scenario Nominal
-
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
-
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
-
-###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
-
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
+### Extensions
+2. Le président effectue les modifications de la page de présentation.
+3. Le président annule ses modifications à l'aide du bouton "Annuler"
+4. Le président redirigé sur la vue de président du cercle.
 
 
 ## Post Conditions
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+La page de présentation à été correctement modifié.
 
 ### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
+Les modifications de l'enseignant ne sont perdu que si celui-ci annule personnellement sont édition.
 
 ### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
+La page de présentation à n'a pas été modifiée.
 
-
-FIXME _les variables suivantes sont optionnelles._
 
 ### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
-### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
-### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
-
-##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
-
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
-
-TBR
+Peu souvent.

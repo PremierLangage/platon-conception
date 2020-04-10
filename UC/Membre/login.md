@@ -7,3 +7,5 @@ Niveau 1
 
 Idem [login utilisateur](../Uilisateur/login.md)
 
+Plus l'environnemt spécifique aux membre est affiche :
+FIXME a définir. pouvoir choisir le cercle dans lequel on travail, voir les notification des cercles, etc 

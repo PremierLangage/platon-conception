@@ -5,6 +5,13 @@ Niveau 4
 
 ##	Description
 
+Objectif il proposer un indicateur au autres utilisateurs de la plateforme (en partfulier les ensiegnants).
+Il programme le bazard: 
+- choisir les données de base fournie par la table answers. 
+- choisir quel opérations a faire sur les données de base. 
+- choisir la façon d'afficher l'information optenue aux utilisateurs (table, graphique : lequel ...)
+
+
 
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   

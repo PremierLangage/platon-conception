@@ -10,7 +10,7 @@ Deux grand types :
 - textuelle éditable directement sur le site il bien sur aussi possible de téléverser un document pour le remplacer.
 
 
-Les ressources peuvent être transformées en [assets](assets.md)  par une publication. 
+Les ressources peuvent être transformées en [assets](assets.md)  par une publication dans une classe. 
 
 Les assets sont directement utilisable par les apprenants si il sont dans le contexte d'un cours.
 Rem: il est possible de produire des assets de démonstration qui sont accessibleis sur le site principal [demo](demo.md)

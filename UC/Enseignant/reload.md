@@ -1,14 +1,14 @@
 
-# Cas d'utilisation N° 32 :  editer-cours-ressource
+# Cas d'utilisation N° 22 :  crud-asset
 
 Niveau 1
 
 ##	Description
 
- Dans le cas ou l'enseignant veut modifier un asset élèmentaire et donc ddoit repasser par l'éditeur et un reload. Ceci est un cas d'utilisation complexe.
+L'édition des assets est indirecte il faut editer la ressource correspondante, et faire un rechargement ce que doit expliquer le cas d'utilisation. Le search & compose des assets.
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[cours](https://github.com/PremierLangage/plconception/blob/master/conception/concept/cours.md)**  
+FIXME N'oubliez pas de mensioner le concept **[assets](https://github.com/PremierLangage/plconception/blob/master/conception/concept/assets.md)**  
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  

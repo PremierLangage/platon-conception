@@ -4,42 +4,50 @@
 Niveau 3
 
 ##	Description
+Chaque étudiant (utilisateur du même niveau) lorsqu'il àccède à l'écran d'accueil de la plateforme se voit présenter un tableau de bord avec affichage individuel différent et paramétrable suivant ses préférences :
 
+ - Visualisation de ces cours 
+ - Visualisation de ces statistiques genérales
+ - Visualisation de son Port-Folio (AAV ou Objectif Pédagogique)
+ - Recherche d'exercices ouverts à tous (si existant)
+ - ...
 
+**[tableaudebord](https://github.com/PremierLangage/plconception/blob/master/conception/concept/tableaudebord.md)**  
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[tableaudebord](https://github.com/PremierLangage/plconception/blob/master/conception/concept/tableaudebord.md)**  
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
- 
+> **Niveau** : FIXME
+> **Déclencheur** : Un étudiant se connecte sur la plateforme via l'écran login et MDP / A partir de Platon, il revient sur sa page d'accueil 
+> **Acteur Primaire**: Utilisateur (tous)   
+> **Acteurs secondaires**: Non (FIXME)   
+> **Parties Prenantes concernées** : FIXME
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+Listez les conditions nécessaires pour que ce cas d'utilisation puisse avoir lieu
 
+-1 Avoir un compte sur platon 
+-2.1 Se connecter sur Platon en passant par la fenêtre Login et MDP 
+-2.2 Être déjà dans Platon et revenir à la page d'accueil
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
+Tout ce passe bien c'est le scénario parfait.
 
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	L'étudiant se connecte à la plateforme (identifiant et mot de passe) / L'étudiant clique sur sa page d'accueil à partir de Platon
+2.	L'étudiant a une vue d'ensemble sur son tableau de bord, ses cours, ses statistiques, ses dernières activités ...
+3.	Il peut accéder à tout les activités représentées en cliquant directement dessus   
+
+Lorsqu'un élève accède à son écran d'accueil il aura immédiatement accès à un tableau de bord qu'il aura lui même paramétré dans les préférences de son profil.
+Ce tableau de bord comportera avec les cours auxquels il est inscrit, ses dernières activités en particulier les exercicies réussis, échoués et de quels cours il dépendaient.
+ATTENTION : il s'agit de l'écran d'accueil après une connexion ou un retour à l'écran d'accueil, il ne s'agit pas de l'accès direct au cours suite à un lien sur un LMS (si ce lien existe)!!
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
-
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
-
+Si problème de connection avec le serveur un message d'erreur doit apparaître
 
 ## Post Conditions
+FIXME
+
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+L'élève accède à son tableau de bord
 
 ### Minimal Guarantees
 FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
@@ -47,17 +55,25 @@ FIXME _[Describe the guarantee or assurance that this Use Case provides to all A
 ### Conditions final en cas d'échec
 FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
 
-
 FIXME _les variables suivantes sont optionnelles._
 
 ### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
+
+Le tableau de bord est confondu avec l'écran d'accueil de l'application, ce qui veut dire que les utilisateurs de type "étudiant" et autre vont revenir très régulièrement à cet écran pour accèder à d'autres "ressources". 
+Le tableau de bord étant le "croisement" de l'ensemble des activités des utilisateurs, sa fréquence d'utilisation sera forte!
+
 ### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
+Le tableau de bord est paramétrable. Les préférences des utilisateurs doivent être stockées.
+
 ### Performance  
+
 ###	Security  
-###	Usability / Accessibility  
+un login = un tableau de bord et des préférences utilisateur
+
+###	Usability / Accessibility
+FIXME
 ###	Other  
+FIXME
 
 ##	Problèmes et étapes suivantes  
 FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  

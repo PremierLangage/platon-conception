@@ -1,16 +1,20 @@
 
 # Cas d'utilisation N° 29 :  demande-aav
 
-Niveau 1
+
 
 ##	Description
 
  Il faut pouvoir editer la demande en suite donc un "crud" avec des particularités.
+ Deux stratégie soit une demande informelle mode Q&A pas très claire.
+ Ou un AAV conforme au spécification des aav.
+ 
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[demande](https://github.com/PremierLangage/plconception/blob/master/conception/concept/demande.md)**  
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
+
+**[demande](https://github.com/PremierLangage/plconception/blob/master/conception/concept/demande.md)**  
+
+
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
 > **Acteur Primaire**: Utilisateur   
 > **Acteurs secondaires**: TODO   

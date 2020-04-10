@@ -8,9 +8,8 @@ FIXME il faut installer cette application dans un django pour voir ce que cela d
 ##	Description
 
 L'utilisateur membre souhaite ouvrir le centre de notification afin de les consulter.
-Le centre de **[notification](https://github.com/PremierLangage/plconception/blob/master/conception/concept/notification.md)** s'affiche comme un sous-menu de l'icone notification
-
-  
+Le centre de **[notification](https://github.com/PremierLangage/plconception/blob/master/conception/concept/notification.md)** s'affiche comme un sous-menu de l'icone notification. 
+**[Concept-centre-de-notification](https://github.com/PremierLangage/plconception/blob/master/conception/concept/centredenotification.md)**
 > **Déclencheur** : Click sur l'icone de notification (cloche)  
 > **Acteur Primaire**: Membre  
 > **Parties Prenantes concernées** : All
@@ -57,14 +56,14 @@ L'inner link suivi mène sur une page error html 404
 ### Frequence
 souvent  
 ### Besoins Spéciaux (optionel)  
-Web socket, inner links, front JS
+Web socket, [Inner Link](https://github.com/PremierLangage/plconception/blob/master/conception/concept/link.md), front JS, API REST
 ### Performance  
 ###	Security  
 ###	Usability / Accessibility  
 ###	Other  
 
 ##	Problèmes et étapes suivantes  
-* Liens internes
+* [Liens internes](https://github.com/PremierLangage/plconception/blob/master/conception/concept/link.md)
 * Websocket
 * API Rest 
 

@@ -1,17 +1,18 @@
 
 # Cas d'utilisation N° 18 :  construire-etabli-double
 
-Niveau 1
+Niveau 4
 
 ##	Description
 
- Prendre deux etabli et en faire un seul (on hérite des fichiers des deux)
-
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[etabli](https://github.com/PremierLangage/plconception/blob/master/conception/concept/etabli.md)**  
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
+ Prendre deux etablis et en faire un seul (on hérite des fichiers des deux),
+ Peut être utilisé pour réduire le nombre d'établi que connait un membre.
+ Peut etre utilisé par le directeurscientifique pour modifier l'atelier (qui est une forme d'établi).
+ 
+ **[etabli](https://github.com/PremierLangage/plconception/blob/master/conception/concept/etabli.md)**   
+  **[atelier](https://github.com/PremierLangage/plconception/blob/master/conception/concept/atelier.md)**  
+ 
+> **Déclencheur** : TODO  
 > **Acteur Primaire**: Utilisateur   
 > **Acteurs secondaires**: TODO   
 > **Parties Prenantes concernées** : TODO   

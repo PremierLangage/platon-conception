@@ -1,14 +1,14 @@
 
-# Cas d'utilisation N° 86 :  optenir-bagde
+# Cas d'utilisation N° 90 :  analyser-reponces
 
-Niveau 3
+Niveau 4
 
 ##	Description
 
- Le badge doit être construit sur des actions quand l'action à lieux l'utisateur recoit une notification de badge
+
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[badge](https://github.com/PremierLangage/plconception/blob/master/conception/concept/badge.md)**  
+FIXME N'oubliez pas de mensioner le concept **[personalisation-des-parcours](https://github.com/PremierLangage/plconception/blob/master/conception/concept/personalisation-des-parcours.md)**  
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
