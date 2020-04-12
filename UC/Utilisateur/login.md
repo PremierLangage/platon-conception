@@ -5,7 +5,7 @@ Niveau 1
 
 ##	Description
 
- explication de l'accès général à la plateforme avec l'interface générale IHM et les notification profile etc qui peuvent être déclanché 
+ Explications de l'accès général à la plateforme avec l'interface générale IHM et les notification profile etc qui peuvent être déclanché 
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
 FIXME N'oubliez pas de mensioner le concept **[centredenotification](https://github.com/PremierLangage/plconception/blob/master/conception/concept/centredenotification.md)**  
