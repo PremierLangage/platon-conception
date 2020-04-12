@@ -8,14 +8,15 @@ Niveau 1
  Travailler pour un étudiant doit couvrir l'ensemble de l'interface utilisateur de l'étudiant.
  
  Objectifs de l'étudiants:
- - apprendre = acquerir des AAV
+ - apprendre = acquerir des AAV, réaliser des activité avec succès
  - atteindre des objectifs pour obtenir des validations (diplomes)
  - participer à un enseignement (Forum, notification, dates limites, dates d'ouverture)
  - communiquer avec les enseignants et les autres élèves: notifications
  - travailler en groupes (plugapps, 2.0), communication orale visio, documents partagés,  
  - construire son portfolio (2.0) 
  - Fournir des travaux au système
- - participer dans un amphi
+ - améliorer sa métacognistion et learn how to learn.
+ 
  
  **[actions,activity,data-activity,classe,aav,assets](https://github.com/PremierLangage/plconception/blob/master/conception/concept/actions,activity,data-activity,classe,aav,assets.md)**  
 
