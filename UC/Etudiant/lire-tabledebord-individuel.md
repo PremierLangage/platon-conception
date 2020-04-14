@@ -14,11 +14,10 @@ Chaque étudiant (utilisateur du même niveau) lorsqu'il àccède à l'écran d'
 
 **[tableaudebord](https://github.com/PremierLangage/plconception/blob/master/conception/concept/tableaudebord.md)**  
 
-> **Niveau** : FIXME
 > **Déclencheur** : Un étudiant se connecte sur la plateforme via l'écran login et MDP / A partir de Platon, il revient sur sa page d'accueil 
-> **Acteur Primaire**: Utilisateur (tous)   
-> **Acteurs secondaires**: Non (FIXME)   
-> **Parties Prenantes concernées** : FIXME
+> **Acteur Primaire**: Etudiant
+> **Acteurs secondaires**: Pour certainnes parties l'enseignant
+> **Parties Prenantes concernées** : 
  
 ## Preconditions
 
