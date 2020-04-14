@@ -42,6 +42,7 @@ Toutes les actions faites par les utilisateurs doivent être enregistrées.
 2. Il choisie entre un badge à action ou un badge *ad-hoc* grâce à deux bouton radio
   1. Si un badge *ad-hoc* est choisi, il rentre un titre, une description, une image ainsi que le nombre de points que vaut le badge.
   2. Pour un badge à action, l'administrateur doit choisir au moins une action, et avoir la possibilité d'en ajouter d'autres en les liants par des connecteurs logiques. Chaque action doit avoir une conditions associées. Il rentre ensuite un titre, une description, une image ainsi que le nombre de points que vaut le badge.
+
 4. L'administrateur valide la création du badge à l'aide d'un bouton correspondant.
 5. Le badge est crée.
 6. La plateforme (ou un serveur de stats associé, et possiblement différé) vérifie que certains utilisateur ne vérifie pas déjà les conditions afin de possiblement leur remettre le badge.
