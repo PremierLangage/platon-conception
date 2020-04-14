@@ -5,10 +5,11 @@ Niveau 1
 
 ##	Description
 
- Ici le cas d'utilisatioin explicite les informations que l'on peut modifier et comment 
+ Ici le cas d'utilisation explicite les informations que l'on peut modifier et comment 
 
 1) Label du cercle (ajouter retirer un label du cercle)
 2) status de publication 
+3) tags scientifiques
 
 Automatiques 
 

@@ -5,64 +5,71 @@ Niveau 1
 
 ##	Description
 
- Travailler pour un étudiant doit couvrir l'ensemble de l'interface utilisateur de l'étudiant
+ Travailler pour un étudiant doit couvrir l'ensemble de l'interface utilisateur de l'étudiant.
+ 
+ Objectifs de l'étudiants:
+ - apprendre = acquerir des AAV, réaliser des activité avec succès
+ - atteindre des objectifs pour obtenir des validations (diplomes)
+ - participer à un enseignement (Forum, notification, dates limites, dates d'ouverture)
+ - communiquer avec les enseignants et les autres élèves: notifications
+ - travailler en groupes (plugapps, 2.0), communication orale visio, documents partagés,  
+ - construire son portfolio (2.0) 
+ - Fournir des travaux au système
+ - améliorer sa métacognistion et learn how to learn.
+ 
+ 
+ **[actions,activity,data-activity,classe,aav,assets](https://github.com/PremierLangage/plconception/blob/master/conception/concept/actions,activity,data-activity,classe,aav,assets.md)**  
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[actions,activity,data-activity,classe,aav,assets](https://github.com/PremierLangage/plconception/blob/master/conception/concept/actions,activity,data-activity,classe,aav,assets.md)**  
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Déclencheur** : connexion à la plateforme avec un compte étudiant (lti, login)
+> **Acteur Primaire**: Etudiant 
+> **Acteurs secondaires**:   Enseignant
+> **Parties Prenantes concernées** : Responsable de formation   
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+L'étudiant a été préalablement inscrit dans un LMS qui est connecté à la plateforme.
+L'étudiant est inscrit dans un cours dans lequel, l'enseignant a mis un liens LTI dans les activités du LMS. 
+Listez les conditions nécessaires pour que ce cas d'utilisation puisse avoir lieu
 
+-1 Avoir un compte sur platon 
+-2.1 Se connecter sur Platon en passant par la fenêtre Login et MDP 
+-2.2 Être déjà dans Platon et revenir à la page d'accueil
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
-
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	le système affiche la page d'acceuil des etudiants, avec les informations personnel de l'étudiant, nom de login en haut a droite, les notifications. Les liens des différents cours auquel l'etudiant participe sur la plateforme.  
+2.	L'etudiant choisi un cours.
+3.	le système passe sur la page d'acceuil du cours pour les étudiants.
+4.	L'etudiant choisi une des activités du cours.
+5. Le système affiche l'activité et interagi avec l'etudiant voir le cas d'utilisation: [réaliser-activité](réaliser-activité.md)
+6. l'étudiant se déloge et a fait ce qu'il souhaitai.
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
 
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
+- Notifications 
+2. l'etudiant choisi de regarder ses notifications. [afficher-notifications](../Utilisateur/afficher-notifications.md)
+
+- Réseau social 
+3.l'etudiant choisi de rejoindre le réseau social du cours. A faire. 
+
+- Notes 
+4. l'etudiant choisi de voir l'avancement dans le cours et son positionnement par rapport à la promotion dans laquelle il est. [afficher-completion](afficher-completion.md)
+
+
 
 
 ## Post Conditions
-### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
 
-### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
+l'etudiant est connecté et est arrivé à réaliser un de ses objectifs
 
-### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
-
-
-FIXME _les variables suivantes sont optionnelles._
 
 ### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
+Utilisation a haute fréquence, le logiciel doit être agréable et réactif.
+
 ### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
-### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
 
-##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
+L'interface doit fonctionner sur un smartphone de façon parfaite, exigence moins forte pour les exercices car pas toujours possible.
 
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
 
 TBR

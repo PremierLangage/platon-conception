@@ -1,7 +1,7 @@
 
 # Cas d'utilisation N° 61 :  archiver-cours
 
-Niveau 2
+Niveau 3
 
 ##	Description
 
