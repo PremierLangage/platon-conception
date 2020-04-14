@@ -1,22 +1,14 @@
 
-# Cas d'utilisation N° 24 :  crud-metadonnes-ressource
+# Cas d'utilisation N° 27 :  crud-test-in-preview
 
 Niveau 1
 
 ##	Description
 
- Ici le cas d'utilisatioin explicite les informations que l'on peut modifier et comment 
-
-1) Label du cercle (ajouter retirer un label du cercle)
-2) status de publication 
-
-Automatiques 
-
-
-
+Gestion des tests de ressources dans la preview 
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[metadonnees](https://github.com/PremierLangage/plconception/blob/master/conception/concept/metadonnees.md)**  
+FIXME N'oubliez pas de mensioner le concept **[tests](https://github.com/PremierLangage/plconception/blob/master/conception/concept/tests.md)**  
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
