@@ -18,8 +18,8 @@ Des exemples :
 |...                         |                      |                      |
 
 Des examples de badges seraient :
-* Se connecter à la plateforme **10** jours d'affilés.
-* Réussir **100** exercice `OU` réussir **10 à la suite**.
+* Se connecter à la plateforme **10** jours.
+* Réussir **100** exercice `OU` réussir un exercice **10 à la suite**.
 * Se connecter à la plateforme **pour la première fois** `ET` réussir un exercice  **pour la première fois**.
 
 Toutefois, comme détaillés dans [obtenir-badge](https://github.com/PremierLangage/platon-conception/blob/master/UC/Utilisateur/obtenir-badge.md), il faut permettre la création de badge *ad-hoc* à remettre manuellement pour permettre par exemple la remise de badge pour action extérieur à la plateforme.
