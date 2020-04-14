@@ -30,6 +30,11 @@ Niveau 1
 
 L'étudiant a été préalablement inscrit dans un LMS qui est connecté à la plateforme.
 L'étudiant est inscrit dans un cours dans lequel, l'enseignant a mis un liens LTI dans les activités du LMS. 
+Listez les conditions nécessaires pour que ce cas d'utilisation puisse avoir lieu
+
+-1 Avoir un compte sur platon 
+-2.1 Se connecter sur Platon en passant par la fenêtre Login et MDP 
+-2.2 Être déjà dans Platon et revenir à la page d'accueil
 
 ## Scenario Nominal
 
