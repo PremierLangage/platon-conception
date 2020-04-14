@@ -4,7 +4,7 @@
 
 ##	Description
 
-De nouvelles version des ressources utilsées sont disponibles, l'enseignant souhaite choisir les ressources qu'il veut remplacer dans sa classe voir [editer-cours-ressource.md](editer-cours-ressource.md) 
+De nouvelles version des ressources utilsées sont disponibles, l'enseignant souhaite choisir les ressources qu'il veut remplacer dans sa classe voir [editer-cours.md](editer-cours.md) 
 
 L'existance de ce cas d'utilisation viens de la neccessite de recharger des élements RELOAD. 
 
