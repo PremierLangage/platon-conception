@@ -6,6 +6,8 @@ Niveau 1
 ##	Description
 
 Expliciter ce qu'est un lien preview et comment cela s'utilise.
+Gestion des tests de ressources dans la preview
+Exécution des tests dans la preview
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
 FIXME N'oubliez pas de mensioner le concept **[liensressources](https://github.com/PremierLangage/plconception/blob/master/conception/concept/liensressources.md)**  
