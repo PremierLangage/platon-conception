@@ -5,7 +5,9 @@ Niveau 1
 
 ##	Description
 
- ce use case est important pour créer les ateliers et les établis. L'edition de l'atelier est un forme de search and compose ?? je ne sais pas . DR a discuter 
+ ce use case est important pour créer les ateliers et les établis.
+ L'edition de l'atelier est un forme de search and compose ?? je ne sais pas .
+ DR a discuter 
 
 FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
 FIXME N'oubliez pas de mensioner le concept **[atelier](https://github.com/PremierLangage/plconception/blob/master/conception/concept/atelier.md)**  
