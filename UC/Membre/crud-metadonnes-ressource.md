@@ -10,9 +10,10 @@ Niveau 1
 1) Label du cercle (ajouter retirer un label du cercle)
 2) status de publication 
 3) tags scientifiques
+4) Certains éléments techniques peuvent être stocké dans les méta-données 
 
 Automatiques 
-
+5) Information d'usage compilées une fois par an.
 
 
 
@@ -33,17 +34,20 @@ FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avo
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
-
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	L'editeur de ressource propose un bouton "editer les méta données".
+SI le membre click dessus. 
+le système demande si c'est pour une version pariculière ou pour la dernière.
+Le membre sélectionne la version de la ressouce pour laquel on souhaite editer les métadonnées.
+le système lui affiche l'éditeur de métadonnées de la ressource.
+2.	Cet editeur permet de modifier sans erreurs (les clefs sont prédéfinie), et le système n'accepte que des valeurs d'un type adapté et convertible en JSON.
+3.	Une fois quel l'utilisateur sauvegarde ces données. Le système met a jour les métadonnées.
+4.	le membre a modifier les métadonnées de la version de la ressource qu'il voulait modifier.
 
 ###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
 
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
+Pouvoir choisir plusieurs ressources.
+Par défaut si l'on édite pas les métadonnées elle sont les mémes que la version précédente de la ressource (récursivement, jusqu'a la valeur par défaut de la version zéro).
+
 
 
 ## Post Conditions
