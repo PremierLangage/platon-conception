@@ -2,6 +2,6 @@
 
 actor Administrateur
 (login) <|-- (aav-add-ressource) : extends 
-(login) <|-- (crud-tag) : extends 
+(login) <|-- (updatedockerfile) : extends 
 Administrateur --> (edition-classificationdisciplinaire) 
 @enduml
