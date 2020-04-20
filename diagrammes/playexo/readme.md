@@ -1,5 +1,5 @@
 
 # Diagramme de classe de PlayExo 
 
-![le diagramme](./playexo.png)
+[le diagramme](./playexo.png)
 
