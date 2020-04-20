@@ -2,7 +2,88 @@
 
 # Coacher 
 
-l'objectif du prof suivre ces élèves.
+L'objectif du prof suivre ces élèves.
+Encourager, recadrer, hontifier, fouetter (virtuellement), 
+    attraper
+    blâmer
+    catéchiser
+    chapitrer
+    corriger
+    disputer
+    fustiger
+    gourmander
+    moraliser
+    quereller
+    réprimander
+    reprendre
+    secouer
+    sermonner
+    affermir
+    aider
+    aiguillonner
+    animer
+    applaudir
+    approuver
+    appuyer
+    autoriser
+    blâmer
+    chauffer
+    complimenter
+    conforter
+    déterminer
+    disposer
+    dissuader
+    enflammer
+    engager
+    enhardir
+    entretenir
+    exalter
+    exciter
+    exhorter
+    favoriser
+    fortifier
+    galvaniser
+    impulser
+    inciter
+    incliner
+    inviter
+    participer
+    piquer
+    porter
+    pousser
+    promouvoir
+    protéger
+    provoquer
+    réconforter
+    ranimer
+    retremper
+    revivifier
+    solliciter
+    soutenir
+    stimuler
+    subventionner
+    approfondir
+    chaperonner
+    collationner
+    conduire
+    contrôler
+    défendre
+    espionner
+    examiner
+    fliquer
+    garder
+    guetter
+    inspecter
+    observer
+    patrouiller
+    pister
+    présider
+    suivre
+    tenir
+    vérifier
+
+
+
 
 Qui est connecté.  
 Qui travail.  
