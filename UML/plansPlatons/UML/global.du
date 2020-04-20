@@ -1,0 +1,161 @@
+@startuml
+
+actor Administrateur
+(login) <|-- (aav-add-ressource) : extends 
+actor Membre
+(login) <|-- (aav-add-ressource) : extends 
+actor Utilisateur
+Utilisateur --> (accèder-demo) 
+(login) <|-- (accèder-demo) 
+(connection-discord) <|-- (acceder-discord) : extends 
+actor Etudiant
+Etudiant --> (activite-recommandation) 
+(login) <|-- (activite-recommandation) 
+(crud-metadonnes-ressource) <|-- (addremove-label-ressource) : extends 
+actor Enseignant
+(Enseigner) <|-- (afficher-completion) : extends 
+Etudiant --> (afficher-completion) 
+(login) <|-- (afficher-completion) 
+(Enseigner) <|-- (afficher-completion-group) : extends 
+Etudiant --> (afficher-completion-group) 
+(login) <|-- (afficher-completion-group) 
+(login) <|-- (afficher-notifications) : extends 
+Utilisateur --> (afficher-profile) 
+(login) <|-- (afficher-profile) 
+(Futur) <|-- (analyser-besoin-hint) : extends 
+actor Didactitien
+Didactitien --> (analyser-comportement-metacognitif) 
+(login) <|-- (analyser-comportement-metacognitif) 
+actor Createur
+Createur --> (analyser-erreurs-activite) 
+(login) <|-- (analyser-erreurs-activite) 
+Didactitien --> (analyser-reponces) 
+(login) <|-- (analyser-reponces) 
+(login) <|-- (archiver-cours) : extends 
+(Enseigner) <|-- (asset-metadata-edition) : extends 
+Utilisateur --> (auto-inscription) 
+(login) <|-- (auto-inscription) 
+Etudiant --> (auto-inscription-classe) 
+(login) <|-- (auto-inscription-classe) 
+(creer-cours) <|-- (choisir-cercle) : extends 
+(login) <|-- (choisir-etabli) : extends 
+(Evaluer) <|-- (choisir-visibilité-completion) : extends 
+actor President
+President --> (communication-cercle) 
+(login) <|-- (communication-cercle) 
+(login) <|-- (connection-chat-membre) : extends 
+(login) <|-- (connection-discord) : extends 
+Utilisateur --> (connection-lti) 
+(login) <|-- (connection-lti) 
+Enseignant --> (connexionLTI) 
+(login) <|-- (connexionLTI) 
+(login) <|-- (construire-etabli-double) : extends 
+(Evaluer) <|-- (consulter-indicateur-individuel-collectif) : extends 
+(login) <|-- (creation-cercle) : extends 
+(Enseigner) <|-- (creer-cours) : extends 
+(login) <|-- (crud-aav) : extends 
+(creer-cours) <|-- (crud-asset) : extends 
+Createur --> (crud-badge-createur) 
+(login) <|-- (crud-badge-createur) 
+(login) <|-- (crud-calcul-indicateur-ressource) : extends 
+(connexionLTI) <|-- (crud-classe) : extends 
+(login) <|-- (crud-exercice-prepare) : extends 
+Createur --> (crud-grille-feedback) 
+(login) <|-- (crud-grille-feedback) 
+(login) <|-- (crud-metadonnes-ressource) : extends 
+(login) <|-- (crud-ressource-demo) : extends 
+(login) <|-- (crud-tag) : extends 
+(login) <|-- (crud-test-in-preview) : extends 
+(Evaluer) <|-- (definir-regle-acquisition) : extends 
+(login) <|-- (definir-seed-preview) : extends 
+Didactitien --> (definir-statistiques) 
+(login) <|-- (definir-statistiques) 
+Utilisateur --> (demande-aav) 
+(login) <|-- (demande-aav) 
+Createur --> (ecrire-tabledebord) 
+(login) <|-- (ecrire-tabledebord) 
+Utilisateur --> (edit-profile) 
+(login) <|-- (edit-profile) 
+actor DirecteurScientifique
+DirecteurScientifique --> (editer-atelier) 
+(login) <|-- (editer-atelier) 
+Membre --> (editer-cours-ressource) 
+(login) <|-- (editer-cours-ressource) 
+(crud-asset) <|-- (editer-modalités-completion) : extends 
+(Futur) <|-- (editer-ontologie) : extends 
+(edition-ressource) <|-- (editer-versions) : extends 
+(edition-ressource) <|-- (edition-activite-programmable) : extends 
+Administrateur --> (edition-classificationdisciplinaire) 
+(login) <|-- (edition-classificationdisciplinaire) 
+(edition-ressource) <|-- (edition-composite) : extends 
+(edition-ressource) <|-- (edition-feuille) : extends 
+(choisir-etabli) <|-- (edition-ressource) : extends 
+(login) <|-- (Enseigner) : extends 
+President --> (envoyer-notification) 
+(login) <|-- (envoyer-notification) 
+(Enseigner) <|-- (Evaluer) : extends 
+Etudiant --> (exporter-cours-portfolio) 
+(login) <|-- (exporter-cours-portfolio) 
+(Enseigner) <|-- (exporter-notes) : extends 
+(Evaluer) <|-- (exporter-stats) : extends 
+actor Candidats
+Candidats --> (Faire-un-test) 
+(login) <|-- (Faire-un-test) 
+actor Physionomiste
+Physionomiste --> (gestion-cercle) 
+(login) <|-- (gestion-cercle) 
+(Enseigner) <|-- (inscription-etudiant-classe) : extends 
+(creer-cours) <|-- (Integrer-moncours) : extends 
+Etudiant --> (interagir-exercice) 
+(login) <|-- (interagir-exercice) 
+(Evaluer) <|-- (lire-tabledebord-groupe) : extends 
+Etudiant --> (lire-tabledebord-individuel) 
+(login) <|-- (lire-tabledebord-individuel) 
+(connection-lti) <|-- (login) : extends 
+Enseignant --> (login) 
+(login) <|-- (login) 
+Etudiant --> (login) 
+(login) <|-- (login) 
+Membre --> (login) 
+(login) <|-- (login) 
+(Enseigner) <|-- (modifier-completion) : extends 
+(Futur) <|-- (modifier-droits-ressource) : extends 
+(crud-asset) <|-- (modifier-evaluation-metadata-asset) : extends 
+(login) <|-- (modifier-ressource-metadata) : extends 
+(crud-metadonnes-ressource) <|-- (modifier-tag) : extends 
+Utilisateur --> (optenir-bagde) 
+(login) <|-- (optenir-bagde) 
+Utilisateur --> (ouvrir-centrenotification) 
+(login) <|-- (ouvrir-centrenotification) 
+(login) <|-- (partage-cours) : extends 
+Utilisateur --> (premiere-connection) 
+(login) <|-- (premiere-connection) 
+(login) <|-- (preview-ressource) : extends 
+(login) <|-- (programmer-activité) : extends 
+(login) <|-- (programmer-ressource) : extends 
+DirecteurScientifique --> (promouvoir-ressource) 
+(login) <|-- (promouvoir-ressource) 
+(edition-ressource) <|-- (publier-ressource) : extends 
+(Enseigner) <|-- (réaliser-activité) : extends 
+Etudiant --> (réaliser-activité) 
+(login) <|-- (réaliser-activité) 
+(crud-asset) <|-- (recharger-cours) : extends 
+(login) <|-- (recherche-ressource) : extends 
+Etudiant --> (travailler) 
+(login) <|-- (travailler) 
+actor Visiteur
+Visiteur --> (Utiliser-demo) 
+(login) <|-- (Utiliser-demo) 
+(Evaluer) <|-- (valider-aav-etudiant) : extends 
+(Evaluer) <|-- (valider-portfolio) : extends 
+
+Utilisateur --|> AnalysteDidactitien
+Membre --|> DirecteurScientifique
+Utilisateur --|> Administrateur.Doyen
+Utilisateur --|> Etudiant
+Membre--|> President
+Membre--|> Physionomiste
+Membre--|> Enseignant
+Utilisateur --|> Membre
+
+@enduml
