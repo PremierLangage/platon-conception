@@ -1,0 +1,6 @@
+#!/bin/bash
+
+java -jar /home/dominique/.bin/plantuml.jar $1
+
+eog ${1%du}png
+
