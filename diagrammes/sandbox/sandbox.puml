@@ -1,0 +1,68 @@
+@startuml
+
+class SandboxSpecs {
+    sandbox_version: str
+    docker_version: str
+    cpu_name : str
+    cpu_count : int
+    ram : int
+    swap: int
+    storage: int
+    container: int
+}
+
+
+class SandboxUsage {
+    cpu : float
+    ram: int
+    swap: int
+    storage: int
+    writing: int
+    reading: int
+    sending: int
+    receiving: int
+    process: int
+    container: int
+    date: DateTimeField
+}
+
+
+class ContainerSpecs {
+    cpu_count: int
+    cpu_period: int
+    cpu_shares: int
+    cpu_quota: int
+    memory_ram: int
+    memory_swap: int
+    memory_storage: int
+    libraries_system: JSONField
+    libraries_python: JSONField
+    libraries_perl: JSONField
+    libraries c: JSONField
+    bin : ArrayField[str]
+    timeout: float
+    environ : JSONField
+}
+
+
+class Sandbox {
+    name : str
+    url : URLField
+    enabled: bool
+    client_id : str
+    client_secret : str
+    server_specs : SandboxSpecs
+    container_specs : ContainerSpecs
+    usage: ArrayField[SandboxUsage]
+
+    usage(self) -> None
+    specification(self) -> None
+    execute(self, config: dict, environment: BinaryIO = None) -> dict
+    retrieve(self, environment: str, file: str = None) -> Optional[BinaryIO]
+}
+
+Sandbox --|> SandboxSpecs
+Sandbox --|> ContainerSpecs
+Sandbox --* SandboxUsage
+
+@enduml
