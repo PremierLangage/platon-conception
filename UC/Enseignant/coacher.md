@@ -83,13 +83,8 @@ Encourager, recadrer, hontifier, fouetter (virtuellement),
     vérifier
 
 
+Il doit donc Communiquer avec les élèves. 
 
-
-Qui est connecté.  
-Qui travail.  
-Ou il en est.  
-
-Communiquer avec les élèves.  
 
 Qui a compris quoi, proportion de ceux qui ont compris.
 Ajouter des aav
