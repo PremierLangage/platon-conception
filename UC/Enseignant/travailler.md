@@ -1,5 +1,5 @@
 
-# Cas d'utilisation N° 36 :  Enseigner
+# Cas d'utilisation N° 36 :  travailler
 
 Niveau 1
 
@@ -7,8 +7,11 @@ Niveau 1
 
 Activité principal de l'enseignant. 
 L'enseignant choisi la classe dans la quelle il souhaite travailler.
-La classe s'ouvre et l'interface de classe est affiché par le système.
-l'enseignant peut travailler.
+La classe s'ouvre et l'interface de classe est affiché par le système.  
+l'enseignant peut travailler a ses missions sur la plateforme:
+- Coacher : suivre le travail des élèves et leurs méthodes 
+- evaluer : fournir des évaluations des acquis des étudiants 
+- enseigner : produire et structurer des ressources pédagogiques puis donner accès a celle-ci.
 
 
 > **Déclencheur** : Soit une arrivé par lti (choix dans le profile d'avoir la page des cours comme page d'acceuil).  
@@ -25,7 +28,7 @@ L'enseignant est loggé et il a au moins une classe de créée.
 
 
 
-1.	La page d'acceuil "Classes" du serveur d'asset de l'esneignant est affichée.
+1.	La page d'acceuil "Classes" du serveur d'asset de l'enseignant est affichée.
 Cette page d'acceuil propose un bouton (text ou icone ou image) pour chaque classe. Et une information est affiché sur chaque cours voir scéma [ Notification et avancement ](https://github.com/PremierLangage/plconception/blob/master/conception/casutilisation/enseignant/ihm/starting-teacher.pdf). 
 2.	L'enseignant choisi en clickant sur le bouton du Classe. Celui dans lequel il souhaite travailler.
 3.	le système affiche la page de la Classe.
@@ -50,6 +53,5 @@ la classe peut fournir un indicateur d'avancement numérique simple.
 Il ne faut pas que le calcul de l'indicateur d'avancement soit couteux en temps de calcul.
 
 
-FIXME **le cas d'usage d'enseigner dans une classe n'est pas défini**  
 
 

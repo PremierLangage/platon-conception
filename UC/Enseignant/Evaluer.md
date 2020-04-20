@@ -1,14 +1,13 @@
 
-# Cas d'utilisation N° 38 :  Evaluer
-
+# Cas d'utilisation N° 38 : Evaluer
 
 ##	Description
 
-Permet à l’enseignant de réaliser des évaluations/collecter les évaluations, c'est un mode d'accès différent aux assets,
-ce mode permet definir la modalité d'évaluation. 
-Ce mode permet de réaliser l'évaluation à la main.
-Ce mode permet de faire les exports.
-Ce mode permet d'indiquer quelles évaluations sont visible oar les élèves.
+Ce use-case rassemble des dispositifs (visuels, numériques ou autre) de mise en valeurs des traces des élèves pour permettre à l’[enseignant](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Enseignant.md) de réaliser des évaluations/collecter les évaluations, c'est un mode d'accès différent aux assets.
+* Ce mode permet definir les modalités d'évaluation. 
+* Ce mode permet de réaliser des évaluations à la main (lorsque nécessaire pour certaine activité pédagogique). 
+* Ce mode permet de faire les exports des traces et évaluations. 
+* Ce mode permet d'indiquer quelles évaluations sont visible oar les élèves. 
 
 
 > **Déclencheur** : l'enseignant passe en "mode évaluation" (bouton, menu , etc.?  a choisir FIXME) 
