@@ -13,6 +13,7 @@ class SandboxSpecs {
 
 
 class SandboxUsage {
+    sandbox: Sandbox
     cpu : float
     ram: int
     swap: int
@@ -53,7 +54,6 @@ class Sandbox {
     client_secret : str
     server_specs : SandboxSpecs
     container_specs : ContainerSpecs
-    usage: ArrayField[SandboxUsage]
 
     usage(self) -> None
     specification(self) -> None

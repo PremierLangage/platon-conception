@@ -35,8 +35,8 @@ plus qu'acceptable.
 ### Sandbox
 
 L'instance de la sandbox, contient les informations permettant de se connecter au serveur,une
-instance de `SandboxSpecs` et `ContainerSpecs`, ainsi qu'une liste de `SandboxUsage` triée
-par date.
+instance de `SandboxSpecs` et `ContainerSpecs`. Il est possible de récupéré l'ensemble des
+`SandboxUsage`correspondant grâce à la relation inverse `SandboxUsage.sandbox`.
 
 Elle contient une méthode `usage()` permettant de récupéré l'usage actuelle de la sandbox, et une
 méthode `specifications()` pour les spécification. Ces méthodes modifient self et ne retourne rien.
