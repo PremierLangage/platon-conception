@@ -22,7 +22,7 @@ class SandboxUsage {
     reading: int
     sending: int
     receiving: int
-    process: int
+    process: int vc
     container: int
     date: DateTimeField
 }
@@ -61,8 +61,8 @@ class Sandbox {
     retrieve(self, environment: str, file: str = None) -> Optional[BinaryIO]
 }
 
-Sandbox --|> SandboxSpecs
-Sandbox --|> ContainerSpecs
-Sandbox --* SandboxUsage
+Sandbox --> SandboxSpecs
+Sandbox --> ContainerSpecs
+Sandbox *-- SandboxUsage
 
 @enduml

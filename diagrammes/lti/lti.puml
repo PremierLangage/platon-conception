@@ -43,13 +43,13 @@ class LTIResourceAbstract<<abstract>> {
 class User<<extern>> {
 }
 
-LMS --* LTIUser
-LMS --* LTICourse
-LMS --* LTIResource
-LTIOutcome --|> LTIResource
-LTIUser --* LTIOutcome
-LTIResourceAbstract --|> LTIResource
-LTICourseAbstract --|> LTICourse
-User --* LTIUser
+LMS *-- LTIUser
+LMS *-- LTICourse
+LMS *-- LTIResource
+LTIOutcome --> LTIResource
+LTIUser *-- LTIOutcome
+LTIResourceAbstract --> LTIResource
+LTICourseAbstract --> LTICourse
+User *-- LTIUser
 
 @enduml

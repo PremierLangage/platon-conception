@@ -8,9 +8,6 @@ class User<<extern>> {
 
 class Metadata {
     data: JSONField[str, Any]
-    commit: Commit
-    previous: Metadata
-    version: int
 }
 
 class Commit {
@@ -25,9 +22,14 @@ class Commit {
     commit(self) -> git.Commit
 }
 
-class Resource {
+class Reference {
     rel_path: str
+    version: int
     circle: Circle
+    resource: Resource
+}
+
+class Resource {
     metadata: Metadata
     commit: Commit
     author: User
@@ -56,13 +58,14 @@ class Resource {
     .         dependencies: Iterable[Resource], maintainers: Iterable[User]) -> Resource
 }
 
-Circle --* Resource
-Circle --o User
-User --o Commit
-User --o Resource
-Resource --|> Metadata
-Resource --|> Commit
-Resource --o Resource
-Metadata --|> Commit
-Metadata --|> Metadata
+Circle *-- Resource
+Circle o-- User
+User o-- Commit
+User *-- Resource
+Resource --> Metadata
+Resource --> Commit
+Resource o-- Resource
+Resource --> Resource
+Resource o-- User
+Resource *-- Reference
 @enduml
