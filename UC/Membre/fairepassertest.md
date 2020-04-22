@@ -12,6 +12,9 @@ l'objectif du membre est de transformer une activité evaluative en test d'entr�
 D'envoyer un lien sur la plateforme aux candidats, avec des mécanismes de vérification:
 - lien a usage unique, question d'entrée dans le test (date de naissance, numéro de téléphone), double identification (vérification avec sms).
 - Validation d'un document fait sur l'honneur que le candidat répondra lui même et seul au test, et qu'il repassera un test du même niveau en arrivant dans la formation pour valider que c'est bien lui qui à passé le test.
+
+Faire vérifier le test par des collègues (il faut que le tests soit faisable et aléatoire).  
+
 Envoyer les tests au candidats.
 Envoyer le test a un candidat.
 Récuperer les resultats.
