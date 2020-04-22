@@ -4,11 +4,20 @@
 Niveau 1
 
 ##	Description
+Objectif d'un utilisateur trouver une ressource.
+Pour trouver une ressource deux possibilités:
+- par aav en utilisant le q&a et la recherche d'aav.
+- par une recherche full text et tags (comme pour une recherche immobilière/ le bon coin )
 
 
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[discipline](https://github.com/PremierLangage/plconception/blob/master/conception/concept/discipline.md)**  
+
+
+**[discipline](https://github.com/PremierLangage/plconception/blob/master/conception/concept/discipline.md)**  
+**[ressource](https://github.com/PremierLangage/plconception/blob/master/conception/concept/ressource.md)**  
+**[aav](https://github.com/PremierLangage/plconception/blob/master/conception/concept/aav.md)**  
+**[tag](https://github.com/PremierLangage/plconception/blob/master/conception/concept/tag.md)**  
+
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
