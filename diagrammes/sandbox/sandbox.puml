@@ -36,13 +36,13 @@ class ContainerSpecs {
     memory_ram: int
     memory_swap: int
     memory_storage: int
-    libraries_system: JSONField
-    libraries_python: JSONField
-    libraries_perl: JSONField
-    libraries c: JSONField
+    libraries_system: JSONField[str, str]
+    libraries_python: JSONField[str, str]
+    libraries_perl: JSONField[str, str]
+    libraries c: JSONField[str, str]
     bin : ArrayField[str]
     timeout: float
-    environ : JSONField
+    environ : JSONField[str, str]
 }
 
 
@@ -57,7 +57,7 @@ class Sandbox {
 
     usage(self) -> None
     specification(self) -> None
-    execute(self, config: dict, environment: BinaryIO = None) -> dict
+    execute(self, config: Dict[str, Any], environment: BinaryIO = None) -> dict
     retrieve(self, environment: str, file: str = None) -> Optional[BinaryIO]
 }
 
