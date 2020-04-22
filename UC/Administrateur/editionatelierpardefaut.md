@@ -1,44 +1,29 @@
 
-# Cas d'utilisation N° 56 :  recherche-ressource
 
-Niveau 1
+# Cas d'utilisation N° {{nbuc}} :  editionatelierpardefaut
+
 
 ##	Description
-Objectif d'un utilisateur trouver une ressource.
-Pour trouver une ressource deux possibilités:
-- par aav en utilisant le q&a et la recherche d'aav.
-- par une recherche full text et tags (comme pour une recherche immobilière/ le bon coin )
+
+Utilisation de l'édition d'atelier pour éditer l'atelier par défaut qui est à la base des atelier de tout les cercles.
 
 
-
-
-
-**[discipline](https://github.com/PremierLangage/plconception/blob/master/conception/concept/discipline.md)**  
-**[ressource](https://github.com/PremierLangage/plconception/blob/master/conception/concept/ressource.md)**  
-**[aav](https://github.com/PremierLangage/plconception/blob/master/conception/concept/aav.md)**  
-**[tag](https://github.com/PremierLangage/plconception/blob/master/conception/concept/tag.md)**  
-
-
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Déclencheur** : Choix d'action de l'adminsitrateur 
+> **Acteur Primaire**: adminsitrateur
+> **Acteurs secondaires**:    
+> **Parties Prenantes concernées** : membre   
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
-
+L'adminsitrateur doit être connecté.
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
+1. Utilisation de l'editeur d'atelier.
+2. Sauvegarde dans la base
 
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+
 
 ###	Extensions
 FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
