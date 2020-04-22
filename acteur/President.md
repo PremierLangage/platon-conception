@@ -11,5 +11,6 @@ Le **cercle** aura une page publique sur le site pl.u-pem.fr/cercles/nomducercle
 
 > Besoin en formation: Oui (oui à markdown).
 
+## Cas d'utilisations identifiés
 
-
+* [envoyer-notification.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/President/envoyer-notification.md) : Notifier d'un message l'ensemble des membres du **cercle**.
