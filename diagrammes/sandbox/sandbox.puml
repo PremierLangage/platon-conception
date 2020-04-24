@@ -3,9 +3,9 @@
 class SandboxSpecs {
     sandbox_version: str
     docker_version: str
-    cpu_name : str
-    cpu_count : int
-    ram : int
+    cpu_name: str
+    cpu_count: int
+    ram: int
     swap: int
     storage: int
     container: int
@@ -14,7 +14,7 @@ class SandboxSpecs {
 
 class SandboxUsage {
     sandbox: Sandbox
-    cpu : float
+    cpu: float
     ram: int
     swap: int
     storage: int
@@ -22,7 +22,7 @@ class SandboxUsage {
     reading: int
     sending: int
     receiving: int
-    process: int vc
+    process: int
     container: int
     date: DateTimeField
 }
@@ -36,27 +36,28 @@ class ContainerSpecs {
     memory_ram: int
     memory_swap: int
     memory_storage: int
+    timeout: float
     libraries_system: JSONField[str, str]
     libraries_python: JSONField[str, str]
     libraries_perl: JSONField[str, str]
     libraries c: JSONField[str, str]
-    bin : ArrayField[str]
-    timeout: float
-    environ : JSONField[str, str]
+    bin: ArrayField[str]
+    environ: JSONField[str, str]
 }
 
 
 class Sandbox {
-    name : str
-    url : URLField
+    name: str
+    url: URLField
     enabled: bool
-    client_id : str
-    client_secret : str
-    server_specs : SandboxSpecs
-    container_specs : ContainerSpecs
+    client_id: str
+    client_secret: str
+    server_specs: SandboxSpecs
+    container_specs: ContainerSpecs
+    poll_usage_every: DurationField
 
-    usage(self) -> None
-    specification(self) -> None
+    poll_usage(self) -> SandboxUsage
+    poll_specification(self) -> Tuple[SandboxSpecs, ContainerSpecs]
     execute(self, config: Dict[str, Any], environment: BinaryIO = None) -> dict
     retrieve(self, environment: str, file: str = None) -> Optional[BinaryIO]
 }

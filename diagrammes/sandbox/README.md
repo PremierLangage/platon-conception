@@ -36,10 +36,10 @@ plus qu'acceptable.
 
 L'instance de la sandbox, contient les informations permettant de se connecter au serveur,une
 instance de `SandboxSpecs` et `ContainerSpecs`. Il est possible de récupéré l'ensemble des
-`SandboxUsage`correspondant grâce à la relation inverse `SandboxUsage.sandbox`.
+`SandboxUsage`correspondant grâce à la relation inverse à `SandboxUsage.sandbox`.
 
-Elle contient une méthode `usage()` permettant de récupéré l'usage actuelle de la sandbox, et une
-méthode `specifications()` pour les spécification. Ces méthodes modifient self et ne retourne rien.
+Elle contient une méthode `poll_usage()` permettant de récupéré l'usage actuelle de la sandbox, et une
+méthode `poll_specification()` pour les spécification.
 
 La méthode `execute()` permet d'executer une tâche sur la sandbox.
 La méthode `retrieve()` permet de récupérer un environment, ou seulement un fichier précis d'un
