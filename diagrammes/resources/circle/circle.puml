@@ -1,0 +1,25 @@
+@startuml
+
+class User <<extern>> {}
+
+class Circle {
+   name : str
+   presentation : str
+   role1 : M2M[User]
+   role2 : M2M[User]
+   role3 : M2M[User]
+   qa : QA
+}
+
+class Workshop <<extern>> {}
+
+class Reference <<extern>> {}
+
+class QA <<extern>> {}
+
+Circle *-- Workshop
+Circle o-- User
+Circle --> QA
+Circle *-- Reference
+
+@enduml

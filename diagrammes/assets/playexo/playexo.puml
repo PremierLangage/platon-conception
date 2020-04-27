@@ -1,0 +1,20 @@
+@startuml
+class PL {
+    data : JsonField
+    course : Course
+
+}
+
+
+class PLSession {
+    data : JsonField
+    PL : pl
+    user : User
+}
+
+class User <<extern>> {}
+
+PL --> PLSession
+User --> PLSession
+
+@enduml
