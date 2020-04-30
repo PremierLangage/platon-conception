@@ -13,7 +13,7 @@ class SandboxSpecs {
 
 
 class SandboxUsage {
-    sandbox: Sandbox
+    sandbox: Sandbox <<fk>>
     cpu: float
     ram: int
     swap: int
@@ -52,9 +52,9 @@ class Sandbox {
     enabled: bool
     client_id: str
     client_secret: str
-    server_specs: SandboxSpecs
-    container_specs: ContainerSpecs
-    poll_usage_every: DurationField
+    server_specs: SandboxSpecs <<fk>>
+    container_specs: ContainerSpecs <<fk>>
+    poll_usage_every: DurationField <<fk>>
 
     poll_usage(self) -> SandboxUsage
     poll_specification(self) -> Tuple[SandboxSpecs, ContainerSpecs]

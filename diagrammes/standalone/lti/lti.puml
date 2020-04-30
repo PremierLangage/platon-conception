@@ -1,7 +1,7 @@
 @startuml
 
 class LMS {
-    guid: str <<pk>>
+    guid: str
     name: str
     url: URLField
     outcome_url: URLField
@@ -10,46 +10,24 @@ class LMS {
 }
 
 class LTIUser {
-    user: User
-    lms: LMS
+    user: User <<fk>>
+    lms: LMS <<fk>>
     lms_guid: str
 }
 
 class LTICourse {
-    lms: LMS
+    lms: LMS <<fk>>
     lms_guid: str
 }
 
-class LTIOutcome {
-    user: LTIUser
-    resource: LTIResource
-    sourcedid: str
-}
-
-class LTIResource {
-    lms: LMS
-    lms_guid: str
-    course: LTICourse
-}
 
 class LTICourseAbstract<<abstract>> {
-    lti : LTICourse <<nullable>>
+    lti : Optional[LTICourse] <<fk>>
 }
 
-class LTIResourceAbstract<<abstract>> {
-    lti : LTIResource <<nullable>>
-}
-
-class User<<extern>> {
-}
 
 LMS *-- LTIUser
 LMS *-- LTICourse
-LMS *-- LTIResource
-LTIOutcome --> LTIResource
-LTIUser *-- LTIOutcome
-LTIResourceAbstract --> LTIResource
 LTICourseAbstract --> LTICourse
-User *-- LTIUser
 
 @enduml
