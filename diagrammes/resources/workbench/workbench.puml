@@ -1,0 +1,7 @@
+@startuml
+
+class Workbench {
+    references : M2M[Reference]
+}
+
+@enduml

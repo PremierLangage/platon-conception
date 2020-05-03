@@ -1,0 +1,51 @@
+@startuml
+
+class User <<extern>> {}
+
+class Circle {
+   name : str
+   presentation : str
+   qa : FK[QA]
+   parent : Circle !!pas de boucle!!
+}
+
+
+Circle *-- User
+
+class Workbench {
+    parent_workshop : Workshop
+}
+
+class Workshop {
+    parent_circle : Circle
+    get_parent_workshop() : Workshop
+}
+
+class QA <<extern>> {}
+
+Circle --> "1" Workshop
+Circle --> "1" QA
+
+class Published {}
+class Templates {}
+class Home {}
+class Repertoire {}
+
+Home -|> Repertoire
+Templates -|> Repertoire
+Published -|> Repertoire
+
+Circle "1..*" <-- Workbench
+User "* my workbenches" *-- Workbench
+
+Workbench --> Home
+Workshop --> Published
+Workshop --> Templates
+
+Circle -|> Circle : extends
+
+Resource "1" -- "1" Metadata
+
+note right of Resource : Une réference dans une ressource :\nRéférence interne (FK[Resource])\nRéférence absolute(FK[atelier]+PATH)\nPATH:[published, templated,home]+path\nRéférence relative (FK[getcurrent(workshop)]+PATH)
+
+@enduml

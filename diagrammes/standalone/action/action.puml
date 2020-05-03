@@ -1,0 +1,27 @@
+@startuml
+
+class ActionMiddleWare {
+    __init__(self, get_response) -> None
+    __call__(self, request) -> HttpResponse
+    process_view(self, request, view_func, view_args, view_kwargs) -> None
+    process_exception(self, request, exception) -> None
+    process_response(self, request, response ) -> None
+}
+
+class Target {
+    name: str
+}
+
+class Action {
+    target: Target <<fk>>
+    result: int
+    user: Optional[User] <<fk>>
+    ip: str
+    date: DateTimeField
+}
+
+
+ActionMiddleWare..> Action
+Action--> Target
+
+@enduml

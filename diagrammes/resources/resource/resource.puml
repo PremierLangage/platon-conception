@@ -1,0 +1,61 @@
+@startuml
+
+class Metadata {
+    data: JSONField[str, Any]
+}
+
+class Commit {
+    hash: str[40] <<pk>>
+    short_description: str[50]
+    long_description: str
+    date: datetime
+    author: User
+   
+    .. properties ..
+    description(self) -> str
+    commit(self) -> git.Commit
+}
+
+class Reference {
+    rel_path: str
+    version: int
+    circle: Circle
+    resource: Resource
+}
+
+class Resource {
+    metadata: Metadata
+    commit: Commit
+    author: User
+    maintainers: M2M[User]
+    previous: Resource
+    dependencies: M2M[Resource]
+    version: int
+   
+    .. properties ..
+    path(self) -> str
+    abs_path(self) -> str
+    content(self) -> BinaryIO
+    next(self) -> Resource
+    forks(self) -> QuerySet[Resource]
+    descendants(self) -> QuerySet[Resource]
+    ancestors(self) -> QuerySet[Resource]
+    history(self) -> QuerySet[Resource]
+
+    -- methods --
+    create(cls, path: str, circle: Circle, author: User, content: BinaryIO, metadata: Metadata,
+    .         dependencies: Iterable[Resource], maintainers: Iterable[User]) -> Resource <<classmethod>>
+
+    doCommit(self, content: BinaryIO, dependencies: Iterable[Resource]) -> Resource
+
+    doFork(self, path: str, circle: Circle, author: User, content: BinaryIO, metadata: Metadata,
+    .         dependencies: Iterable[Resource], maintainers: Iterable[User]) -> Resource
+}
+
+
+Resource --> Metadata
+Resource --> Commit
+Resource o-- Resource
+Resource --> Resource
+Resource *-- Reference
+@enduml

@@ -1,0 +1,38 @@
+@startuml
+
+class Badge {
+    name: str
+    description: str
+    level: int
+    image: str
+    point: int
+    conditions ArrayField[BadgeGoal  <<fk>>]
+
+}
+
+
+class BadgeGoal {
+    target: Target <<fk>>
+    count: int
+    logical: str <<nullable>> # AND / OR / NOT
+    modifier: str
+}
+
+class BadgeGoalProgress {
+    user: User <<fk>>
+    progress: int
+    goal: BadgeGoal
+    unlocked: bool
+}
+
+class BadgeProgress {
+    user: User <<fk>>
+    badge: Badge <<fk>>
+    unlocked: bool
+}
+
+Badge *-- BadgeGoal
+BadgeGoal --> BadgeGoalProgress
+BadgeProgress --> Badge
+
+@enduml

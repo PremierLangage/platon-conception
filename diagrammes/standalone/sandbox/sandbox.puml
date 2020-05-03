@@ -1,0 +1,69 @@
+@startuml
+
+class SandboxSpecs {
+    sandbox_version: str
+    docker_version: str
+    cpu_name: str
+    cpu_count: int
+    ram: int
+    swap: int
+    storage: int
+    container: int
+}
+
+
+class SandboxUsage {
+    sandbox: Sandbox <<fk>>
+    cpu: float
+    ram: int
+    swap: int
+    storage: int
+    writing: int
+    reading: int
+    sending: int
+    receiving: int
+    process: int
+    container: int
+    date: DateTimeField
+}
+
+
+class ContainerSpecs {
+    cpu_count: int
+    cpu_period: int
+    cpu_shares: int
+    cpu_quota: int
+    memory_ram: int
+    memory_swap: int
+    memory_storage: int
+    timeout: float
+    libraries_system: JSONField[str, str]
+    libraries_python: JSONField[str, str]
+    libraries_perl: JSONField[str, str]
+    libraries c: JSONField[str, str]
+    bin: ArrayField[str]
+    environ: JSONField[str, str]
+}
+
+
+class Sandbox {
+    name: str
+    url: URLField
+    enabled: bool
+    client_id: str
+    client_secret: str
+    server_specs: SandboxSpecs <<fk>>
+    container_specs: ContainerSpecs <<fk>>
+    poll_usage_every: DurationField <<fk>>
+
+    poll_usage(self) -> SandboxUsage
+    poll_specification(self) -> Tuple[SandboxSpecs, ContainerSpecs]
+    execute(self, config: Dict[str, Any], environment: BinaryIO = None) -> dict
+    retrieve(self, environment: str, file: str = None) -> Optional[BinaryIO]
+}
+
+Sandbox --> SandboxSpecs
+Sandbox --> ContainerSpecs
+Sandbox *-- SandboxUsage
+
+@enduml

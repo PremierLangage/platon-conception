@@ -64,7 +64,9 @@ l'idée des **cercles** est de faire se rencontrer les utilisateurs ayant les **
 [edition-activite-programmable.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/edition-activite-programmable.md)   
 [edition-composite.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/edition-composite.md)   
 [edition-feuille.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/edition-feuille.md)   
-[edition-ressource.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/edition-ressource.md)   
+
+* [edition-ressource.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/edition-ressource.md) : actions d'édition d'un cours ressource sur le **serveur central** de ressources   
+
 [login.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/login.md)   
 [modifier-droits-ressource.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/modifier-droits-ressource.md)   
 [modifier-ressource-metadata.md](https://github.com/PremierLangage/platon-conception/tree/master/UC/Membre/modifier-ressource-metadata.md)   

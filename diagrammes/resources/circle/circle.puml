@@ -1,0 +1,13 @@
+@startuml
+
+
+class Circle {
+   name : str
+   presentation : str
+   role1 : M2M[User]
+   role2 : M2M[User]
+   role3 : M2M[User]
+   qa : QA
+}
+
+@enduml

@@ -1,0 +1,33 @@
+@startuml
+
+class LMS {
+    guid: str
+    name: str
+    url: URLField
+    outcome_url: URLField
+    client_id : str
+    client_secret : str
+}
+
+class LTIUser {
+    user: User <<fk>>
+    lms: LMS <<fk>>
+    lms_guid: str
+}
+
+class LTICourse {
+    lms: LMS <<fk>>
+    lms_guid: str
+}
+
+
+class LTICourseAbstract<<abstract>> {
+    lti : Optional[LTICourse] <<fk>>
+}
+
+
+LMS *-- LTIUser
+LMS *-- LTICourse
+LTICourseAbstract --> LTICourse
+
+@enduml
