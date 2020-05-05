@@ -25,20 +25,6 @@ de différents LMS.
 
 Fait le lien entre une classe d'un LMS et une classe PLaTon.
 
-### LTIResource
-
-Information reliant une resource d'un LMS à une ressource PLaTon. Stocke aussi un lien vers les 
-informations potentiels de remonté de note (**Outcome**).
-
-### Outcome
-
-Stocke les informations permettant la remonté d'une note pour une activité et
-un User.
-
-### LTIResourceAbstract
-
-Classe dont doit hériter les modèles *pouvant* être une ressource LMS.
-
 ### LTICourseAbstract
 
 Classe dont doit hériter le modèle représentant les classes sur PLaTon.
