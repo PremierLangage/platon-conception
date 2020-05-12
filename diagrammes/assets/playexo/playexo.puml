@@ -2,19 +2,55 @@
 class PL {
     data : JsonField
     course : Course
-
+    parent_activity : Activity
+    demo : bool
+    rerollable : bool
+    compilation_date : Date
+    ressource_ref : qqcvd
 }
 
+class Activity <<extern>> {}
 
 class PLSession {
-    data : JsonField
-    PL : pl
-    user : User
+    context : JsonField
+    pl : pl
+    total_time : int [computed with websockets]
+    seed : int
+    try_count : int
+    creation_date : Date
+    best_answer : Answer
+    last_answer : Answer
+    static build(seed, params) : PLSession
+    evaluate(answers) : grade, feedback
+    reroll(seed)
+}
+class AnonPLSession {
+    user_id : UUID
+}
+class LoggedPLSession {
+    User : user
 }
 
-class User <<extern>> {}
+class Answer {
+    answer : JsonField
+    grade : int
+    date : Date
+    session : PLSession
+}
 
-PL --> PLSession
-User --> PLSession
+PLSession <|-- AnonPLSession
+PLSession <|-- LoggedPLSession
+
+PLSession --> "0..1 last" Answer
+PLSession --> "0..1 best" Answer
+
+class User <<extern>> {}
+class Course <<extern>> {}
+
+PL --> "*" PLSession
+User --> "1" LoggedPLSession
+PL "*" <-- "0..1" Activity
+Course "0..1" --> PL
+Answer --> "1" PLSession
 
 @enduml
