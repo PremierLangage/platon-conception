@@ -1,13 +1,5 @@
 @startuml
 
-class Circle <<extern>> {}
-class Reference <<extern>> {}
-class Workbench <<extern>> {}
-
 class Workshop {}
-
-Workshop o-- Reference
-Workshop *-- Workbench
-Workshop --> Circle
 
 @enduml

@@ -7,7 +7,8 @@ Niveau 1
 
 L'idée est de fournir un / plusieurs moyens de communication pour permettre au membres d'un même **[cercle](https://github.com/PremierLangage/plconception/blob/master/conception/concept/cercle.md)**   de communiquer.
 
-Il peut être utile d'avoir deux moyens de communication à différentes vitesse. L'un s'apparenterais plus à un chat et permettrais un échange rapide (discord / slack / riot). L'autre permettrais un échange plus formet et réfléchis (forum / QA), utilisant un système de notification ([envoyer-notification.md](envoyer-notification.md)) pour signaler toutes nouvelles réponses.
+Il peut être utile d'avoir deux moyens de communication à différentes vitesse. L'un s'apparenterais plus à un chat et permettrais un échange rapide (discord / slack / riot).
+L'autre permettrais un échange plus formet et réfléchis (forum / QA), utilisant un système de notification ([envoyer-notification.md](envoyer-notification.md)) pour signaler toutes nouvelles réponses.
 
 Il est problement intéressant d'exporter ces fonctionnalités sur des services existants.
 

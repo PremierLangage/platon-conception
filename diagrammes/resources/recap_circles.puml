@@ -6,7 +6,8 @@ class Circle {
    name : str
    presentation : str
    qa : FK[QA]
-   parent : Circle !!pas de boucle!!
+   parent : Circle 
+   subcircle: Circle
 }
 
 

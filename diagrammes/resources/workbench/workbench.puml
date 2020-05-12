@@ -1,14 +1,7 @@
 @startuml
 
-class Reference <<extern>> {}
-class Workshop <<extern>> {}
-
 class Workbench {
     references : M2M[Reference]
 }
-
-
-Workbench o-- Reference
-Workbench --> Workshop
 
 @enduml

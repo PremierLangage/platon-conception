@@ -1,6 +1,5 @@
 @startuml
 
-class User <<extern>> {}
 
 class Circle {
    name : str
@@ -10,16 +9,5 @@ class Circle {
    role3 : M2M[User]
    qa : QA
 }
-
-class Workshop <<extern>> {}
-
-class Reference <<extern>> {}
-
-class QA <<extern>> {}
-
-Circle *-- Workshop
-Circle o-- User
-Circle --> QA
-Circle *-- Reference
 
 @enduml
