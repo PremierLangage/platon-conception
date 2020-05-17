@@ -7,6 +7,52 @@ Niveau 1
 
 L'utilisateur se connecte à la plateforme depuis un LMS en cliquant sur une activité [LTI](https://github.com/PremierLangage/plconception/blob/master/conception/concept/lti.md).
 
+
+> **Niveau** :Haut niveau   
+> **Déclencheur** : Cliquer sur une activité LTI depuis un LMS.  
+> **Acteur Primaire**: Utilisateur  
+ 
+ 
+## Preconditions
+
+Avoir créé une activité LTI correspondant à une activité PLaTon depuis un LMS connus.
+
+## Scenario Nominal
+
+1.	L'utilisteur clique sur l'activité LTI depuis un LMS.
+2.	Le LMS redirige l'utilisateur sur PLaTon.
+3.	Si besoin, PLaTon crée l'utilisateur avec les informations de la requête.  
+4.	L'utilisateur est authentifié sur PLaTon.  
+
+### Extensions
+
+2.	Le LMS redirige l'utilisateur sur PLaTon.
+3. Les identifiants LTI ne sont pas valides, PLaTon refuse la connexion.
+
+*Remarque :* Si un même utilisateur se connecte à un même serveur depuis plusieurs LMS différents, un compte différents sera créer sur PLaTon pour chaque LMS.
+
+
+## Post Conditions
+
+### Conditions de succès 
+
+L'utilisateur est correctement authentifié sur PLaTon.
+
+### Minimal Guarantees
+
+Création d'un compte associé à l'utilisateur du LMS.
+
+### Frequence
+
+Une fois pour chaque nouvelle session utilisateur.
+
+### Besoins Spéciaux
+
+Disponibilité d'un LMS.
+
+## Remarques sur LTI
+
+
 La norme LTI permet de récupérer, en partculier, les données suivantes depuis le LMS:
 
 |                paramètre                |       status       |description|
@@ -59,45 +105,3 @@ La norme LTI permet de récupérer, en partculier, les données suivantes depuis
 Dans les faits, la plupart des LMS n'utilisent que les rôles `Instructor` et `Learner`.
 
 Il est intéressant de noter que les LMS ne sont pas tenu de fournir des informations concernants les groupes au seing des classes. Cela doit être fait par des paramètres `custom_*`.
-
-> **Niveau** :Haut niveau   
-> **Déclencheur** : Cliquer sur une activité LTI depuis un LMS.  
-> **Acteur Primaire**: Utilisateur  
- 
- 
-## Preconditions
-
-Avoir créé une activité LTI correspondant à une activité PLaTon depuis un LMS connus.
-
-## Scenario Nominal
-
-1.	L'utilisteur clique sur l'activité LTI depuis un LMS.
-2.	Le LMS redirige l'utilisateur sur PLaTon.
-3.	Si besoin, PLaTon crée l'utilisateur avec les informations de la requête.  
-4.	L'utilisateur est authentifié sur PLaTon.  
-
-### Extensions
-
-2.	Le LMS redirige l'utilisateur sur PLaTon.
-3. Les identifiants LTI ne sont pas valides, PLaTon refuse la connexion.
-
-*Remarque :* Si un même utilisateur se connecte à un même serveur depuis plusieurs LMS différents, un compte différents sera créer sur PLaTon pour chaque LMS.
-
-
-## Post Conditions
-
-### Conditions de succès 
-
-L'utilisateur est correctement authentifié sur PLaTon.
-
-### Minimal Guarantees
-
-Création d'un compte associé à l'utilisateur du LMS.
-
-### Frequence
-
-Une fois pour chaque nouvelle session utilisateur.
-
-### Besoins Spéciaux
-
-Disponibilité d'un LMS.
