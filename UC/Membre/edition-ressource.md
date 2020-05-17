@@ -20,7 +20,7 @@ Niveau 1
  
 ## Preconditions
 
-ëtre logger en comme membre. : [login.md](login.md)
+être logger en comme membre: [login.md](login.md)
 [choisir-cercle.md](choisir-cercle.md) qui implique le choix d'un établi.
 
 ## Scenario Nominal
