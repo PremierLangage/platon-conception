@@ -1,57 +1,57 @@
 # Ressources  
 
 ## FirstAccess 
--> bienvenue 
--> noob (elle dans le noob)
--> créer son premier cours 
--> création d'un cercle pour le cours 
--> demande d'appartenir a un cercle ouvert.
+-> bienvenue  
+-> noob (elle dans le noob)  
+-> créer son premier cours   
+-> création d'un cercle pour le cours   
+-> demande d'appartenir a un cercle ouvert.  
 
 
 ## acceuil
-nouveautés  
-liens  // doc // tuto 
--> choisir un cercle 
--> se promener 
+nouveautés    
+liens  // doc // tuto   
+-> choisir un cercle   
+-> se promener   
 
 
 ## choisir-cercle
--> lire la description d'un cercle 
+-> lire la description d'un cercle  
 ## création d'un cercle
-##* prommener 
-Chercher des ressources sans spécifier de cercle 
-resultat de recherche // formulaire de recherche 
+## prommener (opionnel) 
+Chercher des ressources sans spécifier de cercle  
+resultat de recherche // formulaire de recherche  
 
-## Gestion du Cercle  - membre,
-Inviter des gents
-accepter des demandes 
-(dé)bannir des gents 
-## Gestion des droits, 
-Pour tout les membre et tout les droits ont veux pouvoir ajouter et soustraire 
+## Gestion du Cercle  - membre
+Inviter des gents  
+accepter des demandes  
+(dé)bannir des gents  
+## Gestion des droits 
+Pour tout les membre et tout les droits ont veux pouvoir ajouter et soustraire  
  (voir le module d'administration) 
-## Gestion du Cerclecommunication
+## Gestion du Cerclecommunication  
 Forum // threads ? // 
-envois de notification
-module-django 
+envois de notification  
+module-django  
 
 
-##  edition des Workshop (atelier)
+##  edition des Workshop (atelier)  
 déplacer des fichiers d'un répertoire à l'autre (home// publish )-> workshop tools
 *[promotion] déplace d'un workshop à l'autre workshop "Vers le haut " ex: de python à CS.
 autorise l'ecrasement 
 <<valider l'idée de pas d'edition directe>>
 ##  gestion de la publication 
 ##  gestion de la promotion 
-affiche les problèmes éventuels d'une promotion et permet de décider.  
+affiche les problèmes éventuels d'une promotion et permet de décider.   
 ##  Centre de notification
 ##  création de notification 
 ## Workspace 
-Deux partie 
-arborescence
-workshop (readonly)
-published (read, pullrequest)
-perso (read,write, create,delete)
-Editeur 
+Deux partie  
+arborescence  
+workshop (readonly)  
+published (read, pullrequest)  
+perso (read,write, create,delete)  
+Editeur  
 contient un des editeurs suivants:
   - editeur d'exercice // editeur d'activités // d'activités programmables //  markdown // langage de prog quelconque 
   - editeur d'exercices préparés
