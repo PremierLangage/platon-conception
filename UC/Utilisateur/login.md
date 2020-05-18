@@ -5,28 +5,25 @@ Niveau 1
 
 ##	Description
 
- Explications de l'accès général à la plateforme avec l'interface générale IHM et les notification profile etc qui peuvent être déclanché 
+ Explications de l'accès général à la plateforme avec l'interface générale IHM et les notifications profile etc qui peuvent être déclanchés 
 
-FIXME _[One to two sentences that briefly describe the use case, including the primary actor’s goal]_   
-FIXME N'oubliez pas de mensioner le concept **[centredenotification](https://github.com/PremierLangage/plconception/blob/master/conception/concept/centredenotification.md)**  
+**[centredenotification](https://github.com/PremierLangage/plconception/blob/master/conception/concept/centredenotification.md)**  
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
+> **Niveau** :  Résumé, 
+> **Déclencheur** : Connection par LTI ou connection directe 
 > **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Acteurs secondaires**: pas d'acteurs secondaires (a terme LDAP)
+> **Parties Prenantes concernées** : tous   
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+Les préconditions sont que l'utilisateur à un compte soit sur le LTI consomateur, soit directement sur platon.
 
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
-
-1.	TODO  
+1.	L'utilisateur connecté sur sont LMS  
 2.	TODO  
 3.	TODO  
 4.	TODO  
