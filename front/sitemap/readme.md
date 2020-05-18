@@ -18,7 +18,7 @@ liens  // doc // tuto
 ## choisir-cercle
 -> lire la description d'un cercle  
 ## création d'un cercle
-## prommener (opionnel) 
+## promener (opionnel) 
 Chercher des ressources sans spécifier de cercle  
 resultat de recherche // formulaire de recherche  
 
