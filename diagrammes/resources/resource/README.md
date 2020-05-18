@@ -3,6 +3,8 @@
 ## Résumé
 
 Ce module s'occupe de tout ce qui est concerne les ressources : création, maj, recherche...
+La classe resource s'occupe du stockage des Resources et de leur localisation dans l'arborescence des cercles.
+
 
 ## Classes
 
