@@ -8,6 +8,27 @@ Ce module s'occupe de tout ce qui est concerne les ressources : création, maj, 
 
 ![uml](resource.png)
 
+## Properties
+
+Les properties sont des champs calculés, et non stockés.
+
+**previous** correspond à la version précédente de la Resource, si elle existe.
+
+**version** correspond à la version de la Resource.
+
+**commit** est une clé étrangère vers l'object Commit, qui contient toutes les informations relatives au commit git lié à la version de la ressource.
+
+**next** renvoit la version suivante de la Resource.
+
+**forks** renvoit une queryset de tout les forks de la la Resource.
+
+**descendants** renvoit une queryset avec next + forks.
+
+**ancestors** renvoit une queryset de toutes les version précédentes.
+
+**history** renvoit une queryset avec ancestor + current + descendants.
+
+
 
 ### Commit
 
