@@ -20,4 +20,6 @@ Permet de cibler l'objectif du Badge.
 
 ### BadgeProgress
 
+Représente un utilisateur et ces badges associés.
+
 
