@@ -14,7 +14,9 @@ Un exercice permet à un utilisateur de s'entraîner de manière autonome.
 
 Il est créé par un enseignant ayant un [karma](karma.md) suffisant ou peut être proposer par un étudiant (l'exercice doit donc être validé par un enseignant ayant aussi un karma suffisant dans la discipline de l'exercice).
 
-Il est corrigé de manière automatique.
+Il est corrigé de manière automatique. La correction est un couple (score,feedback).
+Le score variant de -2,à 100.K Zéro indiquant l'échec total et 100 le success total. Le score -1 indiquant que la réponse de l'élève ne peut être évalué car elle n'est pas dans un format correct (exemple: ne compile pas, mal parenthèsé, etc). les valeur négatives sont réservé pour un usage ultérieur.
+Le feedback est du HTML qui affiché entre la text et le form.
 
 Il doit contenir un ou plusieurs [tag](tag.md) permettant de le relier à un [cours](cours.md).
 
