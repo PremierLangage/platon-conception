@@ -10,6 +10,7 @@ Pour plus d'information sur les AAV se repporter au site : [FA2L](https://fa2l.b
 
 AAV Numériques, le problème de la définition actuelle des AAV par [FA2L](https://fa2l.be), bien que très adaptée a la description d'une formation, n'est pas adpatée a la construction d'une structure générale d'information et de savoir-faires.
 
+Cependant, c'est un outil utile pour l'équipe pédagogique et pour l'apprenant. Il permet en particulier l'allignement pédagogique  : fixer les objectifs permet ensuite de  définir les modalités d'évaluation (comment faire pour vérifier qu'ils sont atteind) puis puis les activités permettant d'atteindre cette validation.
 
 ## Editeur d'AAV
 
