@@ -91,7 +91,13 @@ formulaire des assets
 ## Page de note
 décider de ce que l'on exporte 
 
-## Page suivi 
+## Page suivi  générale 
 Informations // indicateurs // sur tout la hiérachie 
+
+## page de suivi individuel 
+
+liste des etudiants et page temps réel , page ensemble de sons oeuvre.
+
+
 
 ## Choisir les colones visibles dans l'affichage de du cours.
