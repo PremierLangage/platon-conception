@@ -17,3 +17,7 @@ Le « Code Golf » est une discipline visant à limiter le nombre de caractères
 Réussir l'exercice au premier essai 
 1% de moins par essai en suite.
 
+## Simulation temps réel
+
+Mettre les etudiants en situation. 
+Et leur envoyer en temp réel 

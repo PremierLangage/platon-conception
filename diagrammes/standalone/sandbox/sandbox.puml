@@ -3,32 +3,19 @@
 class SandboxSpecs {
     sandbox_version: str
     docker_version: str
-    cpu_name: str
-    cpu_count: int
-    ram: int
-    swap: int
-    storage: int
-    container: int
+    cpu_core: int
+    cpu_logical: int
+    cpu_freq_min: float
+    cpu_freq_max: float
+    memory_ram: int
+    memory_swap: int
+    memory_storage: JSONField[str, int]
 }
-
-
-class SandboxUsage {
-    sandbox: Sandbox <<fk>>
-    cpu: float
-    ram: int
-    swap: int
-    storage: int
-    writing: int
-    reading: int
-    sending: int
-    receiving: int
-    process: int
-    container: int
-    date: DateTimeField
-}
-
 
 class ContainerSpecs {
+    count: int
+    process: int
+    working_dir_device: str
     cpu_count: int
     cpu_period: int
     cpu_shares: int
@@ -36,15 +23,30 @@ class ContainerSpecs {
     memory_ram: int
     memory_swap: int
     memory_storage: int
-    timeout: float
-    libraries_system: JSONField[str, str]
-    libraries_python: JSONField[str, str]
-    libraries_perl: JSONField[str, str]
-    libraries c: JSONField[str, str]
+    libraries: JSONField[str, str]
     bin: ArrayField[str]
     environ: JSONField[str, str]
 }
 
+class SandboxUsage {
+    sandbox: Sandbox <<fk>>
+    cpu_usage: ArrayField[float, float, float, float]
+    cpu_freq: float
+    memory_ram: int
+    memory_swap: int
+    memory_storage: JSONField[str, int]
+    writing_io: JSONField[str, int]
+    writing_bytes: JSONField[str, int]
+    reading_io: JSONField[str, int]
+    reading_bytes: JSONField[str, int]
+    sending_packets: int
+    sending_bytes: int
+    receiving_packets: int
+    receiving_bytes: int
+    process: int
+    container: int
+    date: DateTimeField
+}
 
 class Sandbox {
     name: str

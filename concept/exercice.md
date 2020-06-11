@@ -1,10 +1,22 @@
 #  Exercice
 
+Sur la plateforme PLaTon, un exercice est un dispositif pédagogique élémentaire. Il prescrit une tâche dans un énoncé et offre une interface de réponse. Il est capable d'évaluer la réponse entrée par l'élève et, éventuellement, de fournir une rétroaction corrective.
+
+Dans certains exercices, les données de l'énoncé peuvent être aléatoires. Une version d'un exercice associée à un jeu de données particulier est appelée une instance.
+
+La plateforme peut exécuter un exercice selon diverses configurations pédagogiques : nombre de tentatives, limite de temps, possibilité de demander une nouvelle instance de l'exercice, etc.
+
+Les exercices sont généralement insérés dans des dispositifs pédagogiques plus complexes appelés activités. Dans ce cadre, ils peuvent tout aussi bien servir à de l'apprentissage, de l'entraînement ou de l'évaluation.
+
+* * *
+
 Un exercice permet à un utilisateur de s'entraîner de manière autonome.
 
 Il est créé par un enseignant ayant un [karma](karma.md) suffisant ou peut être proposer par un étudiant (l'exercice doit donc être validé par un enseignant ayant aussi un karma suffisant dans la discipline de l'exercice).
 
-Il est corrigé de manière automatique.
+Il est corrigé de manière automatique. La correction est un couple (score,feedback).
+Le score variant de -2,à 100.K Zéro indiquant l'échec total et 100 le success total. Le score -1 indiquant que la réponse de l'élève ne peut être évalué car elle n'est pas dans un format correct (exemple: ne compile pas, mal parenthèsé, etc). les valeur négatives sont réservé pour un usage ultérieur.
+Le feedback est du HTML qui affiché entre la text et le form.
 
 Il doit contenir un ou plusieurs [tag](tag.md) permettant de le relier à un [cours](cours.md).
 

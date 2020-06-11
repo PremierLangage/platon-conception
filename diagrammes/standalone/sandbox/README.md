@@ -28,9 +28,8 @@ Représente l'utilisation de la sandbox à une temps données. L'idée est de r�
 à un intervalle assez cours pour permettre le création de graphe d'utilisation et pouvoir faire des
 stats sur les sandboxes.
 
-En ce qui concerne le stockage, la structure fait 456 octets. Si pour une sandbox, nous stockions
-l'usage toute les 30 secondes pendant un an, nous aurions donc 479 347 200 octets (479 Mo) de pris, ce qui reste
-plus qu'acceptable.
+En ce qui concerne le stockage, celui-ci ne devrait pas dépasser plus de 2 Go par an si un usage est
+créé toutes les 5 secondes.
 
 ### Sandbox
 
