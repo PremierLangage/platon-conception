@@ -1,0 +1,76 @@
+@startuml
+
+
+package "Serveur d'assets" as assets{
+	component roles_assets [
+		user_profile
+		Les roles suivants sont disponibles:
+		* Candidat
+		* Enseignant
+		* Etudiant
+	]
+	[search & compose] as sc
+	[q&a lié à un cours]
+	[gestion_aav]
+	[sandbox]
+	[asset]
+	[playcourse]
+	[playactivity]
+	[playexo]
+	[playexo] ..> [sandbox] : utilise
+
+	database "Assets" as assets_db {
+		
+	}
+}
+
+package "Commun" as common {
+	[q&a]
+	[badges]
+	[notifications]
+	[liens_internes]
+
+}
+
+
+package "Serveur de ressources" as ressources {
+	[user_profile]
+	[circle]
+	[workshop]
+	[workbench]
+	component resources [
+		Resource : 
+		* AAV
+		* Activité
+		* Cours
+		* Exercice
+	]
+	[stats]
+	[parser/loader]
+	[ressource_api]
+
+	[ressource_api] ..> [search] : use
+	[ressource_api] ..> [parser/loader] : use
+
+	component roles_ressources [
+		user_profile
+		Les roles suivants sont disponibles:
+		* Didactitien (stats)
+		* Administrateur
+		* Directeur scientifique
+		* Physionomiste
+		* President
+		* Visiteur
+	]
+
+	database "Ressources" as ressources_db {
+		
+	}
+}
+
+
+ressources ..> ressources_db
+assets ..> assets_db
+sc ..> [ressource_api]
+
+@enduml
