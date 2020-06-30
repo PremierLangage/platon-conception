@@ -1,11 +1,11 @@
 
-# Les ppltp 
+# Les cpltp 
 
 Ou les pltp programmables.
 
 Premierement compatibles avec les pltp.
 
-Un ppltp est un fichier au format pl: 
+Un cpltp est un fichier au format pl: 
 
 - des balises définie par les opérateurs @/=/==/etc cf la documentation.
 
@@ -93,6 +93,8 @@ Exemple :
 @ dogrille.pl [evalgrille] # une eval + une grille -> resultat d'une grille -> un exopourprof qui permet d'afficher l'evaluation pour un élève. 
 @ creatgrille.pl [creation] # creation d'une grille par un prof -> sauvegarde dnas une base de donnée [webcomposant] 
 @ tropdetentatives.pl [errortentatives] 
+@ messagederreur.pl [norerun]
+
 
 barem==
 (pl1.score() + pl2.score() + pl3.score()) / 2
@@ -118,27 +120,23 @@ classe.done(plouvert)# sauvegarde l'information saisie l'elève currentstudent d
 while tp est pas fini :
     name[currentexo].exec() # mais la classe elle connait toutes les exécutions 
     currentexo+= 1
-    while class.asEval():
-      eval.exec(data=class.evaluation())
+    while classe.asEval():
+      eval.exec(decorator={'title':'eval de merde', 'text'=class.evaluation()})
 
 plouvert.content() # Réponse de currentstudent à la question ouverte 
 
 
 
 def exec(self,dico)
-  if rerun==false and self.done(): # done dépand du nombre lance un exo mock qui dit exercice inatégniable revener dans x temps 
+  if rerun==false:
+    return norerun.exec()
+  
+  if self.done(): # done dépand du nombre lance un exo mock qui dit exercice inatégniable revener dans x temps 
     return errortentatives.exec()
   self.load()
   self.updatedic(dico) # application du décorateur 
-  self.run() 
-  while self.error() :
-    self.continue()
-  if examen:
-    return 
- tentativesRestante -= 1
- while tentativesRestante >0 : 
-      self.continue()
-      tentativesRestante -= 1
+  self.run() # la gestion des tentative des erreur et du feedback est fait dans le erun ie. playexo 
+
  return 
 ```
 
