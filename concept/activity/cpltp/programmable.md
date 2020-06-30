@@ -68,7 +68,7 @@ Class Activity:
     The global variable is of the responsability of **runner** code in the case of a ppltp.
   """
 
-  def exec(rerun=False, seed=None, exam=False): 
+  def exec(rerun=False, seed=None, exam=False, **kargs): 
     """
     if rerun==False and if the status of the activity is success or failed.
     Return immedialty with True or False. 
@@ -88,6 +88,12 @@ The code of the **runner** is state less. Meaning you should write your code thi
 
 Exemple :
 ```
+@ questionouverte.pl [plOuvert]
+@ evaluation.pl [eval]
+@ dogrille.pl [evalgrille] # une eval + une grille -> resultat d'une grille -> un exopourprof qui permet d'afficher l'evaluation pour un élève. 
+@ creatgrille.pl [creation] # creation d'une grille par un prof -> sauvegarde dnas une base de donnée [webcomposant] 
+@ tropdetentatives.pl [errortentatives] 
+
 barem==
 (pl1.score() + pl2.score() + pl3.score()) / 2
 ==
@@ -101,9 +107,39 @@ if not pl1.exec() and not pl8.exec() : # if pl 1 not valide do pl 8 !
   notification(current_teacher,currentstudent, " problème avec le concept bascule ")
 
 while pl2.score() + pl3.score() + pl4.score() < 100: # 
-  pl2.exec();
-  pl3.exec();
-  pl4.exec();
+  pl2.exec(rerun=True);
+  pl3.exec(rerun=True);
+  pl4.exec(rerun=True);
+
+plOuvert.exec()
+
+classe.done(plouvert)# sauvegarde l'information saisie l'elève currentstudent dans la class et associé à l'ID du plouvert
+
+while tp est pas fini :
+    name[currentexo].exec() # mais la classe elle connait toutes les exécutions 
+    currentexo+= 1
+    while class.asEval():
+      eval.exec(data=class.evaluation())
+
+plouvert.content() # Réponse de currentstudent à la question ouverte 
+
+
+
+def exec(self,dico)
+  if rerun==false and self.done(): # done dépand du nombre lance un exo mock qui dit exercice inatégniable revener dans x temps 
+    return errortentatives.exec()
+  self.load()
+  self.updatedic(dico) # application du décorateur 
+  self.run() 
+  while self.error() :
+    self.continue()
+  if examen:
+    return 
+ tentativesRestante -= 1
+ while tentativesRestante >0 : 
+      self.continue()
+      tentativesRestante -= 1
+ return 
 ```
 
 Has you can see on this exemple as exec replace the current activity.
