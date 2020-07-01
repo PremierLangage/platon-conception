@@ -94,7 +94,7 @@ Exemple :
 @ creatgrille.pl [creation] # creation d'une grille par un prof -> sauvegarde dnas une base de donnée [webcomposant] 
 @ tropdetentatives.pl [errortentatives] 
 @ messagederreur.pl [norerun]
-
+@ comparaison.pl [comp]
 
 barem==
 (pl1.score() + pl2.score() + pl3.score()) / 2
@@ -121,7 +121,7 @@ while tp est pas fini :
     name[currentexo].exec() # mais la classe elle connait toutes les exécutions 
     currentexo+= 1
     while classe.asEval():
-      eval.exec(decorator={'title':'eval de merde', 'text'=class.evaluation()})
+      eval.exec(decorator={'title':'eval de merde', 'text'=classe.evaluation()})
 
 plouvert.content() # Réponse de currentstudent à la question ouverte 
 
