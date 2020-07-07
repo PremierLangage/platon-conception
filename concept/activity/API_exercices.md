@@ -5,7 +5,9 @@
 * form
 * bouton valider et contrôle (recommencer/abandonner/voire la solution/faire autre chose)
 * builder 
-* grader  
+* grader
+* vrai/faux (juste vrai ou faux, sans la réponse)
+* réponse (juste la réponse brute)
 * solution (solution complète et expliquée)
 * grade (note de la dernière tentative sans tenir compte du nombre de tentatives, l'activité controle la pondération!)
 * hint (conseil du moment)
@@ -39,6 +41,7 @@ Le formulaire de réponse de l'exercice. Ce dernier est proposé à l'élève si
 ### bouton valider et contrôle (recommencer/abandonner/voire la solution/faire autre chose)
 
 * bouton valider : Même visibilité que le formulaire
+* option, proposer trois ou quatre boutons à la place de valider qui indique le niveau de confiance type "je le sais" (vert) "je le pense" (vert clair) "je ne suis pas très sûr" (orange) "je n'en ai aucune idée" (rouge). La valeur choisie doit être collectée.
 * bouton ré-initialiser : Même visibilité que le formulaire, ré-initialise l'exo avec la **même seed de génération aléatoire**
 * bouton voir la solution : Visible si solution existante et autorisation par l'activité
 * bouton retenter l'exercice : Visible si autorisation par l'activité, relance l'exo avec une **nouvelle seed de génération aléatoire**
@@ -65,10 +68,15 @@ La valeur -1 du grade correspond à la décision pédagogique de ne pas noter (t
 
 ### hint (conseil du moment)
 un message dynamique et personnel pour aider l'apprenant sur l'exercice
+Il doit/peut être replié, 
+il peut en exister plusieurs consécutifs, 
+il peut être désactivé (par exemple en mode examen)
+le fait de l'utiliser peut avoir une conséquence sur la notation, 
 TODO : Charte graphique et couleur/mise en page explicite pour des conseils....
 
 ### feedback (retour personnalisé différable : tout de suite ou en fin d'exo)
-Retour personnalisé et possiblement différable pour l'apprenant. 
+Retour personnalisé et possiblement différable pour l'apprenant.
+Basé sur une analyse fine de la réponse, 
 
 ATTENTION !!!! différable est primordiale. Si l'exercice est un exercice à étapes ou un exercice à énoncé changeant, le créateur/enseignant éditeur est responsable de recopier des parties d'énoncés dans son feedback de manière à ce que ce dernier garde du sens même si ce retour est affiché en fin d'exercice.
 
@@ -90,7 +98,7 @@ C'est le mode le plus dynamique, le plus réactif, au service de la performance 
 * Feedback au plus rapide des réponses élèves
 * Hint et conseil activés/activables
 * Note visibles sur le retour d'appel au grader
-* Correction visibles si existantes
+* Correction visibles si existantes 
 * Relance autorisée si ça a du sens (comment le savoir? faut-il le mettre en dur dans les exos (je suis aléatoire et relançable, je suis une blague à chute, etc...))
 
 ### Mode Révision
@@ -104,7 +112,7 @@ C'est un mode d'entraînement au passage des examens. Lorsque l'apprenant travai
 
 ### Mode Examen
 
-Le mode conçu pour les examens dont les notes produites entre dans les modalités de contrôles des connaissances des formations. C'est une activité à réaliser sur un laps de temps imparti sans conseils, ni indices, ni notes, ni débriefing.
+Le mode conçu pour les examens dont les notes produites entre dans les modalités de contrôles des connaissances des formations. C'est une activité à réaliser sur un laps de temps imparti (par exemple une heure consécutive), dans un créneau imparti (par exemple entre 11h et 17h), éventuellement sur des postes impartis (ceux de la salle xx), sans conseils, ni indices, ni notes, ni débriefing.
 
 * Désactivation des Feedback mais collecte de ces derniers
 * Hint et conseil désactivé par défault
