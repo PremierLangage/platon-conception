@@ -6,10 +6,10 @@ Niveau 1
 ##	Description
 Objectif d'un utilisateur trouver une ressource.
 Pour trouver une ressource deux possibilités:
-- par aav en utilisant le q&a et la recherche d'aav.
+- par aav en utilisant le q&a et la recherche d'aav. Voir le Q&A.
 - par une recherche full text et tags (comme pour une recherche immobilière/ le bon coin )
 
-
+ 
 
 
 
@@ -20,25 +20,37 @@ Pour trouver une ressource deux possibilités:
 
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+> **Déclencheur** : Le membre cherche une ressource pour la placer dans un cours ou une ressource agrégeante
+> **Acteur Primaire**: Membre   
+> **Acteurs secondaires**: Acteurs modifiant les métadonnées 
+> **Parties Prenantes concernées** : utilisateurs   
  
  
 ## Preconditions
 
 FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
 
+Il faut des ressources, 
+des ressources étiquetées (tags)
+Types de Tags:
+
+    Disciplinaire (informatique, histoire, etc),
+    Niveau scolaire (CP,CE1,...., D, N),
+    Difficulté (Introductif,applicatif,calculatoire,reflexion,difficile),
+    Etat de développement (None,testé,Validé,opérationnel, inconnu, Erreur,...) 
+
+
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
+Le scenario débute avec la page de recherche d'exercice du site des ressource:
 
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
+1.	l'utilisateur rempli les différents champs des chritère de recherche,
+-> full text (grep dans le fichier ou un locate oy un elastique search)
+-> choix disciplinaire (saisie controlée)
+-> Niveau (Click + selected/notselected)
+-> etat (
+
 
 ###	Extensions
 FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
