@@ -9,8 +9,8 @@ Pour trouver une ressource deux possibilités:
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
 > **Déclencheur** : Le membre cherche une ressource pour la placer dans un cours ou une ressource agrégeante
-> **Acteur Primaire**: Membre   
-> **Acteurs secondaires**: Acteurs modifiant les métadonnées 
+> **Acteur Primaire** : Membre   
+> **Acteurs secondaires** : Acteurs modifiant les métadonnées 
 > **Parties Prenantes concernées** : utilisateurs   
  
  
