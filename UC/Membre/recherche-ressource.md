@@ -50,6 +50,7 @@ FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre
 
 ## Post Conditions
 ### Conditions de succès 
+
 Une fois que les ressources correspondant à la recherche sont listés, la recherche est terminé et l'utilisateur peut naviguer dans les ressources trouvées.
 
 ### Minimal Guarantees
@@ -57,6 +58,7 @@ FIXME _[Describe the guarantee or assurance that this Use Case provides to all A
 
 ### Conditions final en cas d'échec
 FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
+
 S'il existe une ressource qui pourrait correspondre à la recherche mais qui n'est pas tagué -> elle n'apparaîtra pas dans les résultats alors qu'elle devrait
 
 FIXME _les variables suivantes sont optionnelles._
