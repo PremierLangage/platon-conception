@@ -28,16 +28,16 @@ Niveau 1
 
 
  1 L'enseignant clique sur une ressource dans les ressource de l'établi  ou le bouton créer ressource.
- 1. Creation : choisir le type de ressource que l'on créer.  
-   -> composite ouvre l'éditeur composite.
-   -> programmable ouvrer l'editeur programmable (pl? activités programmable)
-   -> préparé ouvir l'editeur adapté.
-2. idem avec la ressource sélectionné, récupère le type pluis on ouvre l'éditeur correspondant 
-3. interaction avec l'éditeur 
- -> voir IHM/MC
- -> modification eventuelle des versioin (voir la fin de ce docuement)
-4. Sauvegarde -> sauvegarde la ressource, mise à jour, des liens de version,
- et notification des propréitaires des ressources qui dépende de celle ci. 
+ 1. Creation : choisir le type de ressource que l'on créer.    
+   -> composite ouvre l'éditeur composite.  
+   -> programmable ouvrer l'editeur programmable (pl? activités programmable). 
+   -> préparé ouvir l'editeur adapté.  
+2. idem avec la ressource sélectionné, récupère le type pluis on ouvre l'éditeur correspondant  
+3. interaction avec l'éditeur  
+ -> voir IHM/MC. 
+ -> modification eventuelle des versioin (voir la fin de ce docuement). 
+4. Sauvegarde -> sauvegarde la ressource, mise à jour, des liens de version,  
+ et notification des propréitaires des ressources qui dépende de celle ci.  
 
 
 ###	Extensions
