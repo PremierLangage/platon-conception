@@ -1,22 +1,10 @@
 
 # Cas d'utilisation N° 56 :  recherche-ressource
 
-Niveau 1
-
-##	Description
-Objectif d'un utilisateur trouver une ressource.
+Objectif d'un utilisateur :  Trouver une ressource.
 Pour trouver une ressource deux possibilités:
-- par aav en utilisant le q&a et la recherche d'aav. Voir le Q&A.
-- par une recherche full text et tags (comme pour une recherche immobilière/ le bon coin )
-
- 
-
-
-
-**[discipline](https://github.com/PremierLangage/plconception/blob/master/conception/concept/discipline.md)**  
-**[ressource](https://github.com/PremierLangage/plconception/blob/master/conception/concept/ressource.md)**  
-**[aav](https://github.com/PremierLangage/plconception/blob/master/conception/concept/aav.md)**  
-**[tag](https://github.com/PremierLangage/plconception/blob/master/conception/concept/tag.md)**  
+- Par aav en utilisant le q&a et la recherche d'aav. Voir le Q&A.
+- Par une recherche full text et tags (comme pour une recherche immobilière/ le bon coin )
 
 
 > **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
@@ -27,29 +15,31 @@ Pour trouver une ressource deux possibilités:
  
  
 ## Preconditions
+ 
+Pour que ce cas d'utilisation puisse avoir lieux il faut des ressources étiquetées (tags)
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
-
-Il faut des ressources, 
-des ressources étiquetées (tags)
 Types de Tags:
-
-    Disciplinaire (informatique, histoire, etc),
-    Niveau scolaire (CP,CE1,...., D, N),
-    Difficulté (Introductif,applicatif,calculatoire,reflexion,difficile),
-    Etat de développement (None,testé,Validé,opérationnel, inconnu, Erreur,...) 
-
+- Disciplinaire (informatique, histoire, etc),
+- Niveau scolaire (CP,CE1,...., D, N),
+- Difficulté (Introductif,applicatif,calculatoire,reflexion,difficile),
+- Etat de développement (None,testé,Validé,opérationnel, inconnu, Erreur,...),
 
 
 ## Scenario Nominal
 
-Le scenario débute avec la page de recherche d'exercice du site des ressource:
+Le scénario débute avec la page de recherche d'exercice du site des ressources:
 
-1.	l'utilisateur rempli les différents champs des chritère de recherche,
--> full text (grep dans le fichier ou un locate oy un elastique search)
--> choix disciplinaire (saisie controlée)
--> Niveau (Click + selected/notselected)
--> etat (
+1.	L'utilisateur rempli les différents champs des critères de recherche,
+- full text (grep dans le fichier ou un locate ou un elastique search)
+- choix disciplinaire (saisie controlée)
+- Niveau (Click + selected/notselected)
+- etat (liste déroulante)
+
+2. Le système fait un filtre selon les critères sélectionnés 
+- Si aucune ressource n'a été trouvé il renvoie à l'utilisateur ou page vide avec un message pour dire qu'aucune ressource ne correspond à la recherche -> fin du cas d'utilisation
+- Sinon il envoie la liste des liens vers les ressources par ordre de correspondance selon les critères
+
+3. L'utilisateur peut cliquer sur n'importe quel lien qui mène vers une ressource parmi celles qui sont apparus à la recherche -> fin du cas d'utilisation
 
 
 ###	Extensions
@@ -60,14 +50,14 @@ FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre
 
 ## Post Conditions
 ### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
+Une fois que les ressources correspondant à la recherche sont listés, la recherche est terminé et l'utilisateur peut naviguer dans les ressources trouvées.
 
 ### Minimal Guarantees
 FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
 
 ### Conditions final en cas d'échec
 FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
-
+S'il existe une ressource qui pourrait correspondre à la recherche mais qui n'est pas tagué -> elle n'apparaîtra pas dans les résultats alors qu'elle devrait
 
 FIXME _les variables suivantes sont optionnelles._
 
@@ -83,7 +73,11 @@ FIXME _[Describe any additional factors that impact the execution of the use cas
 ##	Problèmes et étapes suivantes  
 FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
 
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
+Problème dans la description **actuelle** du cas d'utilisation : Des problèmes à comprendre le principe de la rubrique **extension**  
 
-TBR
+## Cas d'utilisation associé
+
+- [Discipline](https://github.com/PremierLangage/plconception/blob/master/conception/concept/discipline.md) 
+- [Ressource](https://github.com/PremierLangage/plconception/blob/master/conception/concept/ressource.md)
+- [Aav](https://github.com/PremierLangage/plconception/blob/master/conception/concept/aav.md) 
+- [Tag](https://github.com/PremierLangage/plconception/blob/master/conception/concept/tag.md)
