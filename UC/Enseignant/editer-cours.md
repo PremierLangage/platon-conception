@@ -23,6 +23,7 @@ La modification d'un **[cours](https://github.com/PremierLangage/platon-concepti
    -  la possibilité de changer l'ordre des sections/ressources (drap & drop **explicitement indiqué par la présence d'une icône par exemple**)
    - la possibilité d'accéder à une page/boîte de dialogue dédiée à la modification du contenu et des métadonnées de chaque ressource du cours (via un bouton à coté de la ressource par exemple).
    - la possibilité de supprimer une ressource (**confirmation obligatoire**)
+   - la possibilité d'ajouter une ressource (voir editer ressource).
 3. L'enseignant clique sur un bouton permettant de  quitter le mode édition
 
 
