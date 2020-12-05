@@ -1,0 +1,109 @@
+
+
+@startuml
+class BDRessource{
+ RIndex create(Ressource)
+ bool save(RIndex,Ressource)
+ Ressource load(RIndex)
+}
+
+
+
+
+Class ArboCercle {
+RPath pathfrom(Rindex)
+RIndex indexfrom(path)
+Cercle getcercle(name)
+}
+
+Class Ressource {
+File getfile(name)
+bool setfile(name,content) 
+user owner
+hash hashcodeofversion
+List<name> getnames()
+
+}
+
+
+Class ViewCercle{
+showressources()
+showheritedressources()
+showCoreRessource()
+}
+
+
+Class Cercle {
+path getpath()// complete
+name getpathname() // last dir
+bool ismember(user)
+Cercle getparent()
+List<Names> getressources()
+List<Names> getAllRessources()
+bool CrudRessource(name,op)
+
+
+}
+
+Class Path {}
+
+
+Class RIndex {
+path on disque of repo
+}
+
+RIndex --|> Path 
+
+
+class User {
+
+}
+
+class RPath {
+// absolute path of ressource
+}
+
+RPath --|> Path 
+
+class Asset {
+// depands of playexo play activity
+}
+
+
+Asset --> "from" Ressource
+
+class File {
+name
+content
+}
+
+
+note "Rpath est le chemin dans l'arborescence des cercles. \nRIndex est une string unique contenant le chemin unique \nsur disque dans l'arborescence de repository git.\n Un asset est construit a partir dune ressource.\nune ressource est un répertoire (pas nécessairement à plat) de fichiers.\n " as N1
+
+ArboCercle --> "n" Cercle : tous 
+
+ArboCercle ..> RIndex 
+ArboCercle ..> RPath 
+ 
+BDRessource ..> RIndex 
+
+
+
+Ressource --> "1..n" File :  contains
+
+Cercle --> "local" Ressource
+
+Cercle --> "héritées" Ressource
+
+
+User --> "Mes" Cercle
+
+Cercle --> Cercle : parent,enfants
+
+Cercle --> "Lecteurs" User
+Cercle --> "Editeurs" User
+
+
+
+ViewCercle --> "1" Cercle
+@enduml
