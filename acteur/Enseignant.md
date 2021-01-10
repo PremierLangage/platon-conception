@@ -15,7 +15,8 @@ Les possibilités coeurs du travail de l'enseignant sous PLaTon sont :
 - Il peut regarder l'avancement de ces élèves sur les assets déployés.
 - Il peut évaluer/corriger certaines activités (les assets qui permettent de le faire).
 - Il peut exporter des notes.
-- Faire de la gestion: inscrire des enseigants non éditeurs, des enseignants et des étudiants.
+- Faire de la gestion: inscrire des enseigants non éditeurs, des enseignants et des étudiants (fait pas moodle).
+- Gérer des groupes (sous groupes de la classe/promo, binomes, groupes projets). 
 - Administration du cours: partage et archivage.
 
 Sinon l'enseignant est membre d'un **cercle** (a minima celui des "noobs" sur le site) et donc peut utiliser le **serveur central** de ressource comme un [membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md).
