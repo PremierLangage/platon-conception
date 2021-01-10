@@ -43,7 +43,7 @@ Sinon l'enseignant est membre d'un **cercle** (a minima celui des "noobs" sur le
 [Demande-de-cercle.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/Demande-de-cercle.md)   
 [editer-cours.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/editer-cours.md)   
 [editer-modalités-completion.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/editer-modalités-completion.md)   
-[Enseigner.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/Enseigner.md)   
+[Enseigner.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/enseigner.md)   
 [Evaluer.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/Evaluer.md)   
 [exporter-notes.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/exporter-notes.md)   
 [exporter-stats.md](https://github.com/PremierLangage/platon-conception/blob/master/UC/Enseignant/exporter-stats.md)   
