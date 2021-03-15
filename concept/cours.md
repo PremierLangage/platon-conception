@@ -8,8 +8,8 @@ Un cours est un asset basé sur un cours-ressource.
 Un cours-ressource est:
 - une liste d'AAV (aquis d'apprentissage visés) de niveau 1. 
 - un lien vers des AATP (aquis d'apprentissage terminaux du programme) qui figurent dans le supplément au diplome.
-- une liste de ressources de type section-chapitre.
-Un cours-ressource est: une liste de ressources de type section-chapitre.
+- une liste de ressources de type section-chapitre/coursepart.
+Un cours-ressource est: une liste de ressources de type section-chapitre/coursepart.
 - associé à une discipline (ceci ne peux être vide et doit être rempli à la création).
 - associé à un niveau (niveau des élèves: L1, CM2, BTS, etc voire nomenclature officielle/wims)
 - associé à un thème (thème: classement dans la discipline)  
