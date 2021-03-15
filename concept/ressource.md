@@ -23,13 +23,24 @@ Les ressources éditables ont:
 - un classement dans Yggdrasil (ensemble d'étiquetages obligatoires)
 - des aav auquels la ressource participe
 - une discution (eventuellement une page loomio)
-- une structure de stockage (apriori un fichier de données + fichier de meta data)
+- une structure de stockage (apriori un **repertoire** avec un **main.pl** et des fichiers de données + fichier de meta data)
 - des dépendances: information sur les versions des ressources liées.
 - des utilisateurs/propriétaire/observateurs/editeurs/
 
+## Propriétés pédagogiques 
+
+- usages possible de la ressource, présentiel, online,
+- répétabilité, longueur de la répétabilité
+- type: acquisition, discution, collaboration, entrainement, production, 
+- utilisable ou non pour une évaluation
+
+
 ## Les ressources PL 
 
-Les ressources PL sont stockés dans une arborescence versionnée. (Cloud à la Dropbox ?)
+Les ressources PL sont stockés dans une arborescence versionnée. 
+
+Chaque ressource est un répertoire git, chaque sauvegarde est taggée, il est possible d'ajouter des etiquettes.
+
 https://www.ubuntupit.com/best-cloud-storage-for-linux-15-reviewed-and-compared-for-linux-nerds/
 
 Les ressources sont des objets de la base de donnée :
