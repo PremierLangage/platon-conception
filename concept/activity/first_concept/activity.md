@@ -15,13 +15,13 @@ An activity can be used in multiple courses but there is a distinct instance of 
 An activity has at least a standard strategy and a PLTP file.
 
 Activité= S + F* + (sd* td* I N B)
-I  = Introduction + Documentation
-S  = Strategie
-F  = pltp + (decorators)
-sd = student dashboard
-td = teacher dashboard
-N  = navigation
-B  = Barem (comment est calculé la nte qui remonte à moodle)
+I  = Introduction + Documentation  
+S  = Strategie  
+F  = pltp + (decorators)  
+sd = student dashboard  
+td = teacher dashboard  
+N  = navigation  
+B  = Barem (comment est calculé la nte qui remonte à moodle)  
 
 
 
