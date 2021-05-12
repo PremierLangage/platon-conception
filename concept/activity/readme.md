@@ -8,11 +8,13 @@ Deux niveaux:
 
 ## Format syntaxique des fichiers pla
 
-Conservation du format pl:    
-name = jsonvalue  
-name==
-textual value 
-==
+Conservation du format pl:   
+```
+	name = jsonvalue  
+	name==  
+	textual value 
+	==  
+```
 
 ## Déclaration des exercices 
 
@@ -119,6 +121,12 @@ setting.syntactic = True(default)|False  # l'exercice peut si il y a une erreur 
 setting.feedback = True(default)|False # Affichage du feedback proposé par l'exercice, sinon pas de feedback.  
 setting.evaluation = True(default)|False # affichage de l'évaluation (numérique) de l'exercice, ou pas.  
 setting.validation = True(default)|False # le bouton de validation est géré par l'exercice, sinon il est géré par l'activité. Dangereux si l'on oublie de le proposer dans l'activité.   
+
+DEFAULTSETTINGS = { 'nbtry':0, 'reroll':True, 'syntactic':True, 'feedback':False, 'evaluation':False, 'validation'=True }
+
+STEPSSETTINGS = { 'nbtry':1, 'reroll':False, 'syntactic':True, 'feedback':True, 'evaluation':True, 'validation':True }
+STANDARDSETTINGS = { 'nbtry':1, 'reroll':True, 'syntactic':True, 'feedback':True, 'evaluation':True, 'validation':True }
+EXAMSETTINGS =  {  'reroll':False, 'syntactic':True, 'feedback':False, 'evaluation':False, }
 
 ### Paramêtrage
 Certains exercice proposent des paramêtrages cf. leurs documentations. 
@@ -253,14 +261,19 @@ Puis la fonction next de l'activité est appelée.
 ## Une activité qui choisit 3 exercices parmi 5.
 
 ```
+title= Activité de démo
+tags=demo
+
+introduction==
+Page d'introduction de l'activité.
+==
+
 @ exo1.pl
 @ exo2.pl
 @ exo3.pl
 @ exo4.pl
 @ exo5.pl [truc]
-
-
-
+#Balise de lancement de l'activité 
 before ==
 # Choix aléatoires de 3 parmis 5 
 lst_exos = random.sample([exo1, exo2, exo3, exo4, truc], k=3)
@@ -316,7 +329,7 @@ while lstate < len(LL):
 	if state>len(LL[lstate]):
 		lstate+=1
 		continue
-	Launch(LL[lstate][state++],settings=STANDARDSETTINGS, {"title":" bande de moules "})
+	Launch(LL[lstate][state++],settings=STANDARDSETTINGS, {"author":" Nous !! "})
 end()
 ==
 
@@ -332,20 +345,43 @@ score=sum([exo.score for exo in done])/len(done)
 ## Une activité à étapes.
 
 ```
+extends=/model/steps.pla
+
+mesetapes@@ 
 @ step1.pl
 @ step2.pl
 @ step3.pl
+@@
 
 before ==
-from random import randint
-value1 = randint(1, 10)
-value2 = randint(1, 10)
-dicparam = {'param1': value 1, 'param2': value2}
-lst_exos = [Exo('step1.pl', dicparam),
-Exo('step2.pl', dicparam),
-Exo('step3.pl', dicparam)]
+params = {'param1': randint(1,10), 'param2': randint(1,10)}
+basepipe={'param1','param2'}
+# Variable utilisée oar le model steps
+steps = mesetapes
 ==
 ```
+
+Le models steps.pla si il y a échec sur une étape rédémarrage au début.
+
+
+```
+state=0
+next==
+if state <len(steps):
+	param = updatedic(params,basepipe)
+	if done[-1].results != OK :
+		state=0 # echec au cours d'une des étapes rédémarage
+		dobefore()
+		Launch(FEEDBACK, settings={}, param={'feedback':" Vous avez échouez vous devez reprendre au début"})
+	Launch(steps[state++],settings=STEPSSETTINGS,param)	
+else:
+	end()
+==
+
+```
+
+
+
 
 ## Une activité qui génère plusieurs exercices à partir d'un même modèle d'exercice et d'un jeu de données. 
 
