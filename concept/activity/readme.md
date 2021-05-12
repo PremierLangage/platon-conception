@@ -6,6 +6,12 @@ Deux niveaux:
 - niveau code : un système de gestion de workflow qui permet de préciser quelles actions doit prendre l'activité 
 - niveau pla : une activité est un dictionnaire qui permet de définir une partie des comportements de l'activité.
 
+
+Pour comprendre la programmation des activité il faut avoir lu la documentation des Composant-PL.
+
+
+
+
 ## Format syntaxique des fichiers pla
 
 Conservation du format pl:   
@@ -123,14 +129,15 @@ setting.evaluation = True(default)|False # affichage de l'évaluation (numériqu
 setting.validation = True(default)|False # le bouton de validation est géré par l'exercice, sinon il est géré par l'activité. Dangereux si l'on oublie de le proposer dans l'activité.   
 
 DEFAULTSETTINGS = { 'nbtry':0, 'reroll':True, 'syntactic':True, 'feedback':False, 'evaluation':False, 'validation'=True }
-
 STEPSSETTINGS = { 'nbtry':1, 'reroll':False, 'syntactic':True, 'feedback':True, 'evaluation':True, 'validation':True }
 STANDARDSETTINGS = { 'nbtry':1, 'reroll':True, 'syntactic':True, 'feedback':True, 'evaluation':True, 'validation':True }
-EXAMSETTINGS =  {  'reroll':False, 'syntactic':True, 'feedback':False, 'evaluation':False, }
+EXAMSETTINGS =  {  'reroll':False, 'syntactic':True, 'feedback':False, 'evaluation':False, } # autres settings laissé a l'exercice
+CARROUSELSETTINGS=  {  'validation':False,'feedback':False, 'evaluation':False } # autres settings laissé a l'exercice
+
 
 ### Paramêtrage
 Certains exercice proposent des paramêtrages cf. leurs documentations. 
-L'activité peut modifier ces parametrages en fournissant un dictionnaire **parameters**. 
+L'activité peut modifier ces parametrages en fournissant un dictionnaire **param**. 
 
 
 ## ? ce comporter comme un exercice 
@@ -176,7 +183,7 @@ Quels sont les éléments clefs:
 - les étapes doivent être des exercices pré-écrits. 
 - grace aux balise **done** et **last** l'activité peut extraire des valeurs de l'étape précédente. 
 - il faut écrire une activité générique pour simplifier l'ecriture des exercices à étapes.
-- 
+
 
 
 
@@ -186,8 +193,7 @@ Quels sont les éléments clefs:
 
 
 
-* `liste_exos  = [ exo1, exo2, ...]`
-* `coeffs = [c1, c2,...]`
+
 Le coefficient $c_i$ de l'exercice ex$o_i$  de chaque étape dans le score final. 
 * `one_way = true/false `
   * Si `True`, l'utilisateur doit valider l'étape i pour accéder à l'étape i+1.
@@ -232,15 +238,32 @@ La balise de texte de la page de garde de l'activité.
 Une balise qui permet de mettre en page l'activité. 
 Une page Html, avec des conteneurs pour les exos _1, 2, .., N_
 
-## Balise Evaluator
+## Balise End
+
 Calcule Le score final et le feedback à partir des données fournies par les étapes _1..N_.
+Peut utiliser une balise `coeffs = [c1, c2,...]`.
 
 
-Il nous faudrait une classe `Exo` pour représenter un exercice (un peu comme la classe `Component`). On pourrait construire un exercice dans le `before` de l'activité en utilisant cette classe. Les paramètres du constructeur `Exo` seraient l'adresse du fichier source pl et (optionnel) un dictionnaire de surcharge.
 
-A la fin du `before`, il faudrait avoir construit une liste `liste_exos` d'objets `Exo`.
+## Exercices standard utilisables directement par l'activité 
 
-Cette approche est compatible avec le pipeline (on update l'objet `Exo` avec le dictionnaire du pipeline en temps voulu).
+exercises.FEEDBACK = Un exercice qui affiche un message de feedback à paramêtré
+exercices.OP_* = Un exercice qui affiche une question ouverte il faut définir l'énoncé. 
+	Launch(exercices.OP_textArea,settings={},param={'text':' Que pensez vous de la plateforme platon ?'})
+	L'autre est OP_editor qui ouvre un text editor.
+exercice.END = Un exercice qui permet d'afficher la fin d'une activité
+exercice.SLIDE= Un exercice qui permet d'afficher un slide parmis un groupe 
+	exemple le slide 0 dans le cas ou il y a un seul slide
+	Launch(exercices.OP_textArea,settings={},param={'content':' *** \n # Title \n ## sub title \n text du slide \n','id',0 })
+	
+exercice.EMPTY = il est vide ! 
+	On pourrait construire un exercice de toute piece dans le `next` de l'activité en utilisant cette classe.
+	ZZZ : pas d'existance dans la base donc pas de statistique
+	ZZZ : rien ne prouve que l'exercice fonctionnne ... 
+	ZZZ : vraiment dangeureux.
+
+A la fin du `before`, il faudrait avoir construit une liste `liste_exos` de références d'exos (ID dans la table d'assets, transparant pour le programmeur)
+
 
 
 
@@ -373,14 +396,12 @@ if state <len(steps):
 		state=0 # echec au cours d'une des étapes rédémarage
 		dobefore()
 		Launch(FEEDBACK, settings={}, param={'feedback':" Vous avez échouez vous devez reprendre au début"})
-	Launch(steps[state++],settings=STEPSSETTINGS,param)	
+	Launch(steps[state++],settings=STEPSSETTINGS,param=param)	
 else:
 	end()
 ==
 
 ```
-
-
 
 
 ## Une activité qui génère plusieurs exercices à partir d'un même modèle d'exercice et d'un jeu de données. 
@@ -397,3 +418,18 @@ for value in data:
 	lst_exos.append(Exo('exomodel.pl', {'param': value}))
 ==
 ```
+
+
+
+
+
+
+def Launch(exo, settings, param):
+	# Première chose vérifier que l'exo existe ... 
+	# Charger l'exo 
+	# mise a jours des settings et des params
+	# si tout est ok 
+	-> sauvegarde de l'activité pour la prochaine fois 
+	-> lancer l'exo en mode détache avec playexo.
+	exit()
+
