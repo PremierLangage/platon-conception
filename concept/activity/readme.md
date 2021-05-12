@@ -6,7 +6,40 @@ Deux niveaux:
 - niveau code : un système de gestion de workflow qui permet de préciser quelles actions doit prendre l'activité 
 - niveau pla : une activité est un dictionnaire qui permet de définir une partie des comportements de l'activité.
 
-## Rappel des Missions de l'activité 
+## Format syntaxique des fichiers pla
+
+Conservation du format pl:    
+name = jsonvalue  
+name==
+textual value 
+==
+
+## Déclaration des exercices 
+
+Pour que l'activité puisse choisir et proposer des exercices il faut que l'on ai vérifié les exercices et il faut les placer dans le serveur d'asset.
+
+Deux syntaxes, celle des pltp 
+
+@ chemindelexercice [alias]
+Le chemin est soit relative au fichier pla soit absolu. 
+Le nom de l'exercice est par défaut celui du nom de base dans le chemin sans l'extension, mais peut être modifié par l'alias.
+Exemple:
+
+@ ../tp3/exo5.pl [fractions4]
+Par défaut le nom de l'exercice est "exo5" mais remplacé par "fractions4", attention les alias doivent être des identifiants légaux pour des variables python.
+
+La deuxième syntaxe permet de donner un nom a une liste d'exercices:
+
+name@@
+exo.pl 
+../tp3/exo5.pl
+../tp2/exo7.pl
+cours.md
+fusé.pla
+@@
+
+
+## Rappel des Missions de l'activité
 
 Les rôles de l'activité (! obligatoire, ? optionel):
 * ! gérer des données
@@ -25,7 +58,7 @@ Les activités doivent gérer un certains nombre données pour fonctionner.
 Les exercices fait (terminés) par l'utilisateur sont dans la variables **done** qui est une liste de dictionnaires (peut être une optimisation a faire pour un chargement fainéant l'information étant dans la base de donnée). 
 **last** soit **done[-1]** contient le dernier exercice fait. 
 
-[bof bof]:L'utilisateur, le groupe, la classe sont des variables d'environement éventuellement accessibles (je suis pas convincu de l'interet sauf peut être pour les exercices direct affectés ??).
+[bof bof]:L'utilisateur, le groupe, la classe sont des variables d'environnement éventuellement accessibles (je suis pas convincu de l'interet sauf peut être pour les exercices direct affectés ??).
 
 Les activités ont une structure json dans la variable **udata** qui est spécifique à l'utilisateur courrant si option **userdata** est positioné.. 
 Et une struvture json dans la variable **cdata** qui est commune a tout les utilisateurs d'une même classe et que l'option **classdata** est positioné.
@@ -205,6 +238,17 @@ Cette approche est compatible avec le pipeline (on update l'objet `Exo` avec le 
 
 # Exemples de  Codes
 
+Le code d'une activité doit choisir l'exercice que doit lancer le module PlayExo. 
+
+Ceci doit être fait dans la balise next de l'activité.
+Pour cela il doit appeller une fonction Launch(exo,settings,param) qui retourne imédiatement (appel asynchrone) et l'activité s'arrète (yield?).
+Cette fonction launch a pour effet de charger l'exercice "exo" (identifié par sont id dans les assets), puis de modifier ses settings, et d'y ajouter les parametres. 
+Une fois ces modification réalisées on lance un build sur la sandbox, une fois le build réalisé, il faut lancer sur le front de l'utilisateur courrant un composant angular d'exercice avec en paramêtre cet exercice post build.
+L'exercice terminé l'activité est rechargé les données d'exécution placées dans la variable done. (done.append(exo.executiondata)).
+
+Puis la fonction next de l'activité est appelée.
+
+
 
 ## Une activité qui choisit 3 exercices parmi 5.
 
@@ -213,15 +257,77 @@ Cette approche est compatible avec le pipeline (on update l'objet `Exo` avec le 
 @ exo2.pl
 @ exo3.pl
 @ exo4.pl
-@ exo5.pl
+@ exo5.pl [truc]
+
+
 
 before ==
-from random import sample
-names = ['exo1.pl', 'exo2.pl', 'exo3.pl', 'exo4.pl', 'exo5.pl']
-for name in rd.sample(names, k=3):
-	lst_exos.append(Exo(name))
+# Choix aléatoires de 3 parmis 5 
+lst_exos = random.sample([exo1, exo2, exo3, exo4, truc], k=3)
+==
+state=0
+next==
+if state>len(lst_exos):
+	end()
+Launch(lst_exos[state++],settings=STANDARDSETTINGS, {"title":" bande de moules "})
+==
+
+end==
+# l'objectif du script "end" est de préparer les données de fin d'activité et de calculer le grade pour l'activité.
+feedback=vous avez fini. // TBD 
+score=sum([exo.score for exo in done])/len(done)
 ==
 ```
+
+
+
+
+
+
+
+## Une activité qui choisit 3 exercices parmi 5 dans différentes listes
+
+```
+# Création de la liste L1 de 5 exercices 
+L1@@
+exo1.pl
+exo2.pl
+exo3.pl
+exo4.pl
+exo5.pl
+@@ 
+L2@@
+compile/linter.pl
+compile/identifiers.pla
+compile/linker.md
+compile/gesinfo.pl
+translation/exo4.pl
+@@
+
+
+before ==
+state=0
+lstate=0
+LL=@[random.sample(L1, k=3),random.sample(L1, k=3)]
+==
+
+next==
+while lstate < len(LL):
+	if state>len(LL[lstate]):
+		lstate+=1
+		continue
+	Launch(LL[lstate][state++],settings=STANDARDSETTINGS, {"title":" bande de moules "})
+end()
+==
+
+end==
+# l'objectif du script "end" est de préparer les données de fin d'activité et de calculer le grade pour l'activité.
+feedback=vous avez fini. // TBD 
+score=sum([exo.score for exo in done])/len(done)
+==
+```
+
+
 
 ## Une activité à étapes.
 
