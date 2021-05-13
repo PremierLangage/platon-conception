@@ -48,7 +48,7 @@ Le mode Play utilise des composants Platons (inputs, graphics, hints, etc).
 
 
 
-### Mode Answer 
+### Mode Answer / correction 
 
 Mode ou l'énoncé est affiché et la réponse d'un utilisateur est affichée.
 Le mode answer doit être associé a des composants de correction:
@@ -58,7 +58,21 @@ Le mode answer doit être associé a des composants de correction:
 
 Les informations de correction sont sauvé avec la réponse de l'utilisateur.
 
-### 
+### Mode evaluation
 
+Dans ce mode l'exercice affiche la réponse, l'évaluation et le feedback.
+
+
+### Mode Stats 
+
+Affichage d’une stats sur les résultats de l’exercice, l'affichage par défaut est de fournir la proportion de 100/100. 
+L'affichage stats est fait avec un filtre de population: promo, groupe, classe,  tout le monde. TBD.
+
+
+###  BarExo 
+
+Ceci est un composant permettant l'affichage résumé de l'exercice.
+Il permet d'avoir accès aux stats et à la preview dans un popup.
+Version luxe un screenshot réduit.
 
 
