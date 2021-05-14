@@ -423,7 +423,7 @@ for value in data:
 
 
 
-
+```
 def Launch(exo, settings, param):
 	# Première chose vérifier que l'exo existe ... 
 	# Charger l'exo 
@@ -432,4 +432,4 @@ def Launch(exo, settings, param):
 	-> sauvegarde de l'activité pour la prochaine fois 
 	-> lancer l'exo en mode détache avec playexo.
 	exit()
-
+```
