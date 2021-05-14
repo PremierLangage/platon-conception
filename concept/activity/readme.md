@@ -431,5 +431,4 @@ def Launch(exo, settings, param):
 	# si tout est ok 
 	-> sauvegarde de l'activité pour la prochaine fois 
 	-> lancer l'exo en mode détache avec playexo.
-	exit()
 ```
