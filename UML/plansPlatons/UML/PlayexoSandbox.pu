@@ -1,0 +1,18 @@
+@startuml
+
+Server -> Sandbox : doActivity(user_id, activity_id, course_id)
+Sandbox -> BDD : load pla
+BDD -> Sandbox : return pla
+Sandbox -> Docker : next
+Docker -> Docker : next
+Docker -> Sandbox : pl_id, Json
+Sandbox -> Docker : build
+Docker -> Sandbox : JsonBuild, env_id
+Sandbox -> Server : JsonBuild, env_id,  pl_id
+Server -> Sandbox : grade
+Sandbox -> Docker : evaluate
+Docker -> Sandbox : result
+Sandbox -> BDD : save result ?
+Sandbox -> Server : result
+
+@enduml
