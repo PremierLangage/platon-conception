@@ -1,0 +1,61 @@
+@startuml
+== Do Activity ==
+Server -> Sandbox : doActivity(user_id, asset_id, course_id)
+
+Sandbox <--> FileSystem : if exist: load_in_filesystem(): pla
+Sandbox <--> BDD : else: load_in_database(): pla
+Sandbox --> FileSystem : and save_in_filesystem(pla) 
+
+Sandbox -> Docker : next
+Docker -> Docker : next()
+
+Docker -> Sandbox : return (pl_id, Json)
+Sandbox -> Docker : build_exo()
+Docker -> Sandbox : return (JsonBuild, env_id)
+
+
+Sandbox --> FileSystem : save_exo_env(JsonBuild, env_id)
+
+Sandbox -> Server : return (JsonBuild, env_id,  pl_id)
+
+== Grade ==
+
+Server -> Sandbox : grade(user_id, (frozen_id,), (env_id), asset_id, course_id, answer)
+Sandbox <--> FileSystem : get_exo_env(env_id): exo_env
+
+Sandbox -> Docker : evaluate(answer : dict)
+Docker -> Docker : evaluate(answer: dict)
+Docker -> Sandbox : result
+
+Sandbox -> BDD : save_result(result : dict)
+Sandbox --> Server : result (selon les params & settings)
+
+Sandbox -> Docker : next
+Docker -> Docker : next()
+
+Docker --> Sandbox : return the next exo if exist or None
+
+Sandbox -> Server : return next exo or grade
+
+
+== Evaluate ==
+
+Server -> Sandbox : evaluate(user_id, (frozen_id,), (env_id), asset_id, course_id, answer)
+Sandbox <--> FileSystem : get_exo_env(env_id): exo_env
+
+Sandbox -> Docker : evaluate(answer : dict)
+Docker -> Docker : evaluate(answer: dict)
+Docker -> Sandbox : result
+
+Sandbox -> BDD : save_result(result : dict)
+Sandbox --> Server : result (selon les params & settings)
+
+== Save answer ==
+
+
+Server -> Sandbox : save_answer(user_id, (frozen_id,), (env_id), asset_id, course_id, answer)
+Sandbox <--> FileSystem : get_exo_env(env_id): exo_env
+Sandbox -> Sandbox : check_env()
+Sandbox -> BDD : save_answer()
+Sandbox -> Server : result if is done
+@enduml
