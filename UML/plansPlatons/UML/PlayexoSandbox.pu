@@ -1,6 +1,6 @@
 @startuml
 
-Server -> Sandbox : doActivity(user_id, activity_id, course_id)
+Server -> Sandbox : doActivity(user_id, asset_id, course_id)
 Sandbox -> BDD : load pla
 BDD -> Sandbox : return pla
 Sandbox -> Docker : next
