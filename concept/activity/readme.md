@@ -121,12 +121,12 @@ Les balises **setting**, **parameters** quand un exercice est lancé il reçoit 
 
 ### Settings des exercices 
 
-setting.nbtry = nbr d'essai par tentative 0 (default) = infinity, 1  
-setting.reroll = True(default)|False en cas d'echec autorisation de relancer l'exercice (pour les exercices caculatoire répétables)  
-setting.syntactic = True(default)|False  # l'exercice peut si il y a une erreur de syntaxe dans la réponse autoriser une tentative non décomptée, sinon cela consome un essai, dans les deux cas si il y a encore un essai, le feedback d'erreur de saisie ou de syntaxe est fournis à l'utilisateur.  
-setting.feedback = True(default)|False # Affichage du feedback proposé par l'exercice, sinon pas de feedback.  
-setting.evaluation = True(default)|False # affichage de l'évaluation (numérique) de l'exercice, ou pas.  
-setting.validation = True(default)|False # le bouton de validation est géré par l'exercice, sinon il est géré par l'activité. Dangereux si l'on oublie de le proposer dans l'activité.   
+settings.nbtry = nbr d'essai par tentative 0 (default) = infinity, 1  
+settings.reroll = True(default)|False en cas d'echec autorisation de relancer l'exercice (pour les exercices caculatoire répétables)  
+> le setting *syntactic* est obsolete et doit être fait dans l'exercice settings.syntactic = True(default)|False  l'exercice peut si il y a une erreur de syntaxe dans la réponse autoriser une tentative non décomptée, sinon cela consome un essai, dans les deux cas si il y a encore un essai, le feedback d'erreur de saisie ou de syntaxe est fournis à l'utilisateur.  
+settings.feedback = True(default)|False # Affichage du feedback, analyse d'erreur, proposé par l'exercice, sinon pas de feedback.  
+settings.evaluation = True(default)|False # affichage de l'évaluation (numérique) de l'exercice, ou pas.  
+settings.validation = True(default)|False # le bouton de validation est géré par l'exercice, sinon il est géré par l'activité. Dangereux si l'on oublie de le proposer dans l'activité.   
 
 DEFAULTSETTINGS = { 'nbtry':0, 'reroll':True, 'syntactic':True, 'feedback':False, 'evaluation':False, 'validation'=True }
 STEPSSETTINGS = { 'nbtry':1, 'reroll':False, 'syntactic':True, 'feedback':True, 'evaluation':True, 'validation':True }
