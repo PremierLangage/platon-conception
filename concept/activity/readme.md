@@ -123,7 +123,6 @@ Les balises **setting**, **parameters** quand un exercice est lancé il reçoit 
 
 settings.nbtry = nbr d'essai par tentative 0 (default) = infinity, 1  
 settings.reroll = True(default)|False en cas d'echec autorisation de relancer l'exercice (pour les exercices caculatoire répétables)  
-> le setting *syntactic* est obsolete et doit être fait dans l'exercice settings.syntactic = True(default)|False  l'exercice peut si il y a une erreur de syntaxe dans la réponse autoriser une tentative non décomptée, sinon cela consome un essai, dans les deux cas si il y a encore un essai, le feedback d'erreur de saisie ou de syntaxe est fournis à l'utilisateur.  
 settings.feedback = True(default)|False # Affichage du feedback, analyse d'erreur, proposé par l'exercice, sinon pas de feedback.  
 settings.evaluation = True(default)|False # affichage de l'évaluation (numérique) de l'exercice, ou pas.  
 settings.validation = True(default)|False # le bouton de validation est géré par l'exercice, sinon il est géré par l'activité. Dangereux si l'on oublie de le proposer dans l'activité.   
@@ -134,6 +133,7 @@ STANDARDSETTINGS = { 'nbtry':1, 'reroll':True, 'syntactic':True, 'feedback':True
 EXAMSETTINGS =  {  'reroll':False, 'syntactic':True, 'feedback':False, 'evaluation':False, } # autres settings laissé a l'exercice
 CARROUSELSETTINGS=  {  'validation':False,'feedback':False, 'evaluation':False } # autres settings laissé a l'exercice
 
+> le setting *syntactic* est obsolete et doit être fait dans l'exercice settings.syntactic = True(default)|False  l'exercice peut si il y a une erreur de syntaxe dans la réponse autoriser une tentative non décomptée, sinon cela consome un essai, dans les deux cas si il y a encore un essai, le feedback d'erreur de saisie ou de syntaxe est fournis à l'utilisateur. 
 
 ### Paramétrage
 Certains exercice proposent des paramétrages cf. leurs documentations. 
