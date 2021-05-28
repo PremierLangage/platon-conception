@@ -135,8 +135,8 @@ EXAMSETTINGS =  {  'reroll':False, 'syntactic':True, 'feedback':False, 'evaluati
 CARROUSELSETTINGS=  {  'validation':False,'feedback':False, 'evaluation':False } # autres settings laissé a l'exercice
 
 
-### Paramêtrage
-Certains exercice proposent des paramêtrages cf. leurs documentations. 
+### Paramétrage
+Certains exercice proposent des paramétrages cf. leurs documentations. 
 L'activité peut modifier ces parametrages en fournissant un dictionnaire **param**. 
 
 
