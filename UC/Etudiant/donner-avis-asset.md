@@ -1,69 +1,36 @@
 
 
-# Cas d'utilisation N° 101 :  FIXME OCE
+# Cas d'utilisation N° 101 : Donner son avis 
 
 Niveau 3
 
 ##	Description
 
- un sous module complet à décrire pour juillet 
+Donner son avis est une activité qui permet de donner son avis sur une activité.
 
-FIXME _[Un étudiant doit avoir la possibilité de donner un avis sur les ressources. L'objectif est d'aider à faire de la curation et à identifier des "bons" exercices]_   
-FIXME N'oubliez pas de mensioner le concept **[recommandation](https://github.com/PremierLangage/plconception/blob/master/conception/concept/recommandation.md)**  
 
-> **Niveau** :Haut niveau, Résumé, objectif utilisateur, sous fonction, Bas niveau , FIXME Remove unused   
-> **Déclencheur** : _[Describe the event that initiates the use case.]_ TODO  
-> **Acteur Primaire**: Utilisateur   
-> **Acteurs secondaires**: TODO   
-> **Parties Prenantes concernées** : TODO   
+**Niveau** :objectif utilisateur,  
+**Déclencheur** : l'asset a un bouton donner son avis accessible quand l'activité est un success ou terminée et que l'activité admet un avis.
+**Acteur Primaire**: Utilisateur   
+**Parties Prenantes concernées** : Pour les organismes qui veulent des informations de satisfaction.
  
  
 ## Preconditions
 
-FIXME Listez les conditions nécessaire pour que ce cas d'utilisation puisse avoir lieux
+Que le prof est coché (ou pas a voir ) la demande d'avis.
 
+l'activité demande d'avis est une activité générique utilisable par tous.
+IL faut qu'au niveau du serveur elle soit définie. 
+Pour cela l'administrateur Ygddrasil doit valider l'activité /model/std/avis.pla
 
 ## Scenario Nominal
 
-FIXME_[tout ce passe bien c'est le scénario parfait .]_
 
-1.	TODO  
-2.	TODO  
-3.	TODO  
-4.	TODO  
-
-###	Extensions
-FIXME Moins bien _[Document alternate flows and exceptions to the main success scenario. Extensions are branches from the main scenario, and numbering should align with the step of the success scenario where the branch occurs.]_
-
-FIXME Indiquez dans quel point du scenario nominal le chemin alternatif démarre et ou il reprend.
+1. Le prof souhaite avoir des avis sur des acitivté dans son cours. IL valide le bonton corresponant dans les paramètres du cours.	 
+2.	En suite il choisi l'activité qui permettra d'avoir un avis dans son cours. (Load acitivity)
+3.	les étudiants donnent leur avis.
+4.	le prof peut voir les stats de l'activité avis par activité.
+5.	Dans le cas d'avis ecrit il peut faire une "correction" de l'activité. Ce qui lui permet de lire les avis.
 
 
-## Post Conditions
-### Conditions de succès 
-FIXME _[Describe the end condition of the Use Case where the Primary Actor’s goal is satisfied]_
 
-### Minimal Guarantees
-FIXME _[Describe the guarantee or assurance that this Use Case provides to all Actors and Stakeholders to protect their interest regardless of whether the Use Case ends with success or failure.]_
-
-### Conditions final en cas d'échec
-FIXME _[Describe the end condition that results if the Primary Actor fails to accomplish his goal.]_
-
-
-FIXME _les variables suivantes sont optionnelles._
-
-### Frequence
-FIXME _[Indicate how often the use case is expected to occur. This information aids designers and developers in understanding capacity requirements.]_   
-### Besoins Spéciaux (optionel)  
-FIXME _[Describe any additional factors that impact the execution of the use case. These could be environmental, regulatory, organizational or market-driven in nature.]_  
-### Performance  
-###	Security  
-###	Usability / Accessibility  
-###	Other  
-
-##	Problèmes et étapes suivantes  
-FIXME _[Note any issues related to the definition of this use case that will require clarification prior to development. Also list any follow-up work that needs to be done prior to sign-off on the use case.]_  
-
-FIXME définir ce qui pose problème dans la description **actuelle** du cas d'utilisation.  
-FIXME vous pouvez ajouter ici un lien vers une issue github ou un carte de projet github.
-
-TBR
