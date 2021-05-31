@@ -8,16 +8,18 @@ Niveau 1
 Permet de voir des exercices de démo.
 **[demo](https://github.com/PremierLangage/plconception/blob/master/conception/concept/demo.md)**  
 
-> **Déclencheur** : Une URL de démo est parcourrue par un navigateur. 
-> **Acteur Primaire**: Visiteur   
-> **Acteurs secondaires**:    -
-> **Parties Prenantes concernées** :    
+**Déclencheur** : Une URL de démo est parcourrue par un navigateur. 
+**Acteur Primaire**: Visiteur   
+**Acteurs secondaires**:    -
+**Parties Prenantes concernées** :    
  
  
 ## Preconditions
 
-Une ressource doit avoir été publiée comme démo.
+Une Activité doit avoir été publiée comme démo.
+
 Tous les utilisateurs connectés ou non peuvent avoir accès aux exercices de démo.
+
 
 ## Scenario Nominal
 
