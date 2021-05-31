@@ -8,10 +8,10 @@ Niveau 2
 Permet d’envoyer a un candidat une feuille d’exercice à usage unique pour laquelle on récupère l’évaluation.
 
 
-> **Déclencheur** : Le candidat recois un test sous forme d'un liens sur la plateforme. 
-> **Acteur Primaire**: Candidat. 
-> **Acteurs secondaires**: Membre (responsable de formation) 
-> **Parties Prenantes concernées** : Université
+**Déclencheur** : Le candidat recois un test sous forme d'un liens sur la plateforme.  
+**Acteur Primaire**: Candidat. 
+**Acteurs secondaires**: Membre (responsable de formation) 
+**Parties Prenantes concernées** : Université
  
  
 ## Preconditions
@@ -21,6 +21,8 @@ Le cas d'utilisation [membre fairepassertest](../Membre/fairepassertest.md) est 
 
 ## Scenario Nominal
 
+le prof créer un cours FORMATION_X
+le prof créer une activité de type CANDIDATURE remplie le formulaire fournis les exercices.
 
 
 - lien a usage unique, question d'entrée dans le test (date de naissance, numéro de téléphone), double identification (vérification avec sms).
@@ -28,12 +30,12 @@ Le cas d'utilisation [membre fairepassertest](../Membre/fairepassertest.md) est 
 
 
 1.	Le candidat click sur le lien/ le cole dans son navigateur. 
-2.	Le système vérifie que le lien n'a pas été utilisé (test commencé dans une autre session audela de la question de controle et une fois que le cronomètre est lancé). Si oui fin du cas d'utilisation (avec un message au candidat qui peut envoyer un mail si il pense être lésé). 
+2.	Le système vérifie que le lien n'a pas été utilisé (test commencé dans une autre session au dela de la question de controle de démarage et une fois que le cronomètre est lancé). Si oui fin du cas d'utilisation (avec un message au candidat qui peut envoyer un mail si il pense être lésé). 
 3. Sinon le système affiche la question de controle.
-4.	Le candidat répond à la question de controle.  
+4.	Le candidat répond à la question de controle (secret partagé).  
 5. le système vérifie la question de controle. Si fausse retour en 4 (max trois essais). 
  Sinon  le système affiche la page d'engagement sur l'honneur, voire plus bas.
-6. le système lance un cronomètre et l'acitivité associé au test avec la clef d'accès.
+6. le système lance un cronomètre et l'activité associé au test avec la clef d'accès.
 7. Interaction du candidat avec l'activité. Compteur de temps visible.
 Tout les résultats intermédiaires sont enregistrés (answers ou playexo). 
 8. a la fin du temps, l'activité se termine automatiquement avec validation automatique des derniers éléments.
@@ -42,7 +44,11 @@ Tout les résultats intermédiaires sont enregistrés (answers ou playexo).
  
  
 ###	Extensions
-Le pltp qui correspond ne doit afficher les exercices dans la navigation que 5 par 5 (i.e. 5/10/15/20 exos dans la navigation). si au moins un exercice du paquet précédent est correct. 
+Controle durci  
+Le pltp qui correspond ne doit afficher les exercices dans la navigation que 5 par 5 (i.e. 5/10/15/20 exos dans la navigation). si au moins un exercice du paquet précédent est correct. sinon c'est la fin. 
+
+Changement de page du navigateur, pour ne pas perdre les données si l'on fait un retour arrière. on doit protéger la sortie de l'activité.
+
 
 
 
