@@ -1,0 +1,43 @@
+@startuml
+title
+Lancement d'une activité par l'utilisateur création d'un environement sur la sandbox pour l'activité \n
+et création d'un ou plusieurs environement pour les exo créés par le start.
+end title
+
+actor User
+
+User -> Front : startactivity(pla_id)
+Front -> Front : démarage du composant ativity
+Front -> server_platon : api/v1/activity/start/plaid
+activate server_platon 
+
+
+server_platon -> plsession : setCurrentActivity(plaid)
+
+server_platon -> Sandbox: << start(pla_id)>>
+activate Sandbox
+
+Sandbox -> Sandbox : Create env\nreturns envid
+activate Sandbox #Blue
+Sandbox -> Container : "python start.py"
+activate Container
+Container -> Sandbox : Build Exo 
+activate Sandbox #Red
+Sandbox -> Sandbox : create new env
+Sandbox <- Sandbox : return envid
+Sandbox -> Container2 : build exo
+activate Container2
+Container2 -> Sandbox : return json
+deactivate Container2
+deactivate Sandbox
+Sandbox -> Sandbox : Add envid, plsjon to PLA_json
+Container -> Sandbox : return PLA_json
+deactivate Container
+destroy Container
+Sandbox -> server_platon : return envid,PLA_Front_json
+deactivate Sandbox
+server_platon -> plsession : update plsession
+server_platon -> Front : return PLA_Front_json
+deactivate Sandbox
+Front -> User: l'exo en mode play
+@enduml
