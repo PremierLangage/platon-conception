@@ -37,7 +37,7 @@ Exemple:
 Par défaut le nom de l'exercice est "exo5" mais remplacé par "fractions4", attention les alias doivent être des identifiants légaux pour des variables python.
 
 La deuxième syntaxe permet de donner un nom a une liste d'exercices:
-
+```
 name@@
 exo.pl 
 ../tp3/exo5.pl
@@ -45,6 +45,10 @@ exo.pl
 cours.md
 fusé.pla
 @@
+```
+
+Il est envisagé d'avoir une syntaxe de recherche d'exercice, i.e tout les exercices vérifiant une certaine requette.
+
 
 
 ## Rappel des Missions de l'activité
