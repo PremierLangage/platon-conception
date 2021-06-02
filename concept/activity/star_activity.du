@@ -30,7 +30,7 @@ activate Container2
 Container2 -> Sandbox : return json
 deactivate Container2
 deactivate Sandbox
-Sandbox -> Sandbox : Add envid, plsjon to PLA_json
+Sandbox -> Sandbox : Add envid, plsjon to pla_json
 Container -> Sandbox : return PLA_json
 deactivate Container
 destroy Container
