@@ -1,0 +1,49 @@
+@startuml
+class Asset {
+- Date opening
+- Date closing
+- str name
+- str desc
+}
+
+class Activity extends Asset {
+- JSON param
+- Sandbox sandbox
+}
+
+Activity "0, n" --> "1" Course : appartient
+Activity "0, n" --> "0, n" Activity : contient
+
+
+class Exercice {
+- JSON settings
+}
+
+Exercice "0, n" --> "1" Activity : appartient
+Exercice "0, n" --> "1" Resource : contient
+Resource "0, n" --> "0, n" Resource : hérite de
+
+class PlayExoSession {
+- int seed
+- int number_tries
+- int grade
+- uuid env_id
+}
+
+PlayExoSession "0, n" --> "1" User : associe
+PlayExoSession "1" --> "1" Exercice : contient
+
+
+class Answer {
+- Date date
+- JSON answer
+- int seed
+- int grade
+}
+
+Answer "0, n" --> "1" PlayExoSession : sont associé
+
+class Course extends Asset
+
+Course "0, n" --> "0, n" User : contient
+@enduml
