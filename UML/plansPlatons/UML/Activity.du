@@ -6,6 +6,7 @@ Answer "0,n" --> "1" Exercice : sont associés
 Answer "0,n" --> "1" User : sont associés
 
 
+
 PlayActivitySession "0,n" --> "1" User : associe
 PlayActivitySession "0,n" --> "1" Activity : appartient
 
@@ -15,6 +16,7 @@ PlayExoSession "0,n" --> "1" PlayActivitySession : appartient
 Activity --|> Asset
 Activity "0,n" --> "1" Course : appartient
 Activity "0,n" --> "0,n" Activity : contient
+Activity "0,n" --> "1" Resource : contient
 
 
 Course --|> Asset
@@ -36,10 +38,9 @@ class PlayActivitySession {
 }
 
 class PlayExoSession {
-- int number_tries
-- int grade
 - uuid env_exo_id
 - JSON settings
+- JSON save_answer
 }
 
 class Asset {
