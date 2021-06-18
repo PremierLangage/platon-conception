@@ -1,0 +1,57 @@
+@startuml
+Exercice "0, n" --> "1" Activity : contient
+Exercice "0,n" --> "0,n" Resource : contient
+
+Answer "0,n" --> "1" Exercice : sont associés
+Answer "0,n" --> "1" User : sont associés
+
+
+PlayActivitySession "0,n" --> "1" User : associe
+PlayActivitySession "0,n" --> "1" Activity : appartient
+
+Activity --|> Asset
+Activity "0,n" --> "1" Course : appartient
+Activity "0,n" --> "0,n" Activity : contient
+
+
+Course --|> Asset
+Course "0,n" --> "0,n" User : contient
+
+
+class Answer {
+- Date date
+- JSON answer
+- int seed
+- int grade
+}
+
+class PlayActivitySession {
+- int number_tries
+- int grade
+- uuid env_id
+- JSON settings
+}
+
+class Asset {
+- Date opening
+- Date closing
+- str name
+- str desc
+}
+
+class Exercice {
+- JSON settings
+}
+
+class Activity {
+- JSON params
+}
+
+class Course {
+- Sandbox sandbox
+}
+
+class Resource
+
+class User
+@enduml
