@@ -1,0 +1,119 @@
+@startuml
+actor Front as front #black
+
+database    "BDD Server"    as bdd #red
+participant      Server      as server #red
+
+database    "BDD Sandbox"    as bdd1 #99FF99
+database "File System" as fs #99FF99
+participant      Sandbox      as sandbox #99FF99
+collections "Docker" as dk #99FF99
+
+
+=================== Start Session Activity ==
+
+
+front -> server : start(id_activity)
+
+server <--> bdd : getIdEnv(id_activity) -> id_env_act
+server -> sandbox : start(id_env_act)
+
+sandbox --> fs : create_env() : env
+sandbox -> dk : push_env(env)
+ 
+== ==
+dk <--> dk : start.py -> JSON
+dk -> sandbox : return JSON
+
+sandbox -> server : return JSON
+
+server --> bdd : save_data(JSON)
+server -> front : return JSON
+
+
+=================== Next : renvoie un éxo ==
+
+
+front -> server : next(id_activity)
+
+server <--> bdd : getIdEnv(id_activity) -> id_env_act
+server -> sandbox : next(id_env_act)
+
+sandbox <--> fs : get_env(id_env_act): env
+sandbox -> dk : push_env(env)
+ 
+dk <--> dk : next.py -> JSON
+dk -> sandbox : return JSON
+
+sandbox -> server : return JSON
+
+server -> front : return JSON
+
+
+=================== GetExo : renvoie un éxo ==
+
+
+front -> server : get_exo(id_activity, id_exo)
+
+server <--> bdd : getIdEnv(id_activity) -> id_env_act
+server -> sandbox : get_exo(id_env_act, id_exo)
+
+sandbox <--> fs : get_env(id_env_act): env
+sandbox -> dk : push_env(env)
+ 
+dk <--> dk : next.py id_exo -> JSON
+dk -> sandbox : return JSON
+
+sandbox --> sandbox : save_data(exo_courant)
+sandbox -> server : return JSON
+
+server -> front : return JSON
+
+
+=================== Grade ==
+
+
+front -> server : grade(id_activity, id_exo, answer)
+
+server <--> bdd : getIdFrozenR(id_activity) -> env_exo_id
+server -> sandbox : grade(env_exo_id, answer)
+
+sandbox <--> fs : get_env(id_env_act): env
+sandbox -> dk : push_env(env)
+ 
+dk <--> dk : grade.py id_exo -> JSON
+dk -> sandbox : return JSON
+
+sandbox --> sandbox : log(...)
+sandbox -> server : return JSON
+
+server --> bdd : save_data(JSON)
+server -> front : return JSON
+
+=================== Evaluate ==
+
+front -> server : evaluate(id_activity, id_exo, answer)
+
+server <--> bdd : getIdFrozenR(id_activity) -> env_exo_id
+server -> sandbox : grade(env_exo_id, answer)
+
+sandbox <--> fs : get_env(id_env_act): env
+sandbox -> dk : push_env(env)
+ 
+dk <--> dk : evaluate.py id_exo -> JSON
+dk -> sandbox : return JSON
+
+sandbox --> sandbox : log(...)
+sandbox -> server : return JSON
+
+server --> bdd : save_data(JSON)
+server -> front : return JSON
+
+=================== Save answer ==
+
+front -> server : save_answer(id_exo, answer)
+server --> bdd : save_answer(id_exo, answer)
+server -> front : return JSON
+
+== ==
+@enduml
