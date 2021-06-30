@@ -23,8 +23,20 @@ La modification d'un **[cours](https://github.com/PremierLangage/platon-concepti
    -  la possibilité de changer l'ordre des sections/ressources (drap & drop **explicitement indiqué par la présence d'une icône par exemple**)
    - la possibilité d'accéder à une page/boîte de dialogue dédiée à la modification du contenu et des métadonnées de chaque ressource du cours (via un bouton à coté de la ressource par exemple).
    - la possibilité de supprimer une ressource (**confirmation obligatoire**)
-   - la possibilité d'ajouter une ressource (voir editer ressource).
+   - la possibilité d'ajouter une ressource 
+     - l'utilisateur selection une version d'activité avec l'interface de recherche des activité le système 
+     - récupère l'identifiant de ressource version de l'activité. 
+     - le système lance la compilation de la ressource (voire scénario, messages warning, vérification de la ressource est correct)
+     - si la ressource est correcte on optien un json de l'activité contenant les exercices 
+     - La ressource est "loaded" sur la sandbox dans le répertoire /cours_courrant/ACTIVITYID avec ACTIVITYID définie par la sandbox.
+     - L'activité est ajouté au cours
+     - l'utilisateur peut modifier les élements assets associés à l'activité.
 3. L'enseignant clique sur un bouton permettant de  quitter le mode édition
+
+### Scenario alternatifs 
+
+La compilation échoue et donc l'activité n'est pas ajouter.
+
 
 
 ## Post Conditions
