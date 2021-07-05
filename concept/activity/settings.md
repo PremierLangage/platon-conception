@@ -18,27 +18,32 @@ Le mode "evaluation" contient un feedback standard et le grade/100 de l'exercice
 Le mode "validate" ajoute un "bouton validation" ou un "bouton suivant".
 
 # Fonctionnement
-
+```
 Tant qu'il y a des exercices dans la variable main.
 Affichage de l'exercice courrant en mode "play" avec le bouton "validate".
 Quand "validate" envois à la sandbox la "réponse" de l'étudiant.
 
-Retour de la sandbox :
-if grade==-1 (Erreur de syntaxe): continue. 
-if setting.evaluation == False :
-   // Pas d'évaluation exercice suivant. 
-else:
-     if grade==100  grade<100 and settings.nbtry == exo.nbtry :
-       // exo terminé avec success ou trop long
-       Affichage du mode "anwser". 
-       Bouton suivant et si settings.reroll bouton reroll
-       //exercice suivant.
-     elif grade<100 and settings.nbtry > exo.nbtry :
-        Affichage de mode "play" avec évaluation et feedback (si settings.feedback)
-        Attente du click du bouton "suivant". 
+Retour de la sandbox :  
+if grade==-1 (Erreur de syntaxe): continue.   
+if setting.evaluation == False :  
+   // Pas d'évaluation exercice suivant.   
+else:  
+     if grade==100  grade<100 and settings.nbtry == exo.nbtry :  
+       // exo terminé avec success ou trop long  
+       Affichage du mode "anwser".   
+       Bouton suivant et si settings.reroll bouton reroll  
+       //exercice suivant.  
+     elif grade<100 and settings.nbtry > exo.nbtry :  
+        Affichage de mode "play" avec évaluation et feedback (si settings.feedback)  
+        Attente du click du bouton "suivant".   
+
 
 Appel de next et l'on passe en mode "play" pour l'exercice suivant.
 
+```
+donc
+
+```
 settings.nbtry = nbr d'essai par tentative 0 (default) = infinity, 1  
 settings.reroll = True(default)|False en cas d'echec autorisation de relancer l'exercice (pour les exercices caculatoire répétables)  
 settings.feedback = True(default)|False # Affichage du feedback, analyse d'erreur, proposé par l'exercice, sinon pas de feedback.  
