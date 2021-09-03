@@ -11,4 +11,7 @@ Objectif: être accepté dans une formation
 
 ## Cas d'utilisations identifiés du candidat :
 
+* Créer un test d'entrée
 * [Passer un test d'entrée](https://github.com/PremierLangage/platon-conception/blob/master/UC/Candidats/Faire-un-test.md)
+* Produire les "resultats" du test (pour les inscriptions par exemple)
+* associer les comptes candidats au compte etudiant correspondant pour archivage
