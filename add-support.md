@@ -24,7 +24,7 @@ Le prof doit pouvoir insérer des supports de cours ou d'exercices pour que les 
 
 ## Post Conditions
 ### Conditions de succès 
-Le support est ajouté dans un cours et n'importe quel utilisateur peut l'afficher et le jouer (cf **UC: play_activity**).
+Le support est ajouté dans un cours et n'importe quel utilisateur peut l'afficher et le jouer (cf **UC:use-support**).
 
 ### Conditions final en cas d'échec
 La notification n'est pas détruite dans la liste de l'administrateur.
