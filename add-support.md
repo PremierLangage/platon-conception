@@ -13,8 +13,6 @@ Le prof doit pouvoir insérer des supports de cours ou d'exercices pour que les 
 
 - L'utilisateur est loggé sur la plateform web
 - Un rôle lui a été automatiquement attribué
-- Si le support en question est une activité, on suppose que la structure de cours dans laquelle on doit ajouter le support existe déjà
-- Si le support en question est un exercice, on suppose que la structure d'activité dans laquelle on doit ajouter le support existe déjà
 
 ## Scenario Nominal
 
