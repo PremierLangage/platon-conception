@@ -27,7 +27,7 @@ Le prof doit pouvoir insérer des supports de cours ou d'exercices pour que les 
 Le support est ajouté dans un cours et n'importe quel utilisateur peut l'afficher et le jouer (cf **UC:use-support**).
 
 ### Conditions final en cas d'échec
-La notification n'est pas détruite dans la liste de l'administrateur.
+L'utilisateur est renvoyé vers la page de création pour rééssayer.
 
 ### Frequence
 Une fois pour chaque support de cours ajouté.
