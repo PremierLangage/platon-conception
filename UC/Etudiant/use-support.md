@@ -29,9 +29,9 @@ Le déroulement de l'activité s'est bien passé et les résultats seront visibl
 ### Conditions final en cas d'échec
 La notification n'est pas détruite dans la liste de l'administrateur.
 
-### Frequence
+## Frequence
 Autant de fois que possible pour les profs et selon le mode pour les étudiants. 
   - mode exam : 
   - ...
 
-### Work Breakdown Structure 
+## Work Breakdown Structure 
