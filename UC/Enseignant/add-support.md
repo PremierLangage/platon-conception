@@ -41,10 +41,10 @@ Il n'y a pas eu de problème avec la validation
 
 Il n'y a pas eu de problème avec le transfert 
 
-Le support est ajouté dans un cours et n'importe quel utilisateur peut l'afficher et le jouer (cf **UC:use-support**).
+Le support est ajouté dans un cours et n'importe quel utilisateur peut l'afficher et le jouer -> cf **UC:use-support** 
 
 ### Conditions final en cas d'échec
-L'utilisateur est renvoyé vers la page **gui: course**
+L'utilisateur est renvoyé vers la page -> cf **gui: course**
 
 ### Frequence
 Une fois pour chaque support de cours ajouté. //Un cours contient environs 30 supports. 
