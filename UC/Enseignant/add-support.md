@@ -31,11 +31,16 @@ Le prof doit pouvoir insérer des supports de cours ou d'exercices pour que les 
 
 ## Post Conditions
 ### Conditions de succès 
-Le prof a trouvé son cours.
-Il a trouvé la ressource à ajouter. 
+Le prof a trouvé son cours
+
+Il a trouvé la ressource à ajouter 
+
 Il n'y a pas eu de problème avec la compilation
+
 Il n'y a pas eu de problème avec la validation
+
 Il n'y a pas eu de problème avec le transfert 
+
 Le support est ajouté dans un cours et n'importe quel utilisateur peut l'afficher et le jouer (cf **UC:use-support**).
 
 ### Conditions final en cas d'échec
