@@ -6,7 +6,7 @@ Le prof doit pouvoir choisir l'endroit où créer la ressource, la créer, être
 
 > **Déclencheur** :
 
-  - Création de ressources : cliquer sur bouton pour créer une nouvelle ressources
+  - Création de ressources : cliquer sur bouton pour créer une nouvelle ressource
   - Modification d'une ressource : cliquer sur bouton editer pour modifier les paramètres de la ressources 
   - Sauvegarder après modification ou création : cliquer sur bouton de sauvegarde 
   - Consulter l'historique des sauvegardes : cliquer sur la petite icone à côté du bouton de sauvegarder pour afficher les différentes sauvegardes puis appuyer sur celle qu'on veut voir
@@ -27,22 +27,50 @@ Le prof doit pouvoir choisir l'endroit où créer la ressource, la créer, être
 ## Scenario Nominal
 
 1. On navigue jusqu'à la page de cours où se trouve le support à mettre au point
-2. S'il s'agit d'une création de ressources, cf --> ** UC: add-support **
-2. Sinon cliquer sur le support en question 
-3. En bas de page, cliquer sur sauvegarder, play ou télécharger (pour télécharger le json de l'activité).
+2. Puisque le professeur arrive en mode édition, pour modifier une ressource il suffit de cliquer sur la ressource en question : les champs modifiables par écriture seront éditables; s'il faut uploader un fichier, cliquer sur l'icône et choisir le fichier en question, il remplacera celui qui y était
+3. S'il s'agit d'une création de ressources, cf --> ** UC: add-support **
+4. Sinon cliquer sur le support en question 
+5. En bas de page, cliquer sur sauvegarder, play ou télécharger (pour télécharger le json de l'activité).
   - Sauvegarder pour enrégistrer dans la liste des sauvegardes et garder en vue la dernière. Lorsque la souris passe sur l'icône de sauvegarde, la liste des sauvegarde s'affiche en volet ouvrant et si on veut accéder à une en particulier il faut cliquer sur son lien.
   - Télécharger pour télécharger le json de la dernière sauvegarde de l'activité
   - Play pour visualiser PlayActivity -> cf **UC: play-activity
-4. Cliquer sur créer pour 
+
 
 
 ## Post Conditions
 ### Conditions de succès 
+Le prof a pu créer sa ressource et elle figure sur la page de cours
+  
+                    OU
 
+Le prof a modifier la ressource 
+
+                    OU
+                    
+Le prof a pu faire sa sauvegarde et la précédente version figure sur les listes sauvegardes
+
+                    OU
+                    
+PlayActivity a été un succès
 
 ### Conditions final en cas d'échec
 
+Un pop up esst renvoyé affichant l'erreur rencontré -> cf **gui: pop-up-edit**
 
 ## Frequence
+
+Une fois pour chaque sauvegarde 
+
+            OU
+
+Une fois pour chaque création de ressource
+
+            OU
+
+Une fois pour chaque édition
+
+            OU
+
+Une fois pour chaque test de PlayActivity
 
 ## Work Breakdown Structure
