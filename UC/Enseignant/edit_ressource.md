@@ -15,8 +15,8 @@ Un membre appartenant à un cercle doit pouvoir créer des ressources dans ce ce
 
 ## Preconditions
 
-- L'utilisateur est authentifié sur la plateform web (il est donc un membre et appartient à un cercle) -> cf **UC: connexion**
-- L'utilisateur est connecté à un cercle donné
+- L'utilisateur est authentifié sur la plateform web  -> cf **UC: connexion**
+- L'utilisateur est un membre et appartient à un cercle
 
 ## Scenario Nominal
 
