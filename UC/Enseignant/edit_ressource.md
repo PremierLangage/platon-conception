@@ -18,19 +18,21 @@ Un membre appartenant à un cercle doit pouvoir créer des ressources dans ce ce
 - L'utilisateur est authentifié sur la plateform web  -> cf **UC: connexion**
 - L'utilisateur est un membre et appartient à un cercle
 
+
 ## Scenario Nominal
 
-1. L'utlisateur choisit le cercle dans lequel il veut créer ou éditer sa ressource
-2. S'il s'agit d'une édition de ressource l'utilisateur clique sur la ressource en question. Les champs éditables à l'écrit pourront être modifié à la main (nom, etc)
-3. L'édition peut se faire par un formulaire ou directement par VSC (Visual Studio Code) s'il s'agit d'une ressource de type modele . On choisit le procédé voulu
-  -  Si par formulaire, on remplit les champs au fur et à mesure 
-  -  Si par VSC, on est directement renvoyé vers l'éditeur de code VSC 
-4. S'il s'agit d'une création de ressource on définit le type de procédé à adopter sachant que la création par l'éditeur de code VSC n'est disponible que pour les ressources de type modèle.
-  - Par un formulaire : on remplit les champs au fur et à mesure  
-  - Par l'import d'une ressource template déjà fait et remplir un mini formulaire pour adapter le template
-  - Par VSC
-5. On valide après par le bouton de validation et s'il s'agit d'une création, la ressource est répertoriée au niveau de la liste des ressources du cercle, si c'était une édition, la ressource en question est mise à jour. 
-6. Pour voir la liste des sauvegardes, cliquer sur le bouton à côté du bouton de sauvegarde(en mode édition) et cliquer sur une sauvegarder en particulière pour la visionner. 
+1. L'utlisateur choisit le cercle dans lequel il veut travailler -> cf **GUI: acceuil Cercles** 
+2. IL choisit de créer ou éditer une ressource (**Gui:affichage cercle**) .Il ya un bouton créer ressource. Toutes les ressources visibles dans l'affichage cercle peuvent être éditées en cliquant sur le bouton édition à côté de chaque ressource (il y'a aussi un bouton preview pour playActivity).
+3. L'utilisateur a choisi une ressource en cliquant sur le bouton édition . L'éditeur par formulaire est ouvert -> cf **UC: editeur formulaire exo/activité**
+4. S'il veut afficher le previeuw de la ressource en question, on clique sur le bouton preview -> **GUI: (pre)view**
+5. S'il s'agit d'une création de ressource on définit le type de procédé à adopter sachant que la création par l'éditeur de code VSC n'est disponible que pour les ressources de type modèle. -> cf **GUI:selection du type de la ressource**
+    - Par un **formulaire** : on sélectionne le modèle (Ressource de type modèle) à utiliser et le formulaire correspondant s'ouvre -> cf **UC: editeur formulaire exo/activité**
+    - Soit le formulaire est complet -> creation d'une  ressource
+    - soit le formulaire  est in complet "warning" et dans ce cas on créer un nouveau modèle.  
+  - Par l'**import** (*gui:importation
+  - Par **Editeur**
+6. On valide après par le bouton de validation et s'il s'agit d'une création, la ressource est répertoriée au niveau de la liste des ressources du cercle, si c'était une édition, la ressource en question est mise à jour. 
+7. Pour voir la liste des sauvegardes, cliquer sur le bouton à côté du bouton de sauvegarde(en mode édition) et cliquer sur une sauvegarder en particulière pour la visionner. 
 
 ## Post Conditions
 ### Conditions de succès 
