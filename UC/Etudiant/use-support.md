@@ -5,8 +5,11 @@
 Les étudiants doivent pouvoir utiliser les supports de cours ou d'exercices mis en ligne.
 
 > **Déclencheur** : l'étudiant clique sur le bouton play d'une activité 
+> 
 > **Acteur Primaire** : Etudiants
-> **Acteurs secondaires** : -   
+> 
+> **Acteurs secondaires** : -  
+> 
 > **Parties Prenantes concernées** : Etudiants - Professeurs - Responsable de formation 
 
 ## Preconditions
