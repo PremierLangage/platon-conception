@@ -9,9 +9,11 @@ Un membre appartenant à un cercle doit pouvoir créer des ressources dans ce ce
   - Création de ressources : cliquer sur bouton + pour créer une nouvelle ressource
   - Edition d'une ressource : cliquer sur la ressource à éditer pour modifier les paramètres de la ressource 
   
-> **Acteur Primaire** : Membres d'un cercle
-> **Acteurs secondaires** : -   
-> **Parties Prenantes concernées** : -
+**Acteur Primaire** : Membres d'un cercle
+
+**Acteurs secondaires** : -   
+
+**Parties Prenantes concernées** : -
 
 ## Preconditions
 
@@ -47,7 +49,7 @@ Le prof a pu faire sa sauvegarde et la précédente version figure sur les liste
 
 ### Conditions final en cas d'échec
 
-Un pop up esst renvoyé affichant l'erreur rencontrée -> cf **gui: pop-up-edit**
+Un pop up est renvoyé affichant l'erreur rencontrée -> cf **gui: pop-up-edit**
 
 ## Frequence
 
