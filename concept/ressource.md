@@ -1,19 +1,19 @@
 
 # Ressources 
 
-Concept gérant le fait qu'un élément de la plateforme doit avoir un certain nombre de propriétés pour être partageable.
+Structure d'informations pouvant être transformée en asset et gérant le fait qu'un élément de la plateforme doit avoir un certain nombre de propriétés pour être partageable.
 
-Les ressources sont éditables, partagées, versionnées. 
+Les ressources sont à priori **éditables**, **partagées**, **versionnées**. 
 Deux grand types :
 
-- binaires non éditable mais modifiable dans un editeur externe, il faut téléverser le document pour le remplacer. 
-- textuelle éditable directement sur le site il bien sur aussi possible de téléverser un document pour le remplacer.
+- binaires, non éditables mais modifiables dans un editeur externe, il faut téléverser le document pour le remplacer. 
+- textuelles, éditables directement sur le site il est bien sur aussi possible de téléverser un document pour le remplacer.
 
 
-Les ressources peuvent être transformées en [assets](assets.md)  par une publication dans une classe. 
+Les ressources peuvent être transformées en [assets](assets.md) par une publication dans un cours. 
 
-Les assets sont directement utilisable par les apprenants si il sont dans le contexte d'un cours.
-Rem: il est possible de produire des assets de démonstration qui sont accessibleis sur le site principal [demo](demo.md)
+Les assets sont directement utilisables par les apprenants s'ils sont dans le contexte d'un cours.
+Rem: il est possible de produire des assets de démonstration qui sont accessibles sur le site principal [demo](demo.md)
 
 
 ## Propriétées des ressources 
@@ -29,17 +29,17 @@ Les ressources éditables ont:
 
 ## Propriétés pédagogiques 
 
-- usages possible de la ressource, présentiel, online,
+- usages possible de la ressource, présentiel, online
 - répétabilité, longueur de la répétabilité
-- type: acquisition, discution, collaboration, entrainement, production, 
+- type: acquisition, discution, collaboration, entrainement, production
 - utilisable ou non pour une évaluation
 
 
 ## Les ressources PL 
 
-Les ressources PL sont stockés dans une arborescence versionnée. 
+Les ressources PL sont stockées dans une arborescence versionnée. 
 
-Chaque ressource est un répertoire git, chaque sauvegarde est taggée, il est possible d'ajouter des etiquettes.
+Chaque ressource est un répertoire git, chaque sauvegarde est taggée et il est possible d'ajouter des étiquettes.
 
 https://www.ubuntupit.com/best-cloud-storage-for-linux-15-reviewed-and-compared-for-linux-nerds/
 
