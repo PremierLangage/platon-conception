@@ -18,8 +18,12 @@ Les liens sont des couples (nomdulien, assetvisé) donc unidirectionel et typés
 
 L'utilité de ces liens est de pouvoir faire des liens entre aav et ressources.
 La structure de données d'asset contient:
-* la visibilité de l'asset (accessible ou non par les étudiants)
-* les dates de debut, fin, ouverture, retard etc
+* la visibilité de l'asset (accessible ou non par les étudiants) **isVisible de type BooleanField**
+* la description **type de type ENUMField**
+* les aav **aav de type CharFielf**
+* le nom et le type **name et type de types CharField**
+* le lien vers la ressource que l'asset représente **ressource de type CharField. ex: Ressource:36&versions!=0.3**
+* les dates de debut, fin, ouverture, retard etc **opening et closing de types DateField**
 * modalité d'évaluation : il est possible de surcharger les modalités d'évaluation de la ressource.
 
 
