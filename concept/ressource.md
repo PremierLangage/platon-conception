@@ -10,22 +10,32 @@ Deux grand types :
 - textuelles, éditables directement sur le site il est bien sur aussi possible de téléverser un document pour le remplacer.
 
 
-Les ressources peuvent être transformées en [assets](assets.md) par une publication dans un cours. 
+Les ressources peuvent être transformées en [assets](assets.md) par une [publication](publication.md) dans un [cours](cours.md). 
 
-Les assets sont directement utilisables par les apprenants s'ils sont dans le contexte d'un cours.
+Les [assets](assets.md) sont directement utilisables par les apprenants s'ils sont dans le contexte d'un cours.
+
 Rem: il est possible de produire des assets de démonstration qui sont accessibles sur le site principal [demo](demo.md)
 
 
 ## Propriétées des ressources 
 
+l'implémentation doit choisir comment sont stocker les différentes propriétées. 
+
+Une ressource, existe dans l'aroborescence des cercles sous forme d'un répertoire contenant:
+- un fichier json type.json qui décrit le contenu technique de la ressource.
+- un fichier content
+
 Les ressources éditables ont:
+
+- une structure de stockage (apriori un **repertoire** avec un **main.pl** et des fichiers de données + fichier de meta data)
+- des dépendances: information sur les versions des ressources liées.
+- des utilisateurs/propriétaire/observateurs/editeurs/
 - un historique de modification (utilisateur, timestamp, modification)
 - un classement dans Yggdrasil (ensemble d'étiquetages obligatoires)
 - des aav auquels la ressource participe
 - une discution (eventuellement une page loomio)
-- une structure de stockage (apriori un **repertoire** avec un **main.pl** et des fichiers de données + fichier de meta data)
-- des dépendances: information sur les versions des ressources liées.
-- des utilisateurs/propriétaire/observateurs/editeurs/
+
+
 
 ## Propriétés pédagogiques 
 
