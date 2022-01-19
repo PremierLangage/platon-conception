@@ -36,3 +36,4 @@ une activité réussie par un utilisateur et dite aquise. C'est l'activité qui 
 
 
 
+//www.plantuml.com/plantuml/png/PL51KiCm3Bpx5RfnWfbox85fODeZVr1jDVLWx8miX_H9l8EF8QSXap4-IRlMxbe-P46MyXaCMaaCzzCD0rF4A4kF6KufxSmvbUYGRnLxnz7tA5HukQ60iIaAfm2T5Jzw-VbUHf-Dil3uCjUmXzaLr2_I961CXJVqspNv2MWYjjxIoXwdf6H8wE2r-E30Cg4GK1p_IPJ1ARMYQgzWTxbuUyMUm1641r8zXp5hYN-1Qz36guhiDY8nVn5l7xI7uuYXr2WuaqrYkhE9JUtNeKpICxesv8d8dT5-jBwv-16ZD9ki2tmQRkP0qUat_W80
