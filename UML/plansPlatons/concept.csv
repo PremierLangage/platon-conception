@@ -33,7 +33,7 @@ order	actor	UC	UCLINK	concept	comment
 1	Enseignant	creer-cours	Enseigner	coursvide	Permet de créer un cours avec rien dedans (un cours vide) Utilise [choisir-cercle.md](choisir-cercle.md). Quand le prof créer son cours il doit le placer dans un cercle disciplinaire.
 1	Membre	crud-aav	login	aav	 Création des aav et modification remarque il faut faire attention ào la destruction 
 1	Enseignant	crud-asset	creer-cours	assets	 L'édition des assets est indirecte il faut editer la ressource correspondante, et faire un rechargement ce que doit expliquer le cas d'utilisation. Le search & compose des assets.
-3	Createur	crud-badge-createur		badge	" La création consiste à définir quelles actions sur le site produise le badge il faut expliquer que l'on a une table indépendante, qui stocke les ""actions"" et donc les badges ne sont pas rétroactifs."
+3	Createur	crud-badge-createur		badge	" La création consiste à définir quelles actions sur le site produise le badge il faut expliquer que l'on a une table indépendante, qui stocke les actions et donc les badges ne sont pas rétroactifs."
 2	Membre	crud-calcul-indicateur-ressource	login	indicateur	 a partir des indicateurs de base TBD construire un indicateur
 1	Enseignant	crud-classe	connexionLTI	classe	 Une classe permet d'organiser un cours (cours-moodle= classe-platon, contient des élèves et des assets).
 2	Membre	crud-exercice-prepare	login	editeurdechamps	 Sous cas de edition ressource [edition-ressource.md](edition-ressource.md)
