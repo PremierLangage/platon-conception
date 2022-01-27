@@ -1,7 +1,7 @@
 # Analyse et conception fonctionnelle de PLaTon
 
 Bienvenue sur l'analyse et la structuration fonctionnelle de PLaTon 
-établie au printemps 2020 pour rigidifier la prochaine version majeure 
+établie au printemps 2020 pour rigidifier/stabiliser les spécifications de la prochaine version majeure 
 de PLaTon : la version 1.0
 
 ## Les différents acteurs dans PLaTon
