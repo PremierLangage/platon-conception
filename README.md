@@ -22,7 +22,7 @@ Les serveurs d'assets sont les classes virtuelles dans lesquelles les enseignant
 
 ## Les différents acteurs dans PLaTon
 
-* [acteurs](https://github.com/PremierLangage/platon-conception/blob/master/acteur/) 
+* [acteurs](https://github.com/PremierLangage/platon-conception/blob/master/acteur/readme.md) 
 
 ## Ressources du projet, concepts et lexique
 
