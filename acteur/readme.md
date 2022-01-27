@@ -3,6 +3,10 @@
 
 ## Les différents acteurs dans PLaTon
 
+ [note] Les acteurs permettent d'identifier les rôles des utilisateurs qui interagissent avec le système.
+
+
+
 le diagramme général des acteurs.
 [Diagramme Général](http:////www.plantuml.com/plantuml/png/NP11RiCW44NtSmeka0kmg5BLNLQg5BNxYHad8m5EOQWKgHVAENAn3jW9QRtYluU73ziicAG43_hPPnSuSfQ4GYLPWzbWHQe6TZWAZqonSQUvqaHZtRkhGdZYhqBD3pkmhp4J7o96QQX7LL8StqKB5RzHs2TgCBGbsFVZEVCSvw2z5dCwdXKdokpqp0Lf0liXx3dtxYLJ0h3gJdFCkFSqpIcWwBZcqmG0lPNP_3ojnvh_k8uoS2jgpAR3vOzEODXfk4q2RLjTprhd3u3sn8yJwzkQ3Y1DZmd0lc2iUvQxZsi0-ycPxvV_NWE0i7Wo0-CXOGXa3jTBl5uIUkEq2evrLzQrENcKESAMeYl1_m80)
 
