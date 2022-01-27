@@ -4,26 +4,25 @@ Bienvenue sur l'analyse et la structuration fonctionnelle de PLaTon
 établie au printemps 2020 pour rigidifier/stabiliser les spécifications de la prochaine version majeure 
 de PLaTon : la version 1.0
 
+## Organisation fonctionnelle de PLaTon
+
+Platon est une plateforme d'enseignement (LMS) qui est composé d'un serveur central de ressource et des serveurs d'assets.
+
+Le serveur central de ressource permet aux enseignants de produire, chercher, éditer, modifier, créer, évaluer, étiquetter, ... des ressources.
+L'intéret d'un serveur central est la création de cercles d'utilisateurs qui sont intéressé par un sujet d'enseignement donné. Ceci permet d'éviter la dispertion des efforts de production de ressource fait par la communauté enseignante. Les ressources sont en (CC BY SA)[https://creativecommons.org/licenses/by-sa/2.0/fr/].
+
+Les ressources sur PLaTon sont : les supports de cours, les exercices auto corrigés, les activitées dynamiques, les amphi interactifs, les outils de sélection etc. 
+
+Les serveurs d'assets sont les classes virtuelles dans lesquelles les enseignants et les apprenants travaillent. Ces serveurs d'assets peuvent aussi servir pour l'enseignement a distance ou hybride, d'examen en ligne, etc.
+
+
+
+
+
+
 ## Les différents acteurs dans PLaTon
 
-* [Visiteur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Visiteur.md) (Le statut par défault de l'acteur n'ayant pas de compte PLaTon)
-* [Candidat](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Candidats.md) (Le candidat est un utilisateur sans compte dans PLaTon mais possédant un secret pour accèder à une activité évaluatrice)
-
-### Acteurs ayant accès au serveur central de ressources
-
-* [Administrateur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Administrateur.md) (sorte de power-user du **serveur central** de ressources)
-* [Membre](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Membre.md) (statut de base de l'utilisateur/contributeur du **serveur central** de ressources)
-* [Enseignant](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Enseignant.md) (membre qui opérationnalise les resources vers un **serveur d'assets**...)
-* [Didacticien](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Didacticien.md) (membre dont le travail est focalisé sur les outils statistiques supports aux enseignements)
-* [Président d'un cercle](https://github.com/PremierLangage/platon-conception/blob/master/acteur/President.md) (membre d'un **cercle** qui en assure l'animation et l'organisation (souvent son créateur))
-* [Directeur Scientifique](https://github.com/PremierLangage/platon-conception/blob/master/acteur/DirecteurScientifique.md) (membre d'un **cercle** dont il porte la responsabilité scientifique)
-* [Physionomiste d'un cercle](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Physionomiste.md) (membre d'un **cercle** qui assure la médiation et la modération au seing du groupe)
-
-### Acteurs dont l'activité reste sur serveur d'assets
-
-* [Utilisateur](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Utilisateur.md) (status racine abstrait de l'utilisateur loggué ayant toujours un rôle plus précis)
-* [Étudiants](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Etudiant.md) (acteur apprenant sur le **serveur d'assets** de son organisme formateur)
-* [Enseignant](https://github.com/PremierLangage/platon-conception/blob/master/acteur/Enseignant.md) (lorsqu'il décide de rester non-éditeur mais qu'il manage ses classes déployées...)
+* [acteurs](https://github.com/PremierLangage/platon-conception/blob/master/acteur/) 
 
 ## Ressources du projet, concepts et lexique
 
