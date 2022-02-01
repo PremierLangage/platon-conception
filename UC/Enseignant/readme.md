@@ -1,78 +1,53 @@
 
 # Les cas d'utilisations pour l'enseignant
 
-le responsable de formation créer un cours et affecte un enseignant responsable. (par le truchement d'un LMS).
 
-## La mission d'enseignement 
+Le responsable de formation créer un cours et affecte un enseignant responsable. (par le truchement d'un LMS).
 
-1) Ecrire le descriptif du cours.
-2) Ecrire les objectifs de formation du cours. 
-3) Organiser le cours (contenus, ordonancement, dates, heures, rendus, livrables, etc).
-4) Ajouter des assets au cours.
-5) Suivre une activité.
-6) Exporter des notes.
-7) Evaluer une activité un asset.
-8) Faire un amphi dynamique.
-9) Suivre les étudiants.
-10) Faire le bilan du cours.
+En suite l'enseignant à trois grande missions: 
+* organiser et administrer le cours,
+* faire cours (activités interactives) 
+* suivre le groupe et les élèves réaliser la validation finale
+
+
+## La mission d'organisation
+
+1) Ecrire la fiche du cours: 
+   1) le descriptif du cours.
+   2) la lettre d'acceuil
+   3) les objectifs de formation du cours.
+   4) l'organisation du cours
+   5) etc
+2) Organiser le cours (contenus, ordonancement, dates, heures, groupes, rendus, livrables, etc).
+   1) Structurer le cours (editer l'organisation des assets)
+   2) Ajouter des assets au cours
+   3) Modifier organiser  les assets
+3) Faire le bilan du cours.
+    1) construction et export des Notes
+    2) export des statistiques
+    3) remarques pour les membres
+   
+
+## La mission Faire cours
+
+1) Faire un amphi dynamique.
+2) Faire un TP dynamique
+
+## Suivre le groupes et les élèves (coacher)
+
+1) Visualiser le table de bord
+2) Trier/Classer les élèves.
+3) Affecter des activités supplémentaires a des élèves.
+4) Corriger des activités  
+
 
 ## Les enseignants comme membre. 
 
-Les enseignants sont membre d'au moins un cercle ce qui leur permet d'ajouter des assets dans leur cours. Voire la discription des membres. 
+Les enseignants sont membres d'au moins un cercle ce qui leur permet d'ajouter des assets dans leur cours. Voire la discription des membres. 
 1) importer des ressources. Ce role est spécifique aux membres qui sont enseignants.
 
 
 
 ## Plantuml
 
-@startuml
-actor Enseignant as ens
-
-
-usecase "travailler" as trav
-ens --> trav
-
-usecase "Evaluer" as eval #red
-usecase "coacher" as coach
-usecase "enseigner" as teach
-usecase "archiver-cours" as archi
-
-usecase "editer-cours" as editcourse
-usecase "exporter-notes" as exnote
-usecase "exporter-stats" as exstat
-
-
-
-trav --> eval
-trav --> teach
-trav --> coach
-trav --> archi
-archi --> exnote 
-archi --> exstat
-
-usecase "Utiliser une activité" as usepla #red
-
-usecase "motiver recadrer" as foueter
-usecase "consulter-indicateur-individuel-collectif" as con
-usecase "afficher-completion" as affcomp
-
-coach <-- foueter
-usepla --> con :<uses>
-usepla --> affcomp :<uses>
-
-usecase "choisir-visibilité-completion" as chviscom
-usecase "asset-metadata-edition" as asseme
-teach --> asseme :<uses>
-asseme --> chviscom :<uses>
-
-coach --> usepla : <uses>
-teach --> usepla : <uses>
-teach --> editcourse : <uses>
-eval --> usepla
-
-usecase "editer-modalités-completion" as emc
-usecase "modifier-completion" as mc
-asseme --> emc : <uses>
-asseme --> mc : <uses>
-
-@enduml
+![Les cas d'utisation de l'enseignant](global.png)
