@@ -1,14 +1,14 @@
 
 # Cas d'utilisation N° 99 :  Demande-de-cercle
 
-Niveau 1
+Niveau 1: Dans un premier temps le cercle sera créé (en cas de création) sans intervention d'un administrateur mais celui-ci recevra une notification.
 
 ##	Description
 
 Permet de faire une demande de création de cercle (fait par un administrateur).
 Deux posibilités au cours de la création d'un cours/classe, soit l'enseignant connait le cercle auquel il veut appartenir et créer le lien avec son cours en faisant une demande d'entrée dans le cercle au près du physionomiste.
 
-Soit il ne le connait pas et donc demande la création d'un **[cercle](https://github.com/PremierLangage/plconception/blob/master/conception/concept/cercle.md)**  correspondant aux particularités de son cours (niveau, discipline ,etc). C'est l'administrateur qui créer le cercle correspondant (ou inscrit le profe et son cours dans un cercle existant).
+Soit il ne le connait pas et donc demande la création d'un **[cercle](https://github.com/PremierLangage/plconception/blob/master/conception/concept/cercle.md)**  correspondant aux particularités de son cours (niveau, discipline ,etc). C'est l'administrateur qui créer le cercle correspondant (ou inscrit le prof et son cours dans un cercle existant).
 
 
 
