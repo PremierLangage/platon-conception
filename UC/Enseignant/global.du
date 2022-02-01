@@ -1,0 +1,41 @@
+@startuml
+actor Enseignant  as ensei
+
+usecase "organiser" as orga #red
+usecase "Editer le cours" as editcourse #red
+usecase "archiver-cours" as archi
+
+orga --> editcourse
+orga --> archi
+
+
+usecase "coacher" as suivre
+usecase "Utiliser une activité" as teach #red
+usecase "exporter-notes" as exnote
+usecase "exporter-stats" as exstat
+
+ensei --> orga
+ensei --> teach
+ensei --> suivre
+
+usecase "Faire un amphi" as amphi
+usecase "Faire un TD interactif" as tddyna
+teach --> amphi : <uses>
+teach --> tddyna : <uses>
+
+
+archi --> exnote 
+archi --> exstat
+
+
+usecase "Tableau de bord" as con
+suivre --> con :<uses>
+
+usecase "asset-metadata-edition" as asseme
+editcourse --> asseme :<uses>
+
+
+
+
+
+@enduml
