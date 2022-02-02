@@ -1,5 +1,11 @@
 
 
+
+
+Warning : la notion d'atelier a quelque peu changée ce document est a revoir en entier . TODO
+
+
+
 # Cas d'utilisation N° {{nbuc}} :  editionatelierpardefaut
 
 
