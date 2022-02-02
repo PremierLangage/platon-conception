@@ -1,3 +1,16 @@
+
+# Les indicateurs 
+
+les indicateurs sont des affichages visuels (ou pas) d'information sur les données de la plateforme.
+
+- temps d'accès
+- nombre de connection
+- taux de réussite 
+- nombre de tentatives 
+- etc
+
+
+
 # Organisation général des indicateurs
 
 
