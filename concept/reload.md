@@ -1,14 +1,16 @@
 # reload
 
-Le serveur de ressource propose un méthode reload.
+Le serveur d'assets propose un méthode reload.
 
 ### Quand ?
 
-Lorsqu'un utilisateur veut modifier une ressource déjà existante.
+Lorsqu'un utilisateur veut modifier un asset 
 
 ### Principe
 
-Les ressources sont stockées sur le serveur de ressource. Lorsqu'un client voudra modifier une ressource, il effectuera un **reload**.
-Ce **reload** créera une nouvelle branche de la ressource modifiée. Il ira ensuite appeler la méthode **load** qui transformera la ressource en JSON qui sera envoyé au serveur d'Assets.
 
-Le serveur d'Assets réceptionnera l'asset et devra checker la version de tous les files du JSON (qui auront une version de packetage). Il mettra ensuite dans le checkbox les fichiers inexistant ou ceux qui ont une version inférieure à ceux reçu dans le JSON.
+Les assets on un élément graphique permettant de recharger l'asset.
+Si une seule ressource liée à l'asset est modifiée par rapport à l'asset alors il y a rechargement automatique avec cette nouvelle version de la ressource.
+
+si il y en a plusieurs il faut spécifier quelle ressource on souhaite recharger ce qui peut demander une GUI.
+
