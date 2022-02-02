@@ -1,5 +1,5 @@
 
-# Cas d'utilisation N° 19 :  creation-cercle
+# Cas d'utilisation : validation-cercle
 
 Niveau 1
 
@@ -24,7 +24,7 @@ l'Administrateur est loggé. Il a reçu une notification.
 2.	Le système lui propose trois choix:  
 - valider telquel la demande de création (si il ya bien trois personnes différentes qui sont enseignants).
 - valider l'affectation du cours dans le cercle demandé.
-- affecter le cours dans un cercle existant (pas celui demandé en création).le système propose une liste déroulante des cercle existant (ou mieux)
+- affecter le cours dans un cercle existant (pas celui demandé en création).le système propose une liste déroulante des cercles existant (ou mieux)
 3. l'admistrateur fait le choix. 
 4. le système créer le cercle si nécessaire avec les toutes les affectations de membres et notifie les trois membres initiaux de la création. Le cours est associé au cercle et devient visible dans la liste de cours du cercle. l'enseignant si il nétait pas membre du cercle le devient. 
 5. l'enseignant recoit une notification lui dissant dans quel cercle est affecté sont cours.
