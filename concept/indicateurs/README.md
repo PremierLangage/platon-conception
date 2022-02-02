@@ -1,7 +1,19 @@
+# Organisation général des indicateurs
 
 
 
-FIXME a lire
+Le principe architectural pour mes indicateurs est le suivant:
+
+- production de données, dans certains point stratgégiques de PLaton sont placé des "espions" qui envois sur la base de donnée de suivie des json qui sont affectés dans des tables.
+
+- visibilité des indicateurs, l'accès aux indicateurs doit ce faire en fonction du DROIT (RGPD), et donc l'accès est toujours filtré en fonction du type d'accès et de l'utilisateur.
+
+- l'affichage des indicateurs doit être fait par un logiciel sur étagère qui gère bien l'affichage graphique de données.
+
+
+
+
+
 # Quelques remarques sur les indicateurs
 
 Nous avons essayé d'être exaustif :
