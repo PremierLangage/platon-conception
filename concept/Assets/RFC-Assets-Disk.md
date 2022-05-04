@@ -1,11 +1,12 @@
 <h1 style="text-align:center"> RFC </h1>
 
-<h1 style="text-align:center"> ORAGINSATION DES ASSETS DANS LE DISQUE NFS </h1>
+<h1 style="text-align:center"> ORGANISATION DES ASSETS DANS LE DISQUE NFS </h1>
 </br></br>
 
 Cette rfc à pour but d'expliciter l'organisation du disque NFS (Network File System) qui va servir à stocker les [assets](https://github.com/PremierLangage/platon-conception/blob/V2/concept/assets.md) de platon.
 
-Nous avons besoin de spécifier un clair de stocker les actifs afin de pouvoir les retrouver facilement. Le server et la sandbox auront accès à ce disque NFS alors il doit être le plus clair possible.
+Nous avons besoin de spécifier de façon explicte la modalité de stockage les actifs afin de pouvoir les retrouver facilement.
+Le server et la sandbox auront accès à ce disque NFS alors cette organisation doit être la plus claire possible.
 
 ### BASE
 
