@@ -1,4 +1,6 @@
-<h1 style="text-align:center"> RFC </h1>
+<h1 style="text-align:center"> RFC Platon 001: diskdata</h1>
+
+Creation: 4/05/2022
 
 <h1 style="text-align:center"> ORGANISATION DES ASSETS DANS LE DISQUE NFS </h1>
 </br></br>
