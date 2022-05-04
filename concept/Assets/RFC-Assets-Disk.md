@@ -16,11 +16,18 @@ Cette rfc à pour but d'expliciter l'organisation des fichiers sur le disque par
 Trois éléments stratégiques:
  - observer (pull plutot que push)
  - ondemande (lazy loading des données des tableaux de bord)
- - incrémental 
+ - sans blocages 
 
 Biensur les problèmatiques de complexité:
  - l'objectif d'être efficace en terme de nombre d'accès disque (élement de complexité de base des entrées sorties sur disque)
  - réduire l'empreinte en terme de place disk. 
+
+## Comment assurer ces qualités
+
+Il faut que les accès aux fichiers soit protégés (un seul processus manipule le fichier à la fois), et ceci sans interblocages. Pour cela nous utilisons une stratégie hiérarchique ou les processus ne peuvent modifier en écriture que des fichier de leur niveau. Et accède en lecture qu'a des fichiers de niveau supérieur (plus profonds dans l'arborecence).
+
+Les analytics sont calculées à la demande (mais pas recalculées).
+
 
 # Les données stockées
 
