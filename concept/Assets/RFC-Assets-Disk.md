@@ -46,18 +46,18 @@ Quand un utilisateur utilise un asset actif (activité, exo, etc) il faut créer
 
 Pour retrouver ce répertoire le chemin sera : `/${ASSETPATH}/${USERslug}/`  ou `${USERslug}` est un mot identifiant uniquement l'utilisateur (le mieux est d'utiliser une formule du genre nomprenom et d'ajouter un entier en cas d'homonymie). Ce Userslug est stocké dans l'utilisateur et est unique.
 
-Par exemple pour une activité l'on exécutera en shell  sur le serveur : `cp -R /${settings.ASSETS/${ASSETPATH}/context /${ASSETPATH}/${USERslug}`
-avant que la sandbox fasse un `cd /${settings.ASSETS}/${ASSETPATH}/${USERslug}` avant d'exécuter  `python3  /${settings.ASSETS}/${ASSETPATH}/${USERslug}/builder.py`.
+Par exemple pour une activité l'on exécutera en shell  sur le serveur : `cp -R /${settings.NFS_ASSETS/${ASSETPATH}/context /${ASSETPATH}/${USERslug}`
+avant que la sandbox fasse un `cd /${settings.NFS_ASSETS}/${ASSETPATH}/${USERslug}` avant d'exécuter  `python3  /${settings.NFS_ASSETS}/${ASSETPATH}/${USERslug}/builder.py`.
 
 
 ### Localisation absolue sur disque des fichiers 
 
-Tout les fichiers seront dans un répertoire racine nommé settings.ASSETS.
+Tout les fichiers seront dans un répertoire racine nommé settings.NFS_ASSETS.
 (voire la configuration des settings dans le framework django qui est utilisé en commun par le serveur et la sandbox).
 
 Cette valeur peut être fixé différemment sur le serveur et la sandbox en fonction des besoins de l'équipe devops.
 
-Par défaut cette valeur est 'ASSETS' et ce répertoire est a la racine du disk: '/ASSETS'.
+Par défaut cette valeur est 'ASSETS' et ce répertoire est a la racine du disk: '/Assets'.
 
 ## Construction d'un chemin d'asset  : Création du {ASSETPATH}
 
@@ -78,11 +78,11 @@ les cours contiennent des informations spécifiques.
 
 Les cours sont un model django qui contient un slug unique (les cours sont des assets). 
 Ce slug permet de créer le COURSPATH de la façon suivante:
-COURSPATH= `/${settings.ASSETS/${Course.slug}/`.
+COURSPATH= `/${settings.NFS_ASSETS/${Course.slug}/`.
 
 Toutes les informations qui ne sont pas dans le model django sont placé dans le répertoire `/${COURSPATH}/data/`.
 
-Les COURSPATH sont tous uniques : `/${settings.ASSETS/${CourseSlug}/`.
+Les COURSPATH sont tous uniques : `/${settings.NFS_ASSETS/${CourseSlug}/`.
 
 Chaque cours de la plateforme possède un répertoire réservé : `/${COURSPATH}`
 
@@ -95,9 +95,9 @@ Les activités et les exos (il y aura peut être dans l'avenir d'autres types d'
 
 Nous proposons pour le moment une simple copie du contexte pour chaque utilisateur (dans un deuxième temps des liens symboliques pourrai être utilisé, ou des répertoires partagées pour faire des économie de place et de temps).
 
-Ainsi au démarrage (build) d'une activité le première action est de créer par copie du répertoire `/${settings.ASSETS}/${ASSSETPATH}/context` le répertoire `/${settings.ASSETS}/{ASSETPATH}/{user.slug}/`.
+Ainsi au démarrage (build) d'une activité le première action est de créer par copie du répertoire `/${settings.NFS_ASSETS}/${ASSSETPATH}/context` le répertoire `/${settings.NFS_ASSETS}/{ASSETPATH}/{user.slug}/`.
 
-En suite la sandbox reçoit le path: `/${ASSETPATH}/{user.slug}/` et se place sur le répertoire `/${sandbox_settings.ASSETS}/${ASSETPATH}/{user.slug}/`
+En suite la sandbox reçoit le path: `/${ASSETPATH}/{user.slug}/` et se place sur le répertoire `/${sandbox_settings.NFS_ASSETS}/${ASSETPATH}/{user.slug}/`
 
 
 
@@ -105,7 +105,7 @@ En suite la sandbox reçoit le path: `/${ASSETPATH}/{user.slug}/` et se place su
 
 Dans le cas des exercices répétables, il faut un répertoire de travail différent pour chaque répétition. 
 
-Dans ce cas le chemin du répertoire de contexte sera : `/${settings.ASSETS}/{ASSETPATH}/{user.slug}/{tentative}/`
+Dans ce cas le chemin du répertoire de contexte sera : `/${settings.NFS_ASSETS}/{ASSETPATH}/{user.slug}/{tentative}/`
 Avec le numéro de tentative comme nom de répertoire.
 Il n'est interdit de faire plus de 99 fois un exercice. A partir de 100 le compteur est réinitialisé et le répertoire visé est remplacé à chaque fois.
 
