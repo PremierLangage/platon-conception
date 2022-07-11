@@ -145,6 +145,54 @@ Pour rendre le comportement modifiable on pourra dans chaque méthode regarder s
 
 Dans chaque `Asset` sera placé un fichier `data.json` permettant de stocker les résultats de ces données l'idée ici est de ne pas recalculer les données qui ont déjà été calculées. Dans ce fichier json on aura associé à chaque donnée la date à laquelle nous l'avons calculée pour la dernière fois.
 
+### ACCESSIBILITÉ AUX ASSETS
+
+#### Propriétés
+
+`/asset/slug_cours/slug_activité` 
+
+La méthode GET permet de récupérer les propriétés de l'activité
+
+La méthode PATCH permet de mettre a jour ses propriétés et d'en ajouter au besoin 
+
+
+EXEMPLE DE JSON PROPRIÉTÉS
+
+```json
+{
+    "open_date":"12-01-2023",
+    "close_date":"12-02-2023",
+    "visible":"true",
+    "notation":"active"
+}
+```
+
+#### Jouer
+
+ - Activité 
+
+`/play/slug_cours/slug_activité`
+
+La méthode GET permet de lancer le `Build` de l'activité
+
+La méthode POST permet de lancer le `Grade` de l'activité il faudra renseigner l'évaluation faite par l'exercice
+
+La méthode PATCH permet de lancer le `Repeat` de l'activité 
+
+
+ - Exercice
+
+`/play/slug_cours/slug_activité/slug_exercice`
+
+La méthode GET permet de lancer le `Build` de l'activité
+
+La méthode POST permet de lancer le `Grade` de l'activité il faudra renseigner la réponse de l'élève dans le corps de la requête
+
+```JSON
+{
+    "answer":"42"
+}
+```
 
 ### EXEMPLE D'ARBORESCENCE
 
