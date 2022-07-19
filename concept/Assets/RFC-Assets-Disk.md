@@ -107,7 +107,7 @@ Dans le cas des exercices répétables, il faut un répertoire de travail diffé
 
 Dans ce cas le chemin du répertoire de contexte sera : `/${settings.NFS_ASSETS}/{ASSETPATH}/{user.slug}/{tentative}/`
 Avec le numéro de tentative comme nom de répertoire.
-Il n'est interdit de faire plus de 99 fois un exercice. A partir de 100 le compteur est réinitialisé et le répertoire visé est remplacé à chaque fois.
+Le nombre de tentatives enregistrées est limité a 100. A partir de 100 le compteur est réinitialisé et le répertoire visé est remplacé à chaque fois.
 
 
 ### Le context d'un asset actif et compression
@@ -139,7 +139,7 @@ Afin de construire de nouvelles données, qui ne sont pas déjà prise en compte
 
 Une classe AssetVisitor est implémentée qui peut nous servir de base pour le parcours des assets dans le disque partagé. Il suffi d'en hériter puis d'implémenter ses méthodes pour chaque type d'asset dont on souhaite un comportement particulier.
 
-Pour le type `Cours` nous allons faire la moyenne des notes des activités. Pour le type `Activité` nous allons faire la moyenne des notes des exercices. Et dans les exercices nous allons parcourir la note de chaque élève à l'exercice et en faire la moyenne.
+Pour le type `Cours` nous allons faire la moyenne des notes des activités. Pour le type `Activité` nous allons faire la moyenne des notes des exercices. Et dans les exercices nous allons remonter la note.
 
 Pour rendre le comportement modifiable on pourra dans chaque méthode regarder si l'utilisateur à créé un fichier pour surcharger le comportement, dans ce cas l'utilisateur (créateur de cours, d'activité ou d'exercice) pourra remplacer ce comportement en plaçant un fichier "moyenne.py" dans son asset et nous utiliserons la fonction `moyenne(list[Asset])` fournie par le fichier.
 
