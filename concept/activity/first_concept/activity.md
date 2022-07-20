@@ -14,7 +14,7 @@ An activity can be used in multiple courses but there is a distinct instance of 
 
 An activity has at least a standard strategy and a PLTP file.
 
-Activité= S + F* + (sd* td* I N B)
+Activité= S + F* + (sd* td* I N B)  
 I  = Introduction + Documentation  
 S  = Strategie  
 F  = pltp + (decorators)  
