@@ -175,9 +175,10 @@ EXEMPLE DE JSON PROPRIÉTÉS
 
 La méthode GET permet de lancer le `Build` de l'activité
 
-La méthode POST permet de lancer le `Grade` de l'activité il faudra renseigner l'évaluation faite par l'exercice
+La méthode POST permet de lancer le `Grade` de l'activité il faudra renseigner la réponse de l'élève dans le corps de la requête,
+le grade est éxécuter à chaque fin d'exercice lorsque l'on joue une activité
 
-La méthode PATCH permet de lancer le `Repeat` de l'activité 
+La méthode PATCH permet de lancer le `Repeat` de l'activité
 
 
  - Exercice
@@ -185,6 +186,8 @@ La méthode PATCH permet de lancer le `Repeat` de l'activité
 `/play/slug_cours/slug_activité/slug_exercice`
 
 La méthode GET permet de lancer le `Build` de l'activité
+> un champs `repeat` dans la requête permet de répéter l'exercice si il est a `true` ou d'afficher la dernière réponse de l'utilisateur si il est
+> à `false`
 
 La méthode POST permet de lancer le `Grade` de l'activité il faudra renseigner la réponse de l'élève dans le corps de la requête
 
