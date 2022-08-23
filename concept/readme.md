@@ -1,13 +1,10 @@
 
-# Description des types d'exercices 
+# Glossaire 
 
+Vous êtes dans le glossaire de platon.
 
-La description des exercices types pour les différents componants.
+Vous trouverez ici la définition des termes utilisés par les développeurs pour décrire le éléments 
+du système.
 
-### Certains composant ont des interface directs
+Dans le fichier makeall.sh un script permettant de fusionner en un seul document.
 
-automates, graphes, JSX Graph nécessitant un bon niveau de programmation 
-
-### d'autre sont des composant accessoirs 
-
-hint,  countdown 
