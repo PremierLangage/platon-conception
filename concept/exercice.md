@@ -14,27 +14,29 @@ Les settings sont fixés au lancement de l'exercice, l'exercice peut les modifie
 
 Un exercice permet à un utilisateur de s'entraîner de manière autonome.
 
-Il est créé par un enseignant ayant un [karma](karma.md) suffisant ou peut être proposer par un étudiant (l'exercice doit donc être validé par un enseignant ayant aussi un karma suffisant dans la discipline de l'exercice).
+Il est créé par un enseignant ayant un [karma](karma.md) suffisant ou peut être proposé par un étudiant (l'exercice doit donc être validé par un enseignant ayant aussi un karma suffisant dans la discipline de l'exercice).
 
-Il est corrigé de manière automatique. La correction est un couple (score,feedback).
+Il est évalué de manière __automatique__. L'évaluation est un couple (score,feedback).
 Le score variant de -n à 100. Zéro indiquant l'échec total et 100 le success total.  
 Le score -1 indiquant que la réponse de l'élève ne peut être évalué car elle n'est pas dans un format correct (exemple: ne compile pas, mal parenthèsé, etc). 
   Note: les valeurs négatives sont réservé pour un usage ultérieur.
 
-Le feedback est du markdown qui affiché entre la text et le form. Ce feedback est construit par l'évaluateur de l'exercice.
-
-## Règles 
-
-Il doit contenir un ou plusieurs [tag](tag.md) pour apporter un étiquetage sémentique à l'exercice à la fois pour aider l'enseignant qui cherche des exercices et pour permettre des traitement de type analyse des prérequis.
+Le feedback est du markdown qui affiché entre le text et le form.
+Ce feedback est construit par l'évaluateur de l'exercice.
 
 
-Un exercice doit être placer dans une [activité](activity.md) comme la [feuille d'exercice](feuille.md) par un enseignant pour que les étudiants puissent l'tuilisé.
+## Règles d'intégration des exercices dans la plateforme
+
+l'exercice doit contenir au moins un tag](tag.md) pour apporter un étiquetage sémentique à l'exercice à la fois pour aider l'enseignant qui cherche des exercices et pour permettre des traitements pré et post utilisation en particulier de type analyse des prérequis.
+
+
+Un exercice doit être placer dans une [activité](activity.md) comme la [feuille d'exercice](feuille.md) par un enseignant pour que les étudiants puissent l'utilisé. Cette activité doit être soit mise en mode démo soit publié (published) dans un cous pour être accessible.
 
 Un exercice peut être fournis en mode 'démo' dans ce cas il est accessible sans identification.
 
 ## Status editorial d'un exercice
 
-Les exercices sont écrit par des collègues a tout moment et accessible au partage dès qu'ils sont publiés (c-a-d proposés à des étudiants), les exercices de démo ne sont pas publiés.
+Les exercices sont écrit par des collègues mais accessible au partage dès qu'ils sont publiés (c-a-d proposés à des étudiants), les exercices de démo ne sont pas publiés.
 
 Un  exercice passe par les étapes suivantes:  
 privé: seul le propriétaire le vois et peut en faire une préview.  
@@ -44,8 +46,8 @@ utilisé: Des élèves ont fait l'exercice
 En suite l'exercice peut avoir des étiquettes 
 validé: l'exercice à été validé par un responsable de cercle 
 buggé:  Une bug à été détecté dans l'exercice -> une demande de motification à été faite.
-CKC: l'exercice est casé (charge pas, erreur du grader, retour grade=-2). Affectation automatiqe du tag et notificaiton au cercle.
-Cercle<tag>: le cercle peut donner des tags a un exercices (différents de ceux qui sont dans l'éxercice). A utiliser avec modération.
+CKC: l'exercice est casé détection automatique (charge pas, erreur du grader, retour grade=-2). Affectation automatiqe du tag et notificaiton au cercle. Attention: ce tag n'est valable que pour la version. 
+Cercle<tag>: le cercle peut donner des tags a un exercices (différents de ceux qui sont dans l'exercice). A utiliser avec modération.
 
 
 # Spécification de l'exercice
@@ -53,6 +55,8 @@ Cercle<tag>: le cercle peut donner des tags a un exercices (différents de ceux 
 voire la documentation readthedoc.github.io/PremierLangage
 
 
+  
+  
 
 
 
@@ -75,8 +79,3 @@ voire la documentation readthedoc.github.io/PremierLangage
 [étudier](../casutilisation/etudiant/etudier.md)
 
 [réviser](../casutilisation/etudiant/reviser.md)
-
-<!---
-Author : Hugo
-Validator : Jordan
--->
