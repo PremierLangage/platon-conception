@@ -1,7 +1,7 @@
 
 # Description des types d'exercices 
 
-attention: ce document est une réflexion sur l'avenir sur la possibilité d'avoir de la composition sur les exercices.
+ > attention: ce document est une réflexion sur l'avenir sur la possibilité d'avoir de la composition sur les exercices.
 
 
 
