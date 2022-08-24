@@ -9,7 +9,7 @@ Les cercles sont propriétaires de ressources (en lieu et place de personnes).
 
 Le cercle savant d'une discipline est propriétaire du graphe savant de la discipline.
 
-Il existe des cercles publiques, privés, automatiques.
+Il existe des cercles publiques, privés.
 
 Le cercle par défaut de tous les créateurs est le cercle créateur. On y est inscrit par défaut.
 (on peut se faire virer ....).
