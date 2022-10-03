@@ -1,39 +1,47 @@
-# RFC #
+# URIs #
 
 ## Problème ##
-Mettre en place un système d'URI permettant de référencer d'une façon humainement compréhensible et simple les cercles et resources
+Mettre en place un système d'URI permettant de référencer d'une façon humainement compréhensible les ressources. Une API doit permettre de convertir une URI en un chemin vers le dossier contenant la ressource ou le fichier voulu sur le disque physique.
 
-## Solution ##
-### URI absolues ###
-L'idée est de référencer les cercles en suivant leur arborescence sur Platon.
-La racine est le cercle racine dans l'arborescence, et on descend étage par étage en utilisant les noms des cercles "sluggifiés".
+## Spécifications ##
 
-Ainsi, un chemin "/info/python" pointe vers un cercle "Python", fils d'un cercle "Info", lui-même fils du cercle racine.
+Une URI complète se compose de 3 parties, séparées par des ':' du type:
 
-Il convient donc d'écrire un module permettant de résoudre ces URIs pour obtenir l'ID du cercle concernant, et inversement, puisque le chemin réel dans le système de fichier en dépend.
+cercle:ressource:fichier
 
-Pour référencer une resource, il suffit de renseigner l'URI du cercle qui le contient, puis indiquer après un ':' le nom de la resource "sluggifié".
+### Cercle ###
+
+La première partie est une URI vers un cercle. Les cercles forment une arborescence à racine unique, un cercle racine. Ainsi, les URIs de cercle correspondent à un chemin de la racine vers le cercle voulu. Des slugs sont utilisés pour faire référence aux cercles, séparés par des '/'.
+
+Par exemple, un chemin "/info/python" pointe vers un cercle "Python", fils d'un cercle "Info", lui-même fils du cercle racine.
+
+Cette partie peut être omise, rendant l'URI relative. L'interprétation diffère selon la présence ou non des autres parties.
+
+### Ressource ###
+
+Il s'agit du nom de la ressource voulue, sous forme de slug. Si le cercle est précisé, la référence est non ambiguüe.
+
+Si le cercle n'est pas précisé, l'URI est relative, et fera référence à la ressource du nom voulu dans le cercle local. Si aucune ressource dans le cercle local n'est trouvée, alors il fera référénce à la première ressource de ce nom trouvée en remontant les cercles parents jusqu'à la racine.
 
 Par exemple si le cercle "Python" contient une resource "Tableaux", l'URI complète de la resource sera "/info/python:tableaux".
 
-Enfin, si on veut référencer un fichier dans le répertoire de la resource, on peut complèter cette adresse par le chemin du fichier, en séparant par un autre ':' pour éviter des ambiguités. Par exemple, "/info/python:tableaux:exos/exo1.pl".
+Si la partie cercle est omise, celle-ci peut aussi être omise. L'interprétation d'un tel chemin relatif est faite dans la partie fichier.
 
-Les ':' séparent l'URI en 3 parties :
-- Cercle(s)
-- Ressource
-- Fichier
+### Fichier ###
+Il s'agit d'un chemin classique dans le système de fichier. Le chemin est relatif à partir du dossier de la ressource indiquée. La référence '.' est liée au répertoire de la ressource, tout comme la référence '/'. 
 
-### URI relatives ###
-Les URIs peuvent être relatives selon le contexte. On va surtout s'intéresser ici aux syntaxes dans les fichiers .pl/.pla
+La référence '..' est interdite.
 
-Dans le cas d'un "extends", nom d'un resource seul (ex: "tableaux") : le parseur hérite le main.pl/pla de la resource/modèle de ce nom contenu dans le cercle local. Si celui-ci n'existe pas, le parseur va essayer de trouver cette ressources dans un cercle parent, et recommencer jusqu'à atteindre la racine
+Un chemin complet pourra avoir cet aspect : "/info/python:tableaux:exos/exo1.pl"
 
-Dans le cas d'un "@" (imports):
+Cela est équivalent à : "/info/python:tableaux:./exos/exo1.pl"
 
-* Nom d'un fichier seul (ex: "exo1.pl"): cherche le fichier dans le répertoire local à la resource
+Si seule cette partie est présente, le fichier sera cherché directement dans le répertoire de la ressource locale.
 
-* Chemin vers fichier seul (ex: "exos/exo1.pl"): cherche le fichier au chemin indiqué dans le répertoire local à la resource
+## API ##
 
-* Nom de la resource (ex: "tableaux:exos/exo1.pl"): cherche le fichier au chemin indiqué dans la resource nommée "tableaux". Si c'est le nom de la resource actuelle, cherche dans le répertoire local, sinon, remonte dans les cercles parents en cherchant une resource avec le nom correspondant
+L'API doit proposer une méthode resolve qui prend deux paramètres :
+* un string correspondant à l'URI
+* une référence à la ressource locale (nécessaire pour les URI locales)
 
-Dans ces deux cas, l'URI absolue peut aussi être précisée.
+et qui renvoie un chemin direct vers le dossier/fichier correspondant sur le disque.
