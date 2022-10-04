@@ -5,9 +5,13 @@ Mettre en place un système d'URI permettant de référencer d'une façon humain
 
 ## Spécifications ##
 
-Une URI complète se compose de 3 parties, séparées par des ':' du type:
+Une URI complète se compose de 3 parties:
 
-cercle:ressource:fichier
+cercle:ressource/fichier
+
+Il y a 2 séparateurs importants:
+* ':' sépare cercle et ressource
+* '/' sépare ressource et chemin vers le fichier
 
 ### Cercle ###
 
@@ -15,28 +19,32 @@ La première partie est une URI vers un cercle. Les cercles forment une arboresc
 
 Par exemple, un chemin "/info/python" pointe vers un cercle "Python", fils d'un cercle "Info", lui-même fils du cercle racine.
 
-Cette partie peut être omise, rendant l'URI relative. L'interprétation diffère selon la présence ou non des autres parties.
+Cette partie peut être omise, rendant l'URI relative du point de vue des cercles.
 
 ### Ressource ###
 
-Il s'agit du nom de la ressource voulue, sous forme de slug. Si le cercle est précisé, la référence est non ambiguüe.
+Il s'agit du nom de la ressource voulue, sous forme de slug.
 
 Si le cercle n'est pas précisé, l'URI est relative, et fera référence à la ressource du nom voulu dans le cercle local. Si aucune ressource dans le cercle local n'est trouvée, alors il fera référénce à la première ressource de ce nom trouvée en remontant les cercles parents jusqu'à la racine.
 
 Par exemple si le cercle "Python" contient une resource "Tableaux", l'URI complète de la resource sera "/info/python:tableaux".
 
-Si la partie cercle est omise, celle-ci peut aussi être omise. L'interprétation d'un tel chemin relatif est faite dans la partie fichier.
+Si la partie cercle est omise, ':' doit quand même être mis avant le nom de la ressource pour éviter des ambiguités.
+Exemple: ":tableaux"
+Cette URI fera référence à la première ressource "tableaux" trouvée en regardant dans le cercle local, puis en remontant.
+
+Cette partie peut aussi être omise (la partie cercle le sera aussi dans ce cas). L'interprétation d'un tel chemin relatif est faite dans la partie fichier.
 
 ### Fichier ###
 Il s'agit d'un chemin classique dans le système de fichier. Le chemin est relatif à partir du dossier de la ressource indiquée. La référence '.' est liée au répertoire de la ressource, tout comme la référence '/'. 
 
 La référence '..' est interdite.
 
-Un chemin complet pourra avoir cet aspect : "/info/python:tableaux:exos/exo1.pl"
-
-Cela est équivalent à : "/info/python:tableaux:./exos/exo1.pl"
+Un chemin complet pourra avoir cet aspect : "/info/python:tableaux/exos/exo1.pl"
 
 Si seule cette partie est présente, le fichier sera cherché directement dans le répertoire de la ressource locale.
+Exemple: "exos/exo1.pl".
+Si on se trouve déjà dans la ressource tableaux, ce chemin est équivalent au précédent.
 
 ## API ##
 
