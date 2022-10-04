@@ -36,9 +36,10 @@ Cette URI fera référence à la première ressource "tableaux" trouvée en rega
 Cette partie peut aussi être omise (la partie cercle le sera aussi dans ce cas). L'interprétation d'un tel chemin relatif est faite dans la partie fichier.
 
 ### Fichier ###
-Il s'agit d'un chemin classique dans le système de fichier. Le chemin est relatif à partir du dossier de la ressource indiquée. La référence '.' est liée au répertoire de la ressource, tout comme la référence '/'. 
+Il s'agit d'un chemin classique dans le système de fichier. Le chemin est relatif à partir du dossier de la ressource indiquée. 
 
-La référence '..' est interdite.
+La référence '.' est liée au répertoire de la ressource.
+La référence '..' est interdite (on ne veut pas permettre de remonter dans des dossiers hors de la ressource).
 
 Un chemin complet pourra avoir cet aspect : "/info/python:tableaux/exos/exo1.pl"
 
