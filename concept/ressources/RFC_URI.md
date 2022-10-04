@@ -46,6 +46,10 @@ Si seule cette partie est présente, le fichier sera cherché directement dans l
 Exemple: "exos/exo1.pl".
 Si on se trouve déjà dans la ressource tableaux, ce chemin est équivalent au précédent.
 
+La présence ou non d'un ':' permet d'éviter l'ambiguïté. Par exemple :
+* ":tableaux/exos/exo1.pl" : recherche le fichier exos/exo1.pl dans la ressource tableaux, en remontant dans les cercles si nécessaire
+* "tableaux/exos/exo1.pl" : recherche le fichier tableaux/exos/exo1.pl dans la ressource locale
+
 ## API ##
 
 L'API doit proposer une méthode resolve qui prend deux paramètres :
