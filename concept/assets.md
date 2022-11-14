@@ -20,6 +20,7 @@ Certains assets sont "vides" c'est à dire qu'ils ne sont pas neccesairement li�
 
 Les cours sont des sections avec des informations supplémentaires: participants, notes, badges, etc.
 
+Les assets sont liées selon une arboresence chaque Asset possède un lien vers sont parent à l'exception de certaines assets "vides".
 
 ##  Données d'assets TODO: NAME_FOR_THIS
 
@@ -34,6 +35,7 @@ La structure de données d'asset contient:
 * le lien vers la ressource que l'asset représente **ressource de type CharField. ex: Ressource:36&versions!=0.3**
 * les dates de debut, fin, ouverture, retard etc **opening et closing de types DateField**
 * modalité d'évaluation : il est possible de surcharger les modalités d'évaluation de la ressource.
+* un numéro d'ordre pour savoir comment l'affiché sur la page.
 
 ## Description des répertoires utilisées par les Assets
 Le répertoire d'Assets a pour racine le dossier /Assets
