@@ -53,8 +53,12 @@ La présence ou non d'un ':' permet d'éviter l'ambiguïté. Par exemple :
 
 ## API ##
 
-L'API doit proposer une méthode resolve qui prend deux paramètres :
+L'API doit proposer une méthode getlocation qui prend en paramètres :
 * un string correspondant à l'URI
+* working directory
 * une référence à la ressource locale (nécessaire pour les URI locales)
-
+* une 
 et qui renvoie un chemin direct vers le dossier/fichier correspondant sur le disque.
+
+
+
