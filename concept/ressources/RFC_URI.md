@@ -33,6 +33,9 @@ Si la partie cercle est omise, ':' doit quand même être mis avant le nom de la
 Exemple: ":tableaux"
 Cette URI fera référence à la première ressource "tableaux" trouvée en regardant dans le cercle local, puis en remontant.
 
+Par défaut, on fera référence à la version de la ressource la plus récente. Une version particulière peut etre précisée entre accolades, par exemple:
+":tableaux{1.2}"
+
 Cette partie peut aussi être omise (la partie cercle le sera aussi dans ce cas). L'interprétation d'un tel chemin relatif est faite dans la partie fichier.
 
 ### Fichier ###
@@ -53,11 +56,12 @@ La présence ou non d'un ':' permet d'éviter l'ambiguïté. Par exemple :
 
 ## API ##
 
-L'API doit proposer une méthode getlocation qui prend en paramètres :
+On doit proposer une méthode get_location qui prend en paramètres :
 * un string correspondant à l'URI
-* working directory
-* une référence à la ressource locale (nécessaire pour les URI locales)
-* une 
+* le working directory (pour résoudre les chemins locaux notamment)
+* l'id du cercle actuel
+* l'id de l'utilisateur (permissions d'accès)
+
 et qui renvoie un chemin direct vers le dossier/fichier correspondant sur le disque.
 
 
